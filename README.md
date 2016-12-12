@@ -2,6 +2,7 @@
 nobody knows, or do they?
 
 # library of independent components
+lemony components
 
 ## layout 
  - base grid (regular 12 col, percentage based)
