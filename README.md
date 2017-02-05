@@ -1,34 +1,33 @@
 # le-co
-nobody knows, or do they?
 
-# library of independent components
-lemony components
+## component/snippet library
+3rd major iteration of Lemony project (nobody ever heard of) that focuses on reusable and accesible html snippets. Some snippets may include a CSS or JS.
 
-## layout 
+### layout 
  - base grid (regular 12 col, percentage based)
  - fraction grid (fraction 12 col, percentage based)
  - block grid
  - flex toolbox
 
-## helpers
+### helpers
  - hidden
  - text-access
  - fleft/fright
  - rwd-imagery
 
-## Typography
+### Typography
  - generic text (bold, strongs, everything)
  - headings
  - lists
 
-## Forms
+### Forms
  - general input style (input, button, textaread, dropdown)
  - radio + checkbox styles
 
-## Tables
+### Tables
  - general tables styles with visual row separation
 
-## Complex modules
+### Complex modules
  - captioned imagery
  - media object
  - media block
