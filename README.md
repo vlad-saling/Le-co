@@ -38,3 +38,4 @@ lemony components
  - band
  - menu
  - tree
+ - pager
