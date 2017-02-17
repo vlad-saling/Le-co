@@ -1,0 +1,49 @@
+.c-f1 {
+  width: 100%; }
+
+.c-f2 {
+  width: 50%; }
+
+.c-f3 {
+  width: 33.33333%; }
+
+.c-f4 {
+  width: 25%; }
+
+.c-f5 {
+  width: 20%; }
+
+.c-f6 {
+  width: 16.66667%; }
+
+.c-f7 {
+  width: 14.28571%; }
+
+.c-f8 {
+  width: 12.5%; }
+
+.c-f9 {
+  width: 11.11111%; }
+
+.c-f10 {
+  width: 10%; }
+
+.c-f11 {
+  width: 9.09091%; }
+
+.c-f12 {
+  width: 8.33333%; }
+
+
+  /* structural grid (layout) */
+[class*="c-"] {
+  float: left;
+  min-height: 1px;
+  padding: 0 10px;
+  word-wrap: break-word; }
+  @media only screen and (max-width: 480px) {
+    [class*="c-"] {
+      /* all columns go 100% frenzy on small screen */
+      width: 100%; } }
+      [class*="c-"] + [class*="c-"]:last-child {
+  float: right; }
