@@ -1,7 +1,7 @@
 # le-co
 
 ## component/snippet library
-3rd major iteration of Lemony project (nobody ever heard of) that focuses on reusable and accesible html snippets. Some snippets may include a CSS or JS.
+3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accesible) snippets.
 
 ### layout 
  - base grid (regular 12 col, percentage based)
