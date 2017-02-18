@@ -3,6 +3,9 @@
 ## component/snippet library
 3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accesible) snippets.
 
+:star: = draft
+:white_check_mark: = finished
+
 ### layout 
  - base grid (regular 12 col, percentage based) :star:
  - fraction grid (fraction 12 col, percentage based)
