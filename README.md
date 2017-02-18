@@ -7,10 +7,11 @@
 :white_check_mark: = finished
 
 ### layout 
+ - generic container :star:
  - base grid (regular 12 col, percentage based) :star:
- - fraction grid (fraction 12 col, percentage based)
- - block grid
- - flex toolbox
+ - fraction grid (fraction 12 col, percentage based) :star:
+ - block grid :star:
+ - flex toolbox :star:
 
 ### helpers
  - hidden
