@@ -6,11 +6,12 @@
     margin-bottom: 10px;
     display:flex;
     flex-direction: row; //default
-    // flex-wrap: nowrap | wrap | wrap-reverse;
-    // flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-    // justify-content: flex-start | flex-end | center | space-between | space-around;
-    // align-items: flex-start | flex-end | center | baseline | stretch;
-    // align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    /* flex-wrap: nowrap | wrap | wrap-reverse;
+       flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+       justify-content: flex-start | flex-end | center | space-between | space-around;
+       align-items: flex-start | flex-end | center | baseline | stretch;
+       align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    */
 
     &.revers {
         flex-direction:  row-reverse
