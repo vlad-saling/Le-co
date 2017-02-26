@@ -8,7 +8,7 @@
 
 
 <ul>
-    <li>layout
+    <li>Layout
         <ul>
             <li>base</li>
             <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a></li>
@@ -37,26 +37,31 @@
             <li>RWD imagery</li>
         </ul>
     </li>
+    <li>Forms
+        <ul>
+            <li>general input style (input, button, textaread, dropdown)</li>
+            <li>radio + checkbox styles</li>
+        </ul>
+    </li>
+    <li>Tables
+        <ul>
+            <li>general tables styles with visual row separation</li>
+        </ul>
+    </li>
+    <li>Forms
+        <ul>
+            <li>captioned imagery</li>
+            <li>media object</li>
+            <li>media block</li>
+            <li>cards</li>
+            <li>blocks</li>
+            <li>carousel (css scrollpoints based)</li>
+            <li>band</li>
+            <li>menu</li>
+            <li>tree</li>
+            <li>pager</li>
+        </ul>
+    </li>
 </ul>
 
 
-
-
-### Forms
- - general input style (input, button, textaread, dropdown)
- - radio + checkbox styles
-
-### Tables
- - general tables styles with visual row separation
-
-### Complex modules
- - captioned imagery
- - media object
- - media block
- - cards
- - blocks
- - carousel (css scrollpoints based)
- - band
- - menu
- - tree
- - pager
