@@ -1,33 +1,29 @@
-
 /* general container */
+
+/* vars */
+:root {
+    --min-width: 320px;
+    --optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
+}
+
 .container {
   margin: 0 auto;
-  /*padding: 0 1%;*/
   clear: both;
-  /* grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper */ }
+  min-width: var(--min-width);
+}
+
   .container:after {
     content: " ";
     display: block;
-    clear: both; }
-  .container.full {
-    width: 100%; }
-  .container.fixed {
-    max-width: 960px; }
-  @media only screen and (max-width: 960px) {
-    .container {
-      min-width: 320px;
-      width: auto; } }
-  @media only screen and (max-width: 480px) {
-    .container {
-      min-width: 240px;
-      width: auto; } }
-  @media only screen and (max-width: 960px) {
-    .container .container {
-      min-width: 0px; } }
-  @media only screen and (max-width: 480px) {
-    .container .container {
-      min-width: 0px; } }
-  @media only screen and (max-width: 960px) {
-    .container.mprime {
-      padding-left: 5%;
-      padding-right: 5%; } }
+    clear: both;
+  }
+
+.container.full {
+  width: 100%;
+}
+
+.container.fixed {
+  max-width: var(--optimal-line-width);
+}
+
+
