@@ -11,12 +11,12 @@
     <li><h3>Layout</h3>
         <ul>
             <li><a href="layout/base.css">base</a> :star:</li>
-            <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a> :white_check_mark:</li>
+            <li><a href="layout/container/container.css">container</a> :white_check_mark:</li>
             <li>grids
                 <ul>
                     <li>base grid (regular 12 col, percentage based) :star:</li>
                     <li>fraction grid (fraction 12 col, percentage based) :star:</li>
-                    <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/grids/block/block.css">block grid</a> :star:</li>
+                    <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
                     <li>flex toolbox :star:</li>
                 </ul>
             </li>
