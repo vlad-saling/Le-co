@@ -7,11 +7,25 @@
 :white_check_mark: = finished
 
 ### layout 
- - generic container :star:
- - base grid (regular 12 col, percentage based) :star:
- - fraction grid (fraction 12 col, percentage based) :star:
- - block grid :star:
- - flex toolbox :star:
+
+<ul>
+    <li>base</li>
+    <li>[container](https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css)</li>
+    <li>grids
+        <ul>
+            <li>base grid (regular 12 col, percentage based) :star:</li>
+            <li>fraction grid (fraction 12 col, percentage based) :star:</li>
+            <li>block grid :star:</li>
+            <li>flex toolbox :star:</li>
+        </ul>
+    </li>
+</ul>
+
+#### container
+ - main container
+
+#### grids
+
 
 ### helpers
  - hidden
