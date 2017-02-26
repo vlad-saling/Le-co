@@ -22,20 +22,25 @@
             </li>
         </ul>
     </li>
+    <li>Typography
+        <ul>
+            <li>generic text (bold, strongs, everything)</li>
+            <li>headings</li>
+            <li>lists</li>
+        </ul>
+    </li>
+    <li>Helpers
+        <ul>
+            <li>hidden</li>
+            <li>text-access</li>
+            <li>float classes</li>
+            <li>RWD imagery</li>
+        </ul>
+    </li>
 </ul>
 
 
 
-### helpers
- - hidden
- - text-access
- - fleft/fright
- - rwd-imagery
-
-### Typography
- - generic text (bold, strongs, everything)
- - headings
- - lists
 
 ### Forms
  - general input style (input, button, textaread, dropdown)
