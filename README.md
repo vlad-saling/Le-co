@@ -6,20 +6,23 @@
 :star: = draft  
 :white_check_mark: = finished
 
-### layout 
 
 <ul>
-    <li>base</li>
-    <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a></li>
-    <li>grids
+    <li>layout
         <ul>
-            <li>base grid (regular 12 col, percentage based) :star:</li>
-            <li>fraction grid (fraction 12 col, percentage based) :star:</li>
-            <li>block grid :star:</li>
-            <li>flex toolbox :star:</li>
+            <li>base</li>
+            <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a></li>
+            <li>grids
+                <ul>
+                    <li>base grid (regular 12 col, percentage based) :star:</li>
+                    <li>fraction grid (fraction 12 col, percentage based) :star:</li>
+                    <li>block grid :star:</li>
+                    <li>flex toolbox :star:</li>
+                </ul>
+            </li>
         </ul>
     </li>
-</ul>
+<ul>
 
 #### container
  - main container
