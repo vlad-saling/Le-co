@@ -10,7 +10,7 @@
 
 <ul>
     <li>base</li>
-    <li>[container](https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css)</li>
+    <li><a href="blob/master/layout/container/container.css">container</a></li>
     <li>grids
         <ul>
             <li>base grid (regular 12 col, percentage based) :star:</li>
