@@ -8,7 +8,7 @@
 
 
 <ul>
-    <li>Layout
+    <li><h3>Layout</h3>
         <ul>
             <li>base</li>
             <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a></li>
@@ -22,14 +22,14 @@
             </li>
         </ul>
     </li>
-    <li>Typography
+    <li><h3>Typography</h3>
         <ul>
             <li>generic text (bold, strongs, everything)</li>
             <li>headings</li>
             <li>lists</li>
         </ul>
     </li>
-    <li>Helpers
+    <li><h3>Helpers</h3>
         <ul>
             <li>hidden</li>
             <li>text-access</li>
@@ -37,18 +37,18 @@
             <li>RWD imagery</li>
         </ul>
     </li>
-    <li>Forms
+    <li><h3>Forms</h3>
         <ul>
             <li>general input style (input, button, textaread, dropdown)</li>
             <li>radio + checkbox styles</li>
         </ul>
     </li>
-    <li>Tables
+    <li><h3>Tables</h3>
         <ul>
             <li>general tables styles with visual row separation</li>
         </ul>
     </li>
-    <li>Forms
+    <li><h3>Complex moduls</h3>
         <ul>
             <li>captioned imagery</li>
             <li>media object</li>
