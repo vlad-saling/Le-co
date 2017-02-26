@@ -10,7 +10,7 @@
 <ul>
     <li><h3>Layout</h3>
         <ul>
-            <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/base.css">base</a> :star:</li>
+            <li><a href="layout/base.css">base</a> :star:</li>
             <li><a href="https://github.com/vlad-saling/le-co/blob/master/layout/container/container.css">container</a> :white_check_mark:</li>
             <li>grids
                 <ul>
