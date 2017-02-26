@@ -1,7 +1,7 @@
 # le-co
 
 ## component/snippet library
-3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accesible) snippets.
+3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accessible) snippets.
 
 :star: = draft  
 :white_check_mark: = finished
