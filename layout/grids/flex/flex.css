@@ -1,80 +1,100 @@
 /* flex box grid */
 
-/*TODO: need to rewrite it to css*/
-
 .flex-row {
     margin-bottom: 10px;
     display:flex;
-    flex-direction: row; //default
-    /* flex-wrap: nowrap | wrap | wrap-reverse;
-       flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-       justify-content: flex-start | flex-end | center | space-between | space-around;
-       align-items: flex-start | flex-end | center | baseline | stretch;
-       align-content: flex-start | flex-end | center | space-between | space-around | stretch;
-    */
+    flex-direction: row;
+}
 
-    &.revers {
+    .flex-row.reverse {
         flex-direction:  row-reverse
     }
 
-    &.column {
+    .flex-row.column {
         flex-direction: column;
     }
 
-    &.column-reverse {
+    .flex-row.column-reverse {
         flex-direction: column-reverse;
     }
 
-    @media only screen and (max-width: $medium) {
-        flex-wrap: wrap;
-    }    
-
-    @media only screen and (max-width: $small) {
-        flex-direction: column;
+    @media only screen and (max-width: 360px) {
+        .flex-row {
+            flex-direction: column;
+        }
     }
+
+
+/* regular cells */
+
+[class*="flex-cell-"] {
+    background: #ccc;
+    flex: 1;
+    margin: 2%;
 }
 
-    .flex-cell {
-        background: #ccc;
-        // order: <integer>; /* override default ordering as specified by makrup */
-        flex-grow: 1; /* default 0 */ /* proportional size of container */
-        // flex-shrink: <number>; /* default 1 */ /*  defines the ability for a flex item to shrink if necessary */
-        // flex-basis: <length> | auto; /* default auto */ /* default size of an element before the remaining space is distributed */
-        // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-        // align-self: auto | flex-start | flex-end | center | baseline | stretch;
-        padding: 2%;
 
-        @media only screen and (max-width: $small) {
-            order: 2;
-
-            &.first.first {
-                order: 1;
-                margin-top: 0;
-                margin: 0 0 2% 0;
-            }
-        }
-
-        .column & {
-            margin: 0 0 2% 0;
-        }
-
-        & + & {
-            margin-left: 2%;
-
-            .column & {
-                margin: 0 0 2% 0;
-            }
-
-            @media only screen and (max-width: $small) {
-                margin: 2% 0 0 0;
-            }
-        }
-
-        @media only screen and (max-width: $medium) {
-
-            &.dominant {
-                min-width: 100%;
-                margin: 2% 0 0 0;
-            }
-        }
+    .column [class*="flex-cell-"] {
+        margin: 0 0 2% 0;
     }
+
+    [class*="flex-cell-"] + [class*="flex-cell-"] {
+        margin-left: 2%;
+    }
+
+    .column [class*="flex-cell-"] + [class*="flex-cell-"] {
+        margin: 0 0 2% 0;
+    }
+
+     @media only screen and (max-width: 360px) {
+         .column [class*="flex-cell-"] + [class*="flex-cell-"] {
+            margin: 2% 0 0 0;
+        }
+     }
+
+
+/* seamless version of cell layout */
+
+.seamless [class*="flex-cell-"] {
+    padding: 2%;
+}
+
+    .seamless.column [class*="flex-cell-"] {
+        padding: 0 0 2% 0;
+    }
+
+    .seamless [class*="flex-cell-"] + [class*="flex-cell-"] {
+        padding-left: 2%;
+    }
+
+    .seamless.column [class*="flex-cell-"] + [class*="flex-cell-"] {
+        padding: 0 0 2% 0;
+    }
+
+     @media only screen and (max-width: 360px) {
+         .seamless.column [class*="flex-cell-"] + [class*="flex-cell-"] {
+            padding: 2% 0 0 0;
+        }
+     }
+
+
+
+.flex-cell-1 {
+    flex-basis: 100%;
+}
+
+.flex-cell-2 {
+    flex-basis: 50%;
+}
+
+.flex-cell-3 {
+    flex-basis: 33.333%;
+}
+
+.flex-cell-4 {
+    flex-basis: 25%;
+}
+
+.flex-cell-5 {
+    flex-basis: 20%;
+}
