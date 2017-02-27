@@ -8,6 +8,20 @@ Collection reusable reusable css (and html) snippets you can drop into your proj
 
 
 <ul>
+    <li><h3>Forms</h3>
+        <ul>
+            <li>general input style (input, button, textaread, dropdown)</li>
+            <li>radio + checkbox styles</li>
+        </ul>
+    </li>
+        <li><h3>Helpers</h3>
+        <ul>
+            <li>hidden</li>
+            <li>text-access</li>
+            <li>float classes</li>
+            <li>RWD imagery</li>
+        </ul>
+    </li>
     <li><h3>Layout</h3>
         <ul>
             <li><a href="layout/base.css">base</a> :star:</li>
@@ -24,33 +38,7 @@ Collection reusable reusable css (and html) snippets you can drop into your proj
             </li>
         </ul>
     </li>
-    <li><h3>Typography</h3>
-        <ul>
-            <li>generic text (bold, strongs, everything)</li>
-            <li>headings</li>
-            <li>lists</li>
-        </ul>
-    </li>
-    <li><h3>Helpers</h3>
-        <ul>
-            <li>hidden</li>
-            <li>text-access</li>
-            <li>float classes</li>
-            <li>RWD imagery</li>
-        </ul>
-    </li>
-    <li><h3>Forms</h3>
-        <ul>
-            <li>general input style (input, button, textaread, dropdown)</li>
-            <li>radio + checkbox styles</li>
-        </ul>
-    </li>
-    <li><h3>Tables</h3>
-        <ul>
-            <li>general tables styles with visual row separation</li>
-        </ul>
-    </li>
-    <li><h3>Complex moduls</h3>
+    <li><h3>Modules</h3>
         <ul>
             <li>captioned imagery</li>
             <li>media object</li>
@@ -62,6 +50,18 @@ Collection reusable reusable css (and html) snippets you can drop into your proj
             <li>menu</li>
             <li>tree</li>
             <li>pager</li>
+        </ul>
+    </li>
+    <li><h3>Tables</h3>
+        <ul>
+            <li>general tables styles with visual row separation</li>
+        </ul>
+    </li>
+    <li><h3>Typography</h3>
+        <ul>
+            <li>generic text (bold, strongs, everything)</li>
+            <li>headings</li>
+            <li>lists</li>
         </ul>
     </li>
 </ul>
