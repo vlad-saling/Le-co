@@ -1,7 +1,7 @@
 # le-co
 
 ## component/snippet library
-3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accessible) snippets.
+Collection reusable reusable css (and html) snippets you can drop into your project. No bells and whistles. Just code.
 
 :star: = draft  
 
