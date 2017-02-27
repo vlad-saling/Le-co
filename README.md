@@ -4,19 +4,19 @@
 3rd major iteration of Lemony project (nobody ever heard of) that collects reusable (and accessible) snippets.
 
 :star: = draft  
-:white_check_mark: = finished
+
 
 
 <ul>
     <li><h3>Layout</h3>
         <ul>
             <li><a href="layout/base.css">base</a> :star:</li>
-            <li><a href="layout/container/container.css">container</a> :white_check_mark:</li>
+            <li><a href="layout/container/container.css">container</a></li>
             <li><a href="#">flex layout toolbox</a> </li>
             <li>grids
                 <ul>
-                    <li>base grid (regular 12 col, percentage based) :star:</li>
-                    <li>fraction grid (fraction 12 col, percentage based) :star:</li>
+                    <li><a href="layout/grids/float/float.css">base grid (regular 12 col, percentage based)</a></li>
+                    <li><a href="layout/grids/fraction/fraction.css">fraction grid (fraction 12 col, percentage based)</a></li>
                     <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
                     <li><a href="layout/grids/flex/flex.css">flex grid</a>  :star:</li>
                     <li>native grid templates</li>
