@@ -17,7 +17,9 @@
                     <li>base grid (regular 12 col, percentage based) :star:</li>
                     <li>fraction grid (fraction 12 col, percentage based) :star:</li>
                     <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
-                    <li>flex toolbox :star:</li>
+                    <li>flex grid :star:</li>
+                    <li>flex toolbox</li>
+                    <li>native grid templates</li>
                 </ul>
             </li>
         </ul>
