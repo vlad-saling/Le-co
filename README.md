@@ -12,13 +12,13 @@
         <ul>
             <li><a href="layout/base.css">base</a> :star:</li>
             <li><a href="layout/container/container.css">container</a> :white_check_mark:</li>
+            <li><a href="#">flex layout toolbox</a> </li>
             <li>grids
                 <ul>
                     <li>base grid (regular 12 col, percentage based) :star:</li>
                     <li>fraction grid (fraction 12 col, percentage based) :star:</li>
                     <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
                     <li>flex grid :star:</li>
-                    <li>flex toolbox</li>
                     <li>native grid templates</li>
                 </ul>
             </li>
