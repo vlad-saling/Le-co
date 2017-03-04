@@ -1,7 +1,7 @@
 # le-co
 
 ## component/snippet library
-Collection reusable reusable snippets you can drop into your project. No bells and whistles. Just compiled<sup>1</sup> code (source included).
+Collection of snippets you can drop into your project. No bells and whistles. Just compiled<sup>1</sup> code (source included).
 
 :star: = draft  
 
