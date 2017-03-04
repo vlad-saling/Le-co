@@ -1,0 +1,28 @@
+{
+  "name": "Le-co",
+  "version": "0.1.0",
+  "description": "Collection of snippets",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "./node_modules/.bin/node-sass ./src/grid.scss ./dist/grid.css --output-style compressed",
+    "build:dev": "./node_modules/.bin/node-sass ./src/grid.scss ./dist/grid.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-saling/Le-co.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "native"
+  ],
+  "author": "Vladislav Saling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad-saling/Le-co/issues"
+  },
+  "homepage": "https://github.com/vlad-saling/Le-co/issues#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  }
+}
