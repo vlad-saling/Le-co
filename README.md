@@ -33,7 +33,7 @@ Collection of snippets you can drop into your project. No bells and whistles. Ju
                     <li><a href="layout/grids/fraction/fraction.css">12col fraction grid</a></li>
                     <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
                     <li><a href="layout/grids/flex/flex.css">flex grid</a>  :star:</li>
-                    <li>native grid templates</li>
+                    <li><a href="https://github.com/vlad-saling/Le-co-Grid">native CSS grid (CSS Grid Layout)</a></li>
                 </ul>
             </li>
         </ul>
