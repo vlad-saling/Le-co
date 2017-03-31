@@ -1,0 +1,238 @@
+// needs fragmentation
+
+/* common styling */
+
+
+body {
+	@media only screen and (max-width: $large) {
+		min-width: 320px;
+		width: auto;
+	}
+
+	@media only screen and (max-width: $small) {
+		min-width: 240px;
+		width: auto;
+	}
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* classes */
+
+.hidden {
+    display:none !important;
+}
+
+
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display:block;
+    clear:both;
+  }
+}
+
+
+@mixin text-access {
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.text-access {
+	@include text-access
+}
+
+.f-left {
+	float: left !important;
+}
+
+.f-right {
+	float: right !important;
+}
+
+.space {
+	margin-bottom: 1em;
+}
+
+
+/* mixins */
+
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+}
+
+
+//universal background mixin
+
+@mixin icon-sprite($is-bposition: 0 0, $icon-sprite:'pc.png') {
+	background: transparent;
+	background-image: url($icon-sprite);
+	background-repeat: no-repeat;
+	background-position: $is-bposition;
+}
+
+
+
+//navigation - nav parent module - can be extended
+
+.nav {
+
+	.nav--list {
+		padding: 0;
+		list-style: none;
+	}
+
+	.nav--item {
+		
+	}
+
+	.nav--link {
+		display:block;
+		text-decoration:none;
+
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+
+
+	&.horizontal {
+		.nav--item {float:left}
+	}
+
+}
+
+
+//media object
+
+.media {
+	margin: 10px;
+	overflow: hidden;
+
+	//making sure image will fit - hopefully
+	.media--content {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+
+//captioned image
+
+.captioned {
+	@include clearfix;
+	float:left;
+	margin: 0 10px 10px 0;
+
+	//f-right class can be used to position image the right
+
+	.captioned--image,
+	.captioned--text {
+		// float: left;
+		// clear: both;
+	}
+
+	.captioned--text {
+		text-align: center;
+		display: block;
+		font-size: .9em;
+	}
+
+
+}
+
+
+
+// content toggle - css-based navigation 
+
+//if applied to HTML, first .content-cell must be the last-of-type in order for css to work correctly
+
+.content-cell {
+	display:none;
+}
+
+.content-cell[id]:target {
+	display:block;
+}
+
+.content-cell:not(:target) ~ .content-cell:last-of-type {
+	display:block;
+}
+
+.content-cell:target ~ .content-cell:last-of-type {
+	display:none;
+}
+
+
+//pager for listings
+
+
+
+.pager {
+	list-style: none;
+	text-align: center;
+
+	> li {
+		display: inline-block;
+
+		> a {
+			color: inherit;
+			display: inline-block;
+			padding: 3px 6px;
+			text-decoration: none;
+			border: 1px solid rgba(32,32,32,.5);
+			@include transition(border-color);
+
+			&:hover {
+				border-color: rgba(32,32,32,.8);
+			}		
+		}
+	}
+
+}
+
+
+//tables
+
+table {
+	width: 100%;
+	text-align: left;
+
+	thead > tr,
+	tbody > tr,
+	tfoot > tr {
+		> th {
+			padding: 6px 4px;
+			border: 1px solid #e2e2e2;
+		}
+		> td {
+			padding: 4px;
+			border: 1px solid #e2e2e2;
+		}
+	}
+
+	tbody > tr:nth-child(even) > td {
+		background-color: #f9f9f9;
+	}
+
+	thead > tr > th,
+	tfoot > tr > td {
+		background-color: #f1f1f1;
+	}
+
+	tfoot > tr > td { 
+		color:  #777;
+	}
+}
+
+	

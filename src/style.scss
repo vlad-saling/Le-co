@@ -1,0 +1,49 @@
+// This is master file. It serves a wrapper for all your imports
+// In other words, this file defines css build
+
+// config
+
+/* adding default widths value in case it wasn't set in main css */
+$large: null !default;
+@if $large {}
+@else  {$large: 960px !global;}
+
+$medium: null !default;
+@if $medium {}
+@else  {$medium: 768px !global;}
+
+$small: null !default;
+@if $small {}
+@else  {$small: 480px !global;}
+
+//kill switch for responsivity - set to FALSE to remove any build in responsive behaviour
+$responsive: true !default;
+
+//number of grid cells
+$grid-cell: 12 !default;
+
+//number of block-grid cells
+$block-grid-cell: 12 !default;
+
+
+// helpers
+@import "helpers/effects.scss",
+        "helpers/common.scss",
+        "helpers/rwd.scss";
+
+// typography
+@import "typography/typography.scss";
+
+// basic layout components
+@import "layout/base.scss",
+        "layout/container.scss";
+
+// grid components
+@import "layout/grids/block.scss",
+        "layout/grids/flex.scss",
+        "layout/grids/float.scss",
+        "layout/grids/fraction.scss";
+
+// ui components
+@import "forms/forms.scss",
+        "modules/overlay.scss";

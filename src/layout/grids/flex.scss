@@ -1,0 +1,79 @@
+/* flex box grid */
+
+// http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+.flex-row {
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row; //default
+    // flex-wrap: nowrap | wrap | wrap-reverse;
+    // flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+    // justify-content: flex-start | flex-end | center | space-between | space-around;
+    // align-items: flex-start | flex-end | center | baseline | stretch;
+    // align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
+    &.revers {
+        flex-direction:  row-reverse
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    @media only screen and (max-width: $medium) {
+        flex-wrap: wrap;
+    }    
+
+    @media only screen and (max-width: $small) {
+        flex-direction: column;
+    }
+}
+
+    .flex-cell {
+        background: #ccc;
+        // order: <integer>; /* override default ordering as specified by makrup */
+        flex-grow: 1; /* default 0 */ /* proportional size of container */
+        // flex-shrink: <number>; /* default 1 */ /*  defines the ability for a flex item to shrink if necessary */
+        // flex-basis: <length> | auto; /* default auto */ /* default size of an element before the remaining space is distributed */
+        // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+        // align-self: auto | flex-start | flex-end | center | baseline | stretch;
+        padding: 2%;
+
+        @media only screen and (max-width: $small) {
+            order: 2;
+
+            &.first.first {
+                order: 1;
+                margin-top: 0;
+                margin: 0 0 2% 0;
+            }
+        }
+
+        .column & {
+            margin: 0 0 2% 0;
+        }
+
+        & + & {
+            margin-left: 2%;
+
+            .column & {
+                margin: 0 0 2% 0;
+            }
+
+            @media only screen and (max-width: $small) {
+                margin: 2% 0 0 0;
+            }
+        }
+
+        @media only screen and (max-width: $medium) {
+
+            &.dominant {
+                min-width: 100%;
+                margin: 2% 0 0 0;
+            }
+        }
+    }

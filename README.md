@@ -24,15 +24,15 @@ Collection of snippets you can drop into your project. No bells and whistles. Ju
     </li>
     <li><h3>Layout</h3>
         <ul>
-            <li><a href="layout/base.css">base</a> :star:</li>
-            <li><a href="layout/container/container.css">container</a></li>
+            <li><a href="layout/base.scss">base</a> :star:</li>
+            <li><a href="layout/container.scss">container</a></li>
             <li><a href="#">flex layout toolbox</a> </li>
             <li>grids
                 <ul>
-                    <li><a href="layout/grids/float/float.css">12col base grid</a></li>
-                    <li><a href="layout/grids/fraction/fraction.css">12col fraction grid</a></li>
-                    <li><a href="layout/grids/block/block.css">block grid</a> :star:</li>
-                    <li><a href="layout/grids/flex/flex.css">flex grid</a>  :star:</li>
+                    <li><a href="layout/grids/float.scss">12col base grid</a></li>
+                    <li><a href="layout/grids/fraction.scss">12col fraction grid</a></li>
+                    <li><a href="layout/grids/block.scss">block grid</a> :star:</li>
+                    <li><a href="layout/grids/flex/flex.scss">flex grid</a>  :star:</li>
                     <li><a href="https://github.com/vlad-saling/Le-co-Grid">native CSS grid (CSS Grid Layout)</a></li>
                 </ul>
             </li>

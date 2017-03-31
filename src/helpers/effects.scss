@@ -1,0 +1,170 @@
+/* mixin: fade in hover transition efect */
+
+@mixin trans-fade($topacity:0.8, $ttime: .3s) {
+    opacity: $topacity;
+    -o-transition: opacity $ttime;
+    -moz-transition: opacity $ttime;
+    -webkit-transition: opacity $ttime;
+    -ms-transition: opacity $ttime;
+    transition: opacity $ttime;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+/* universal transition efect mixin for all or defined attributes */
+@mixin transition($tattribute: all, $ttime: .3s, $tdelay: .3s) {
+    -o-transition: #{$tattribute} $ttime;
+    -moz-transition: #{$tattribute} $ttime;
+    -webkit-transition: #{$tattribute} $ttime;
+    -ms-transition: #{$tattribute} $ttime;
+    transition: #{$tattribute} $ttime;
+}
+
+
+
+/* mixins for border radiuses | s-shorthand, c-complex */
+@mixin bradius-s($radius-s:10px) {
+    -webkit-border-radius: $radius-s;
+       -moz-border-radius: $radius-s;
+            border-radius: $radius-s;
+}
+
+@mixin bradius-c($radius-t: 10px,$radius-r: 10px,$radius-b: 10px,$radius-l: 10px) {
+    -webkit-border-radius: $radius-t $radius-r $radius-b $radius-l;
+       -moz-border-radius: $radius-t $radius-r $radius-b $radius-l;
+            border-radius: $radius-t $radius-r $radius-b $radius-l;
+}
+
+
+/* mixins for gradients | top->down td-gradient */
+
+@mixin td-gradient($td-g-color1: #ffffff, $td-g-color2: #bbbbbb) {
+    background: $td-g-color1; /* Old browsers */
+    background: -moz-linear-gradient(top,  $td-g-color1, $td-g-color2); /* FF3.6+ */
+    background: -webkit-linear-gradient(top, $td-g-color1, $td-g-color2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $td-g-color1, $td-g-color2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $td-g-color1, $td-g-color2); /* IE10+ */
+    background: linear-gradient(top,  $td-g-color1, $td-g-color2); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{$td-g-color1}, endColorstr=#{$td-g-color2},GradientType=0 ); /* IE6-9 */
+}
+
+
+/* mixins for gradients | left->right rl-gradient */
+
+@mixin lr-gradient($lr-g-color1: #ffffff, $lr-g-color2: #bbbbbb) {
+    background: $lr-g-color1; /* Old browsers */
+    background: -moz-linear-gradient(left,  $lr-g-color1, $lr-g-color2); /* FF3.6+ */
+    background: -webkit-linear-gradient(left, $lr-g-color1, $lr-g-color2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, $lr-g-color1, $lr-g-color2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, $lr-g-color1, $lr-g-color2); /* IE10+ */
+    background: linear-gradient(left,  $lr-g-color1, $lr-g-color2); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#{$lr-g-color1}, endColorstr=#{$lr-g-color2},GradientType=1 ); /* IE6-9 */
+}
+
+
+/* transform mixing for compatibilty */
+
+
+@mixin transform($ttype) {
+    -webkit-transform: $ttype;
+    -moz-transform:    $ttype;
+    -ms-transform:     $ttype;
+    -o-transform:      $ttype;
+    transform:         $ttype;
+}
+
+
+
+/* effects */
+
+/* adding imprint look with white-ish border from top a black-ish at the bottom */
+
+@mixin fx-inprint {
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+@mixin fx-inprint-helper {
+    /* removing vertical jump caused by suddenly added border width */
+    border-top: 1px solid transparent; 
+    border-bottom: 1px solid transparent; 
+}
+
+
+
+/* css triangles */
+
+//regular triangles
+
+@mixin triangle($size:5px, $direction:left, $inverted:false, $color:#000) {
+
+    width: 0; 
+    height: 0; 
+
+
+    @if $inverted == false {
+
+        @if $direction == "up" or $direction == "down" {
+            border-left: $size solid transparent;
+            border-right: $size solid transparent;
+
+            @if $direction == "up" {
+                border-bottom: $size solid $color;
+            }
+
+            @else if $direction == "down" {
+                border-top: $size solid $color;
+            }
+        }
+
+ 
+
+        @else if $direction == "right" or $direction == "left" {
+            border-top: $size solid transparent;
+            border-bottom: $size solid transparent;
+
+            @if $direction == "right" {
+                border-left: $size solid $color;
+            }
+
+            @else if $direction == "left" {
+                border-right: $size solid $color;
+            }
+        }
+    }
+
+    @else {
+
+        @if $direction == "up" or $direction == "down" {
+            border-left: $size solid $color;
+            border-right: $size solid $color;
+
+            @if $direction == "up" {
+                border-bottom: $size solid transparent;
+            }
+
+            @else if $direction == "down" {
+                border-top: $size solid transparent;
+            }
+        }
+ 
+
+        @else if $direction == "right" or $direction == "left" {
+            border-top: $size solid $color;
+            border-bottom: $size solid $color;
+
+            @if $direction == "right" {
+                border-left: $size solid transparent;
+            }
+
+            @else if $direction == "left" {
+                border-right: $size solid transparent;
+            }
+        }
+    }
+}
+

@@ -4,8 +4,10 @@
   "description": "Collection of snippets",
   "main": "index.js",
   "scripts": {
-    "build:prod": "./node_modules/.bin/node-sass ./src/layout/grids/float/float.scss ./dist/layout/grids/float/float.css --output-style compressed",
-    "build:dev": "./node_modules/.bin/node-sass ./src/layout/grids/float/float.scss ./dist/layout/grids/float/float.css"
+    "float:prod": "./node_modules/.bin/node-sass ./src/layout/grids/float/float.scss ./dist/layout/grids/float/float.css --output-style compressed",
+    "float:dev": "./node_modules/.bin/node-sass ./src/layout/grids/float/float.scss ./dist/layout/grids/float/float.css",
+    "build:prod": "./node_modules/.bin/node-sass ./src/style.scss ./dist/style.css --output-style compressed",
+    "build:dev": "./node_modules/.bin/node-sass ./src/style.scss ./dist/style.css"
   },
   "repository": {
     "type": "git",

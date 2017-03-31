@@ -1,0 +1,140 @@
+/* the grid */
+
+
+/* general container */
+
+.container {
+  margin: 0 auto;
+  /*padding: 0 1%;*/
+  clear:both;
+  
+  @include clearfix;
+
+  
+  &.full { 
+    width: 100%;
+  }
+
+
+
+  @if $responsive {
+
+     &.fixed { 
+      max-width: $large;
+    }
+
+    @media only screen and (max-width: $large) {
+      min-width: 320px;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $small) {
+      min-width: 240px;
+      width: auto;
+    }
+
+    .container {
+      @media only screen and (max-width: $large) {
+        min-width: 0px;
+      }
+
+      @media only screen and (max-width: $small) {
+        min-width: 0px;
+      }
+    }
+
+    /* grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper */
+    &.mprime {
+      @media only screen and (max-width: $large) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+  }
+
+  //if container is set ot fixed with, whole responsivity goes off
+  @else {
+      &.fixed { 
+        width: $large;
+    }
+  }
+
+}
+
+
+/* column container */
+
+.row {
+  width: 100%;
+  clear:both;
+  margin-bottom: 10px;
+  
+  &::after {
+    content: " ";
+    display:block;
+    clear:both;
+  }
+}
+
+
+/* columns */
+
+/* text grid gutter (not for general layout) */
+
+$text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
+
+@each $text-gutter in $text-gutters {
+  $tg-classname: nth($text-gutter, 1);
+  $tg-padding: nth($text-gutter, 2);
+
+  .#{$tg-classname}, .#{$tg-classname} .row  {
+    > [class*="c-"] {padding: 0 $tg-padding $tg-padding 0;}
+    > [class*="c-full"], [class*="c-"] + [class*="c-full"],
+    > [class*="c-twelve"], [class*="c-"] + [class*="c-twelve"] {padding: 0 0 $tg-padding 0} 
+    > [class*="c-"] {padding: 0 $tg-padding $tg-padding 0;}
+  }
+}
+
+
+//base grid
+@for $i from 1 through $grid-cell {
+  .c-#{($i)} {
+    width: 100%/$grid-cell * $i;
+  }
+}
+
+//fraction grid
+@for $i from 1 through $grid-cell {
+  .c-f#{($i)} {
+    width: 100%/$i;
+  }
+}
+
+
+/* column nesting limit -> 4 levels allowed - may be removed or tweaked if needed */
+[class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] {
+    width: 100%;
+}
+
+/* structural grid (layout) */
+
+[class*="c-"] {
+  float:left;
+  min-height: 1px;
+  padding: 0 10px;
+  word-wrap: break-word;
+
+  @media only screen and (max-width: $small) {
+    /* all columns go 100% frenzy on small screen */
+    width: 100%;
+  }
+
+}
+
+[class*="c-"] + [class*="c-"]:last-child {
+  float:right;
+}
+
+
+
