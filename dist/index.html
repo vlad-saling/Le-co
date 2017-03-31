@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="Lemony-clwis : lemony - css library written in sass" />
+
+  <title>Lemony-clwis</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+
+<body>
+
+  <header class="container full mprime header white">
+    <div class="container fixed">
+      <div class="c-f1">
+        <h1 class="heading giga brick-red-text">Lemony Clwis - css library written in sass</h1>
+        <p class="brick-red-text">documentation</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container full mprime brick-red">
+    <nav class="primary-nav horizontal container fixed">
+
+      <ul class="nav--list">
+        <li class="nav--item">
+          <a class="nav--link" href="#overview">home</a>
+        </li>
+
+        <li class="nav--item">
+          <a class="nav--link" href="#grid">grid</a>
+        </li>
+        <li class="nav--item">
+          <a class="nav--link" href="#modifiers">modifiers</a>
+        </li>
+        <li class="nav--item">
+          <a class="nav--link" href="#mixins">mixins</a>
+        </li>
+        <li class="nav--item">
+          <a class="nav--link" href="#modules">modules</a>
+        </li>
+        <li class="nav--item">
+          <a class="nav--link" href="#patterns">patterns</a>
+        </li>
+        <li class="nav--item">
+          <a class="nav--link" href="#solutions">solutions</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+  <div class="container fixed main mprime">
+
+    <section  class="content-cell" id="modifiers">
+      <article >
+
+        <div class="c-f1">
+          <h2 class="heading mega space">Modifiers</h2>
+
+          <div class="container fixed space">
+
+            <p class="f-code-desc">Completely hiding element:</p>
+            <p class="f-code">.hidden</p>
+
+            <p class="f-code-desc">Hiding text of the element:</p>
+            <p class="f-code">.text-access</p>
+
+            <p class="f-code-desc">Float left:</p>
+            <p class="f-code">.f-left</p>
+
+            <p class="f-code-desc">Float right:</p>
+            <p class="f-code">.f-right</p>
+
+            <p class="f-code-desc">Ensuring image will keep proportions</p>
+            <p class="f-code">.r-image</p>
+
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section  class="content-cell" id="mixins">
+      <article >
+        <div class="c-f1">
+
+          <h2 class="heading mega space">Mixins</h2>
+
+          <div class="container fixed space">
+
+            <p class="f-code-desc">Common clearfix:</p>
+            <p class="f-code">@mixin clearfix</p>
+
+            <p class="f-code-desc">Removing text from node:</p>
+            <p class="f-code">@mixin text-access</p>
+
+            <p class="f-code-desc">Box sizing set:</p>
+            <p class="f-code">@mixin border-box</p>
+
+            <p class="f-code-desc">Sprite mixin:</p>
+            <p class="f-code">
+              @mixin icon-sprite($is-bposition: 0 0, $icon-sprite:'pc.png')
+            </p>
+
+            <p class="f-code-desc">Universal on mouser over fade in:</p>
+            <p class="f-code">@mixin trans-fade($topacity:0.8, $ttime: .3s)</p>
+
+            <p class="f-code-desc">Universal on change configurable transition:</p>
+            <p class="f-code">
+              @mixin transition($tattribute: all, $ttime: .3s, $tdelay: .3s)
+            </p>
+
+            <p class="f-code-desc">Crossbrowser one-parameter border radius:</p>
+            <p class="f-code">@mixin bradius-s($radius-s:10px)</p>
+
+            <p class="f-code-desc">Crossbrowser multiparameter border radius:</p>
+            <p class="f-code">
+              @mixin bradius-c($radius-t: 10px,$radius-r: 10px,$radius-b: 10px,$radius-l: 10px)
+            </p>
+
+            <p class="f-code-desc">Crossbrowser top-down css gradient:</p>
+            <p class="f-code">
+              @mixin td-gradient($td-g-color1: #ffffff, $td-g-color2: #bbbbbb)
+            </p>
+
+            <p class="f-code-desc">Crossbrowser left-right css gradient:</p>
+            <p class="f-code">
+              @mixin lr-gradient($lr-g-color1: #ffffff, $lr-g-color2: #bbbbbb)
+            </p>
+
+            <p class="f-code-desc">
+              Crossbrowser transform (multiple values have to be in parentheses e.g. (2px,2px) ):
+            </p>
+            <p class="f-code">@mixin transform($ttype, $value)</p>
+
+            <p class="f-code-desc">Inprint effect mixin:</p>
+            <p class="f-code">@mixin fx-inprint</p>
+
+            <p class="f-code-desc">
+              Inprint effect mixin helper -  removes vertical jump caused by suddenly added border width:
+            </p>
+            <p class="f-code">@mixin fx-inprint-helper</p>
+
+            <p class="f-code-desc">CSS triangles/labels mixin:</p>
+            <p class="f-code">
+              @mixin triangle($size:5px, $direction:left, $inverted:false, $color:#000)
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+    </section>
+
+    <section  class="content-cell" id="modules">
+      <article >
+
+        <div class="c-f1">
+          <h2 class="heading mega space">Modules</h2>
+
+          <div class="container fixed space">
+
+            <p class="f-code-desc">Navigation module:</p>
+            <p class="f-code">.nav(.horizontal) > .nav--list > .nav--item > .nav--link</p>
+
+            <p class="f-code-desc">Media module (NOT FINISHED):</p>
+            <p class="f-code">.media > .media--content</p>
+
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <section  class="content-cell" id="solutions">
+      <article >
+
+        <div class="c-f1">
+
+          <h2 class="heading mega space">Solutions</h2>
+
+          <div class="container fixed space">
+
+            <h2 class="heading kilo space">CSS navigation</h2>
+
+            <p class="f-code-desc">Content wrapper:</p>
+            <p class="f-code">.content-cell#[id]</p>
+
+            <p class="f-code-desc">Content call:</p>
+            <p class="f-code">href="#[id]"</p>
+
+          </div>
+
+        </div>
+
+      </article>
+    </section>
+
+    <section  class="content-cell" id="grid">
+      <article>
+
+        <div class="c-f1">
+
+          <h2 class="heading mega">Grid systems</h2>
+
+          <p>
+            Lemony provide three grid systems. <strong>Base grid</strong>
+            offers common grid functionality where a cell occupies as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>
+            on the other hand uses number in class as a spectification of occupied portion of the whole available with of parent container ( e.g. .c-f2 occupies one half of the row). Third system is
+            <strong>block grid</strong>
+            , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6 will display up to 6 items in a row).
+          </p>
+
+          <h2 class="heading mega space">Grid usage</h2>
+
+          <p class="f-code-desc">
+            Sass variable to set number of collumns in grid (default is 12):
+          </p>
+          <p class="f-code">$grid-cell</p>
+
+          <p class="f-code-desc">
+            Sass variable to set number of collumns in block grid (default is 12):
+          </p>
+          <p class="f-code">$block-grid-cell</p>
+
+          <p class="f-code-desc">
+            Main grid container (can be used as "row" practically anywhere):
+          </p>
+          <p class="f-code">.container</p>
+
+          <p class="f-code-desc">Setting fixed size on container - centered:</p>
+          <p class="f-code">(.container).fixed</p>
+
+          <p class="f-code-desc">Setting full size on container - centered:</p>
+          <p class="f-code">(.container).full</p>
+
+          <p class="f-code-desc">Column container - simple grid row:</p>
+          <p class="f-code">(.container).full</p>
+
+          <p class="f-code-desc">
+            Adding small (1%), medium (2%) or lartbe (5%) left and right padding (text gutter for grid):
+          </p>
+          <p class="f-code">(.container).tg-small/medium/large</p>
+
+          <p class="f-code-desc">
+            Grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper:
+          </p>
+          <p class="f-code">.row</p>
+
+          <p class="f-code-desc">Grid structure:</p>
+          <p class="f-code">(.container) > .row > .c-1/.c-f1</p>
+          <p>OR</p>
+          <p class="f-code">.container > .c-1/.c-f1</p>
+
+          <p class="f-code-desc">Block grid:</p>
+          <p class="f-code">(.container) > (ul/ol).bgrid-large-6</p>
+
+          <p class="f-code-desc">
+            Block grids have three variations that can be used together to alter responsive behaviour. Following example displays up to 6 items on desktop, 4 on tablet screen and 2 on smallest screens:
+          </p>
+          <p class="f-code">
+            .container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2
+          </p>
+
+          <p class="f-code-desc">Flex grid in row:</p>
+          <p class="f-code">.flex-row > .flex-cell</p>
+
+          <p class="f-code-desc">Flex grid in row reversed:</p>
+          <p class="f-code">(.flex-row).reverse > .flex-cell</p>
+
+          <p class="f-code-desc">Flex grid in column:</p>
+          <p class="f-code">(.flex-row).column > .flex-cell</p>
+
+          <p class="f-code-desc">Flex grid in column reversed:</p>
+          <p class="f-code">(.flex-row).column-reverse > .flex-cell</p>
+
+          <p class="f-code-desc">Dominant flex cell will go 100% wide in medium screen:</p>
+          <p class="f-code">(.flex-cell).dominant</p>
+
+          <p class="f-code-desc">First flex cell will go to the first place on small screen:</p>
+          <p class="f-code">(.flex-cell).first</p>
+
+
+
+
+
+          <h2 class="heading mega space">Base grid</h2>
+
+          <div class="container colored">
+
+            <div class="row">
+
+              <div class="c-12">
+                <p>c-12</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-1">
+                <p>c-1</p>
+              </div>
+              <div class="c-11">
+                <p>c-11</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-2">
+                <p>c-2</p>
+              </div>
+              <div class="c-10">
+                <p>c-10</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-3">
+                <p>c-3</p>
+              </div>
+              <div class="c-9">
+                <p>c-9</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-4">
+                <p>c-4</p>
+              </div>
+              <div class="c-8">
+                <p>c-8</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-5">
+                <p>c-5</p>
+              </div>
+              <div class="c-7">
+                <p>c-7</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-6">
+                <p>c-6</p>
+              </div>
+              <div class="c-6">
+                <p>c-6</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h2 class="heading mega space">Fraction grid</h2>
+
+          <div class="container colored blue">
+
+            <div class="row">
+
+              <div class="c-f1">
+                <p>c-f1</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f2">
+                <p>c-f2</p>
+              </div>
+              <div class="c-f2">
+                <p>c-f2</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f3">
+                <p>c-f3</p>
+              </div>
+              <div class="c-f3">
+                <p>c-f3</p>
+              </div>
+              <div class="c-f3">
+                <p>c-f3</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f4">
+                <p>c-f4</p>
+              </div>
+              <div class="c-f4">
+                <p>c-f4</p>
+              </div>
+              <div class="c-f4">
+                <p>c-f4</p>
+              </div>
+              <div class="c-f4">
+                <p>c-f4</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f5">
+                <p>c-f5</p>
+              </div>
+              <div class="c-f5">
+                <p>c-f5</p>
+              </div>
+              <div class="c-f5">
+                <p>c-f5</p>
+              </div>
+              <div class="c-f5">
+                <p>c-f5</p>
+              </div>
+              <div class="c-f5">
+                <p>c-f5</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+              <div class="c-f6">
+                <p>c-f6</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+              <div class="c-f7">
+                <p>c-f7</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+              <div class="c-f8">
+                <p>c-f8</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+              <div class="c-f9">
+                <p>c-f9</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+              <div class="c-f10">
+                <p>c-f10</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+              <div class="c-f11">
+                <p>c-f11</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+              <div class="c-f12">
+                <p>c-f12</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h2 class="heading mega space">Block grid</h2>
+
+          <ul class="bgrid-large-6 bgrid-medium-3 bgrid-small-2">
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+            <li>
+              <img class="r-image promo" src="http://placehold.it/150x150"></li>
+          </ul>
+
+
+          <h2 class="heading mega space">Flex grid</h2>
+
+          <h3 class="heading kilo space">Flex row with first and dominant cells</h3>
+
+          <div class="flex-row">
+            <div class="flex-cell">regular flex cell</div>
+            <div class="flex-cell first">first on small screen</div>
+            <div class="flex-cell dominant">earliest to go 100%</div>
+          </div>
+
+
+          <h3 class="heading kilo space">Flex column with first cell</h3>
+
+
+          <div class="flex-row column">
+            <div class="flex-cell">regular flex cell</div>
+            <div class="flex-cell first">first on small screen</div>
+            <div class="flex-cell">regular flex cell</div>
+          </div>
+
+        </div>
+
+      </article>
+    </section>
+
+    <section class="content-cell" id="patterns">
+      <article>
+
+        <div class="c-f1">
+          <h2 class="heading mega">Text elements</h2>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <h2 class="heading mega">Headings</h2>
+
+          <h1 class="heading peta">.peta .heading</h1>
+          <h2 class="heading tera">.tera .heading</h2>
+          <h3 class="heading giga">.giga .heading</h3>
+          <h4 class="heading mega">.mega .heading</h4>
+          <h5 class="heading kilo">.kilo .heading</h5>
+          <h6 class="heading">.heading (default)</h6>
+          <h6 class="heading micro">.micro .heading</h6>
+          <h6 class="heading nano">.nano .heading</h6>
+          <h6 class="heading piko">.piko .heading</h6>
+
+          <h2 class="heading mega">Text gutter</h2>
+
+          <div class="row tg-small">
+
+            <div class="c-f3">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f3">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f3">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+          </div>
+
+          <div class="row tg-large">
+
+            <div class="c-f4">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f4">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f4">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+            <div class="c-f4">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+          </div>
+
+          <div class="row tg-medium">
+
+            <div class="c-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+            <div class="c-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+            <div class="c-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+
+          </div>
+
+          <div class="row tg-small">
+            <div class="c-f1">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+          </div>
+
+          <div class="row tg-medium">
+            <div class="c-f2">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers. I have reset the sensors to scan for
+              <a href="#">frequencies</a>
+              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </div>
+            <div class="c-f2">
+
+              <ul>
+
+                <li>
+                  USS Enterprise - NCC-1701 -
+                  <a href="#">Commanded by Robert April (2245–2250)</a>
+                  , Christopher Pike (2250–2265), James T. Kirk (2265-2270, 2271–2285), and Willard Decker (2270-2271), Vessel's self-destruction carried out while in orbit of the Genesis Planet, to prevent ship from falling into Klingon hands.
+                </li>
+
+                <li>
+                  USS Reliant - NCC-1864 - Ship on which Pavel Chekov serves as first officer. Assigned to Project Genesis and later hijacked by Khan Noonien Singh. Destroyed by Genesis Device detonation.
+                </li>
+
+                <li>
+                  USS Excalibur - NCC-26517 - Part of the tachyon blockade during the Klingon Civil War. Later commanded by Captain Mackenzie Calhoun in Star Trek: New Frontier.
+                </li>
+
+                <li>
+                  USS Shenandoah - NCC-73024 - Taken by Dax and Worf to rescue a Cardassian informant from the Dominion. Severely damaged by the Jem'Hadar en route to deliver diplomatic message to Grand Nagus Zek.
+                </li>
+
+                <li>
+                  USS Stargazer - NCC-2893 - Jean-Luc Picard's first command. Abandoned following the Battle of Maxia, later returned to Starfleet.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="c-f1">
+          <h2 class="heading mega">Form elements WORK IN PROGRESS</h2>
+
+        </div>
+
+        <div class="c-f2">
+
+          <label for="text-input">Text input:</label>
+          <br />
+          <input type="text" class="nice-input" id="text-input" value="Text input"/>
+          <p class="f-code">.nice-input</p>
+
+          <label for="button-input">Button:</label>
+          <br />
+          <input type="button" class="nice-button"  id="button-input" value="Button"/>
+          <p class="f-code">.nice-button</p>
+
+          <label for="button-input-anchor">Button - anchor:</label>
+          <br />
+          <a class="nice-button"  id="button-input-anchor">Button - anchor</a>
+          <p class="f-code">.nice-button</p>
+
+          <label for="button-input1">Disabled button:</label>
+          <br />
+          <input type="button" class="nice-button disabled" disabled  id="button-input1" value="Button"/>
+          <p class="f-code">.nice-button.disabled</p>
+
+          <select class="nice-input" value="select one">
+            <option>list item</option>
+            <option>list item</option>
+            <option>list item</option>
+            <option>list item</option>
+          </select>
+          <p class="f-code">.nice-input</p>
+
+        </div>
+
+        <div class="c-f2">
+
+          <h2 class="heading">Radio buttons:</h2>
+
+          <div class="container">
+
+            <div class="nice-radio">
+              <input name="radio1" type="radio" id="radio1">
+              <label for="radio1">Radio Button 1</label>
+            </div>
+            <span class="nice-label">Radio Button 1</span>
+
+          </div>
+
+          <div class="container">
+
+            <div class="nice-radio">
+              <input name="radio1" type="radio" id="radio2">
+              <label for="radio2">Radio Button 2</label>
+            </div>
+            <span class="nice-label">Radio Button 2</span>
+          </div>
+
+          <div class="container">
+
+            <div class="nice-radio">
+              <input name="radio1" type="radio" id="radio3">
+              <label for="radio3">Radio Button 3</label>
+            </div>
+            <span class="nice-label">Radio Button 3</span>
+          </div>
+
+          <h2 class="heading">Checkboxes:</h2>
+
+          <div class="container">
+            <div class="nice-checkbox">
+
+              <input type="checkbox" id="checkbox1">
+              <label for="checkbox1">Label for Checkbox 1</label>
+            </div>
+            <span class="nice-label">Label for Checkbox 1</span>
+          </div>
+
+          <div class="container">
+
+            <div class="nice-checkbox">
+
+              <input type="checkbox" id="checkbox2">
+              <label for="checkbox2">Label for Checkbox 2</label>
+            </div>
+            <span class="nice-label">Label for Checkbox 2</span>
+          </div>
+
+          <h2 class="heading">Textarea:</h2>
+          <div class="container">
+
+            <label for="textarea" class="hidden">Textarea:</label>
+            <textarea class="nice-textarea" id="textarea">
+              I have reset the sensors to scan for frequencies outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            </textarea>
+
+          </div>
+
+        </div>
+
+        <div class="c-f1 space">
+          <h2 class="heading mega">Listing/pager</h2>
+
+          <ul class="pager">
+            <li>
+              <a href="#">previous</a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a href="#">6</a>
+            </li>
+            <li>
+              <a href="#">next</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="c-f1 space">
+          <h2 class="heading mega">Captioned imagery</h2>
+
+          <div class="captioned">
+            <img class="captioned--image" src="assets/i/best-dummy-image-ever.jpg" width="350" height="s214">
+            <span class="captioned--text">
+              Text describing image (
+              <a href="http://johneaves.wordpress.com/2009/04/29/the-opening-credits-of-enterprise/">image source</a>
+              )
+            </span>
+          </div>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <div class="captioned f-right">
+            <img class="captioned--image" src="assets/i/best-dummy-image-ever.jpg" width="350" height="s214">
+            <span class="captioned--text">
+              Text describing image (
+              <a href="http://johneaves.wordpress.com/2009/04/29/the-opening-credits-of-enterprise/">image source</a>
+              )
+            </span>
+          </div>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+          <p>
+            I have reset the sensors to scan for
+            <a href="#">frequencies</a>
+            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+          </p>
+
+        </div>
+
+        <div class="c-f1">
+          <h2 class="heading mega">Tables</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+              </tr>
+              <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">data</a>
+                </td>
+                <td>data</td>
+                <td>data</td>
+              </tr>
+              <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+              </tr>
+              <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="3">Table footer data</td>
+              </tr>
+            </tfoot>
+
+          </table>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- first section | has to be last in order for CSS navigation to work -->
+
+    <section class="content-cell" id="overview">
+
+      <article>
+
+        <div class="c-f1">
+
+          <h3 class="heading mega">Introduction</h3>
+          <p>
+            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as well as parametric mixing to be called within custom SCSS files.
+          </p>
+
+        </div>
+
+        <div class="c-f1">
+          <h3 class="heading kilo">Instalation</h3>
+
+          <p >
+            Lemony can be included serveral way. You can download
+            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a>
+            , though this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins and extendable module you should download or clone whole
+            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a>
+            (includes offline documentation).
+          </p>
+
+          <h3 class="heading micro">Including compiled css file</h3>
+          <p class="f-code">
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
+          </p>
+
+          <h3 class="heading micro">Including scss file</h3>
+          <p>
+            Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
+          </p>
+          <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
+
+          <p>
+            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before the import of main SCSS file (example below show defautl values):
+          </p>
+
+          <p class="f-code">
+            $large: 960px;
+            <br/>
+            $medium: 768px;
+            <br/>
+            $small: 480px;
+          </p>
+
+          <p>
+            <strong>$large</strong>
+            is the widest page if .container.fixed is used.
+            <br/>
+            <strong>$medium</strong>
+            is breakpoint value for tablets or middle sized devices in case large nor small fits the needs.
+            <br/>
+            <strong>$small</strong>
+            defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid cells go 100% wide.
+          </p>
+
+        </div>
+
+      </article>
+
+    </section>
+
+  </div>
+
+  <footer  class="container fixed mprime footer">
+    <div class="container fixed">
+      <div class="c-f1">
+        <p>
+          Library is free for non-comercial and commercial use but cannot be re-sold as a standalone product.
+          <p>
+            <p>
+              <a href="https://github.com/vlad-saling">author's github</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3088394-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+    </html>
