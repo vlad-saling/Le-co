@@ -59,29 +59,16 @@
   <main class="container fixed main mprime p-bottom-2">
 
     <section>
-      <div class="c-f1">
-        <h2 id="overview" class="heading mega">Introduction</h2>
 
-        <p>
-          Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
-          well as parametric mixing to be called within custom SCSS files.
-        </p>
-
-      </div>
-
-      <div class="c-f1">
+      <div class="c-f1 p-top-1">
         <h3 class="heading kilo">Instalation</h3>
 
         <p>
-          Lemony can be included serveral way. You can download
-          <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
-          this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
-          and extendable module you should download or clone whole
-          <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
+          compiled css (full), call trouch npm, fork/clone
         </p>
 
         <h3 class="heading micro">Including compiled css file</h3>
-        <p class="f-code">
+        <prere>
           &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
         </p>
 
@@ -89,14 +76,14 @@
         <p>
           Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
         </p>
-        <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
+        <pre>@import &quot;../../../scss/lemony-clwis&quot;;</pre>
 
         <p>
           Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
           the import of main SCSS file (example below show defautl values):
         </p>
 
-        <p class="f-code">
+        <prere>
           $large: 960px;
           <br/> $medium: 768px;
           <br/> $small: 480px;
@@ -128,20 +115,20 @@
 
           <div class="container fixed space">
 
-            <p class="f-code-desc">Completely hiding element:</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Completely hiding element:</p>
             <pre>.hidden</pre>
 
-            <p class="f-code-desc">Hiding text of the element:</p>
-            <p class="f-code">.text-access</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Hiding text of the element:</p>
+            <pre>.text-access</pre>
 
-            <p class="f-code-desc">Float left:</p>
-            <p class="f-code">.f-left</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Float left:</p>
+            <pre>.f-left</pre>
 
-            <p class="f-code-desc">Float right:</p>
-            <p class="f-code">.f-right</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Float right:</p>
+            <pre>.f-right</pre>
 
-            <p class="f-code-desc">Ensuring image will keep proportions</p>
-            <p class="f-code">.r-image</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Ensuring image will keep proportions</p>
+            <pre>.r-image</pre>
 
           </div>
         </div>
@@ -159,61 +146,61 @@
 
           <div class="container fixed space">
 
-            <p class="f-code-desc">Common clearfix:</p>
-            <p class="f-code">@mixin clearfix</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
+            <pre>@mixin clearfix</pre>
 
-            <p class="f-code-desc">Removing text from node:</p>
-            <p class="f-code">@mixin text-access</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Removing text from node:</p>
+            <pre>@mixin text-access</pre>
 
-            <p class="f-code-desc">Box sizing set:</p>
-            <p class="f-code">@mixin border-box</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Box sizing set:</p>
+            <pre>@mixin border-box</pre>
 
-            <p class="f-code-desc">Sprite mixin:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">Sprite mixin:</p>
+            <prere>
               @mixin icon-sprite($is-bposition: 0 0, $icon-sprite:'pc.png')
             </p>
 
-            <p class="f-code-desc">Universal on mouser over fade in:</p>
-            <p class="f-code">@mixin trans-fade($topacity:0.8, $ttime: .3s)</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Universal on mouser over fade in:</p>
+            <pre>@mixin trans-fade($topacity:0.8, $ttime: .3s)</pre>
 
-            <p class="f-code-desc">Universal on change configurable transition:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">Universal on change configurable transition:</p>
+            <prere>
               @mixin transition($tattribute: all, $ttime: .3s, $tdelay: .3s)
             </p>
 
-            <p class="f-code-desc">Crossbrowser one-parameter border radius:</p>
-            <p class="f-code">@mixin bradius-s($radius-s:10px)</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Crossbrowser one-parameter border radius:</p>
+            <pre>@mixin bradius-s($radius-s:10px)</pre>
 
-            <p class="f-code-desc">Crossbrowser multiparameter border radius:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">Crossbrowser multiparameter border radius:</p>
+            <prere>
               @mixin bradius-c($radius-t: 10px,$radius-r: 10px,$radius-b: 10px,$radius-l: 10px)
             </p>
 
-            <p class="f-code-desc">Crossbrowser top-down css gradient:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">Crossbrowser top-down css gradient:</p>
+            <prere>
               @mixin td-gradient($td-g-color1: #ffffff, $td-g-color2: #bbbbbb)
             </p>
 
-            <p class="f-code-desc">Crossbrowser left-right css gradient:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">Crossbrowser left-right css gradient:</p>
+            <prere>
               @mixin lr-gradient($lr-g-color1: #ffffff, $lr-g-color2: #bbbbbb)
             </p>
 
-            <p class="f-code-desc">
+            <p class="[DISABLEDCLASS]f-code-desc">
               Crossbrowser transform (multiple values have to be in parentheses e.g. (2px,2px) ):
             </p>
-            <p class="f-code">@mixin transform($ttype, $value)</p>
+            <pre>@mixin transform($ttype, $value)</pre>
 
-            <p class="f-code-desc">Inprint effect mixin:</p>
-            <p class="f-code">@mixin fx-inprint</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Inprint effect mixin:</p>
+            <pre>@mixin fx-inprint</pre>
 
-            <p class="f-code-desc">
+            <p class="[DISABLEDCLASS]f-code-desc">
               Inprint effect mixin helper - removes vertical jump caused by suddenly added border width:
             </p>
-            <p class="f-code">@mixin fx-inprint-helper</p>
+            <pre>@mixin fx-inprint-helper</pre>
 
-            <p class="f-code-desc">CSS triangles/labels mixin:</p>
-            <p class="f-code">
+            <p class="[DISABLEDCLASS]f-code-desc">CSS triangles/labels mixin:</p>
+            <prere>
               @mixin triangle($size:5px, $direction:left, $inverted:false, $color:#000)
             </p>
 
@@ -229,11 +216,11 @@
 
           <div class="container fixed space">
 
-            <p class="f-code-desc">Navigation module:</p>
-            <p class="f-code">.nav(.horizontal) > .nav--list > .nav--item > .nav--link</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
+            <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
 
-            <p class="f-code-desc">Media module (NOT FINISHED):</p>
-            <p class="f-code">.media > .media--content</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Media module (NOT FINISHED):</p>
+            <pre>.media > .media--content</pre>
 
           </div>
 
@@ -251,11 +238,11 @@
 
             <h2 class="heading kilo space">CSS navigation</h2>
 
-            <p class="f-code-desc">Content wrapper:</p>
-            <p class="f-code">.content-cell#[id]</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Content wrapper:</p>
+            <pre>.content-cell#[id]</pre>
 
-            <p class="f-code-desc">Content call:</p>
-            <p class="f-code">href="#[id]"</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Content call:</p>
+            <pre>href="#[id]"</pre>
 
           </div>
 
@@ -280,73 +267,73 @@
 
           <h2 class="heading mega space">Grid usage</h2>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Sass variable to set number of collumns in grid (default is 12):
           </p>
-          <p class="f-code">$grid-cell</p>
+          <pre>$grid-cell</pre>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Sass variable to set number of collumns in block grid (default is 12):
           </p>
-          <p class="f-code">$block-grid-cell</p>
+          <pre>$block-grid-cell</pre>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Main grid container (can be used as "row" practically anywhere):
           </p>
-          <p class="f-code">.container</p>
+          <pre>.container</pre>
 
-          <p class="f-code-desc">Setting fixed size on container - centered:</p>
-          <p class="f-code">(.container).fixed</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Setting fixed size on container - centered:</p>
+          <pre>(.container).fixed</pre>
 
-          <p class="f-code-desc">Setting full size on container - centered:</p>
-          <p class="f-code">(.container).full</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Setting full size on container - centered:</p>
+          <pre>(.container).full</pre>
 
-          <p class="f-code-desc">Column container - simple grid row:</p>
-          <p class="f-code">(.container).full</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Column container - simple grid row:</p>
+          <pre>(.container).full</pre>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Adding small (1%), medium (2%) or lartbe (5%) left and right padding (text gutter for grid):
           </p>
-          <p class="f-code">(.container).tg-small/medium/large</p>
+          <pre>(.container).tg-small/medium/large</pre>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper:
           </p>
-          <p class="f-code">.row</p>
+          <pre>.row</pre>
 
-          <p class="f-code-desc">Grid structure:</p>
-          <p class="f-code">(.container) > .row > .c-1/.c-f1</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Grid structure:</p>
+          <pre>(.container) > .row > .c-1/.c-f1</pre>
           <p>OR</p>
-          <p class="f-code">.container > .c-1/.c-f1</p>
+          <pre>.container > .c-1/.c-f1</pre>
 
-          <p class="f-code-desc">Block grid:</p>
-          <p class="f-code">(.container) > (ul/ol).bgrid-large-6</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Block grid:</p>
+          <pre>(.container) > (ul/ol).bgrid-large-6</pre>
 
-          <p class="f-code-desc">
+          <p class="[DISABLEDCLASS]f-code-desc">
             Block grids have three variations that can be used together to alter responsive behaviour. Following example displays up
             to 6 items on desktop, 4 on tablet screen and 2 on smallest screens:
           </p>
-          <p class="f-code">
+          <prere>
             .container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2
           </p>
 
-          <p class="f-code-desc">Flex grid in row:</p>
-          <p class="f-code">.flex-row > .flex-cell</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in row:</p>
+          <pre>.flex-row > .flex-cell</pre>
 
-          <p class="f-code-desc">Flex grid in row reversed:</p>
-          <p class="f-code">(.flex-row).reverse > .flex-cell</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in row reversed:</p>
+          <pre>(.flex-row).reverse > .flex-cell</pre>
 
-          <p class="f-code-desc">Flex grid in column:</p>
-          <p class="f-code">(.flex-row).column > .flex-cell</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in column:</p>
+          <pre>(.flex-row).column > .flex-cell</pre>
 
-          <p class="f-code-desc">Flex grid in column reversed:</p>
-          <p class="f-code">(.flex-row).column-reverse > .flex-cell</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in column reversed:</p>
+          <pre>(.flex-row).column-reverse > .flex-cell</pre>
 
-          <p class="f-code-desc">Dominant flex cell will go 100% wide in medium screen:</p>
-          <p class="f-code">(.flex-cell).dominant</p>
+          <p class="[DISABLEDCLASS]f-code-desc">Dominant flex cell will go 100% wide in medium screen:</p>
+          <pre>(.flex-cell).dominant</pre>
 
-          <p class="f-code-desc">First flex cell will go to the first place on small screen:</p>
-          <p class="f-code">(.flex-cell).first</p>
+          <p class="[DISABLEDCLASS]f-code-desc">First flex cell will go to the first place on small screen:</p>
+          <pre>(.flex-cell).first</pre>
 
 
 
@@ -449,8 +436,11 @@
               <div class="c-f2">
                 <p>c-f2</p>
               </div>
-              <div class="c-f2">
-                <p>c-f2</p>
+              <div class="c-f4">
+                <p>c-f4</p>
+              </div>
+              <div class="c-f4">
+                <p>c-f4</p>
               </div>
 
             </div>
@@ -460,141 +450,6 @@
               <div class="c-f3">
                 <p>c-f3</p>
               </div>
-              <div class="c-f3">
-                <p>c-f3</p>
-              </div>
-              <div class="c-f3">
-                <p>c-f3</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f4">
-                <p>c-f4</p>
-              </div>
-              <div class="c-f4">
-                <p>c-f4</p>
-              </div>
-              <div class="c-f4">
-                <p>c-f4</p>
-              </div>
-              <div class="c-f4">
-                <p>c-f4</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f5">
-                <p>c-f5</p>
-              </div>
-              <div class="c-f5">
-                <p>c-f5</p>
-              </div>
-              <div class="c-f5">
-                <p>c-f5</p>
-              </div>
-              <div class="c-f5">
-                <p>c-f5</p>
-              </div>
-              <div class="c-f5">
-                <p>c-f5</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-              <div class="c-f6">
-                <p>c-f6</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-              <div class="c-f7">
-                <p>c-f7</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-              <div class="c-f8">
-                <p>c-f8</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f9">
-                <p>c-f9</p>
-              </div>
-              <div class="c-f9">
-                <p>c-f9</p>
-              </div>
-              <div class="c-f9">
-                <p>c-f9</p>
-              </div>
               <div class="c-f9">
                 <p>c-f9</p>
               </div>
@@ -614,121 +469,11 @@
                 <p>c-f9</p>
               </div>
 
-            </div>
 
-            <div class="row">
-
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
-              <div class="c-f10">
-                <p>c-f10</p>
-              </div>
 
             </div>
 
-            <div class="row">
-
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-              <div class="c-f11">
-                <p>c-f11</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-              <div class="c-f12">
-                <p>c-f12</p>
-              </div>
-
-            </div>
+         
 
           </div>
 
@@ -803,19 +548,26 @@
             helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
-          <h2 class="heading mega">Headings</h2>
+  
 
-          <h1 class="heading peta">.peta .heading</h1>
-          <h2 class="heading tera">.tera .heading</h2>
-          <h3 class="heading giga">.giga .heading</h3>
-          <h4 class="heading mega">.mega .heading</h4>
-          <h5 class="heading kilo">.kilo .heading</h5>
-          <h6 class="heading">.heading (default)</h6>
-          <h6 class="heading micro">.micro .heading</h6>
-          <h6 class="heading nano">.nano .heading</h6>
-          <h6 class="heading piko">.piko .heading</h6>
+          <h3 class="heading mega">Headings</h3>
 
-          <h2 class="heading mega">Text gutter</h2>
+          <p>Note: Heading below use <code>p>strong</code>. You should use heading tags.</p>
+  
+
+          <p class="heading peta"><strong>.peta .heading</strong></p>
+          <p class="heading tera"><strong>.tera .heading</strong></p>
+          <p class="heading giga"><strong>.giga .heading</strong></p>
+          <p class="heading mega"><strong>.mega .heading</strong></p>
+          <p class="heading kilo"><strong>.kilo .heading</strong></p>
+          <p class="heading"><strong>.heading (default)</strong></p>
+          <p class="heading micro"><strong>.micro .heading</strong></p>
+          <p class="heading nano"><strong>.nano .heading</strong></p>
+          <p class="heading piko"><strong>.piko .heading</strong></p>
+
+
+
+          <h3 class="heading mega">Text gutter</h3>
 
           <div class="row tg-small">
 
@@ -1004,22 +756,22 @@
           <label for="text-input">Text input:</label>
           <br />
           <input type="text" class="nice-input" id="text-input" value="Text input" />
-          <p class="f-code">.nice-input</p>
+          <pre>.nice-input</pre>
 
           <label for="button-input">Button:</label>
           <br />
           <input type="button" class="nice-button" id="button-input" value="Button" />
-          <p class="f-code">.nice-button</p>
+          <pre>.nice-button</pre>
 
           <label for="button-input-anchor">Button - anchor:</label>
           <br />
           <a class="nice-button" id="button-input-anchor">Button - anchor</a>
-          <p class="f-code">.nice-button</p>
+          <pre>.nice-button</pre>
 
           <label for="button-input1">Disabled button:</label>
           <br />
           <input type="button" class="nice-button disabled" disabled id="button-input1" value="Button" />
-          <p class="f-code">.nice-button.disabled</p>
+          <pre>.nice-button.disabled</pre>
 
           <select class="nice-input">
             <option>list item</option>
@@ -1027,7 +779,7 @@
             <option>list item</option>
             <option>list item</option>
           </select>
-          <p class="f-code">.nice-input</p>
+          <pre>.nice-input</pre>
 
         </div>
 
