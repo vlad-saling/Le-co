@@ -17,16 +17,21 @@
     html {
       font-family: Lato
     }
+
+
+
     .fancy-block {
       background-image: linear-gradient(to bottom, #0e67b3, #664ca8);
-      color: #fff;
     }
 
     .fancy-footer {
       background-color: #664ca8;
     }
 
-    .fancy-block a {
+    .fancy-block,
+    .fancy-footer,
+    .fancy-block a,
+    .fancy-footer a {
       color: #fff;
     }
   </style>
@@ -34,11 +39,11 @@
 
 <body>
 
-  <header class="container full mprime fancy-block">
+  <header class="container full mprime fancy-block p-top-2 p-bottom-2">
     <div class="container fixed">
       <div class="c-f2">
         <h1 class="heading giga">Le-co</h1>
-        <p class=>Minimalistic-ish modular UI library</p>
+        <p>Minimalistic-ish modular UI library</p>
       </div>
       <div class="c-f2">
         <a class="f-right" href="https://github.com/vlad-saling/Le-co">git repo</a>
@@ -51,93 +56,74 @@
 
   
 
-  <div class="container fixed main mprime">
+  <main class="container fixed main mprime p-bottom-2">
 
- <section>
+    <section>
+      <div class="c-f1">
+        <h2 id="overview" class="heading mega">Introduction</h2>
 
-      <h2 id="overview" class="heading mega">Introduction</h2>
+        <p>
+          Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
+          well as parametric mixing to be called within custom SCSS files.
+        </p>
 
-      <article>
+      </div>
 
-        <div class="c-f1">
+      <div class="c-f1">
+        <h3 class="heading kilo">Instalation</h3>
 
+        <p>
+          Lemony can be included serveral way. You can download
+          <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
+          this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
+          and extendable module you should download or clone whole
+          <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
+        </p>
 
-          <p>
-            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
-            well as parametric mixing to be called within custom SCSS files.
-          </p>
+        <h3 class="heading micro">Including compiled css file</h3>
+        <p class="f-code">
+          &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
+        </p>
 
-        </div>
+        <h3 class="heading micro">Including scss file</h3>
+        <p>
+          Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
+        </p>
+        <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
 
-        <div class="c-f1">
-          <h3 class="heading kilo">Instalation</h3>
+        <p>
+          Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
+          the import of main SCSS file (example below show defautl values):
+        </p>
 
-          <p>
-            Lemony can be included serveral way. You can download
-            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
-            this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
-            and extendable module you should download or clone whole
-            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
-          </p>
+        <p class="f-code">
+          $large: 960px;
+          <br/> $medium: 768px;
+          <br/> $small: 480px;
+        </p>
 
-          <h3 class="heading micro">Including compiled css file</h3>
-          <p class="f-code">
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
-          </p>
+        <p>
+          <strong>$large</strong> is the widest page if .container.fixed is used.
+          <br/>
+          <strong>$medium</strong> is breakpoint value for tablets or middle sized devices in case large nor small fits
+          the needs.
+          <br/>
+          <strong>$small</strong> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
+          cells go 100% wide.
+        </p>
 
-          <h3 class="heading micro">Including scss file</h3>
-          <p>
-            Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
-          </p>
-          <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
+      </div>
 
-          <p>
-            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
-            the import of main SCSS file (example below show defautl values):
-          </p>
-
-          <p class="f-code">
-            $large: 960px;
-            <br/> $medium: 768px;
-            <br/> $small: 480px;
-          </p>
-
-          <p>
-            <strong>$large</strong> is the widest page if .container.fixed is used.
-            <br/>
-            <strong>$medium</strong> is breakpoint value for tablets or middle sized devices in case large nor small fits
-            the needs.
-            <br/>
-            <strong>$small</strong> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
-            cells go 100% wide.
-          </p>
-
-        </div>
-
-      </article>
 
     </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section>
-      <h2 class="heading mega space" id="modifiers">Modifiers</h2>
-      <article>
 
         <div class="c-f1">
+
+          <h2 class="heading mega space" id="modifiers">Modifiers</h2>
 
 
           <div class="container fixed space">
@@ -159,17 +145,16 @@
 
           </div>
         </div>
-      </article>
+
     </section>
 
 
 
 
     <section>
-      <h2 class="heading mega space" id="mixins">Mixins</h2>
-      <article>
-        <div class="c-f1">
 
+        <div class="c-f1">
+          <h2 class="heading mega space" id="mixins">Mixins</h2>
 
 
           <div class="container fixed space">
@@ -236,15 +221,11 @@
 
         </div>
 
-      </article>
     </section>
 
     <section>
-      <h2 class="heading mega space" id="modules">Modules</h2>
-      <article>
-
         <div class="c-f1">
-
+          <h2 class="heading mega space" id="modules">Modules</h2>
 
           <div class="container fixed space">
 
@@ -257,15 +238,13 @@
           </div>
 
         </div>
-      </article>
+
     </section>
 
     <section>
-      <h2 class="heading mega space" id="solutions">Solutions</h2>
-      <article>
 
         <div class="c-f1">
-
+          <h2 class="heading mega space" id="solutions">Solutions</h2>
 
 
           <div class="container fixed space">
@@ -282,16 +261,14 @@
 
         </div>
 
-      </article>
     </section>
 
     <section>
-      <h2 class="heading mega" id="grid">Grid systems</h2>
-      <article>
+      
 
         <div class="c-f1">
 
-
+          <h2 class="heading mega" id="grid">Grid systems</h2>
 
           <p>
             Lemony provide three grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
@@ -809,15 +786,14 @@
 
         </div>
 
-      </article>
     </section>
 
     <section>
-      <h2 id="patterns" class="heading mega">Text elements</h2>
-      <article>
+      
+
 
         <div class="c-f1">
-
+          <h2 id="patterns" class="heading mega">Text elements</h2>
 
           <p>
             I have reset the sensors to scan for
@@ -1278,15 +1254,13 @@
 
         </div>
 
-      </article>
-
     </section>
 
    
 
-  </div>
+  </main>
 
-  <footer class="container full mprime fancy-footer">
+  <footer class="container full mprime fancy-footer p-top-1 p-bottom-1">
     <div class="container fixed">
       <div class="c-f1">
         <p>
