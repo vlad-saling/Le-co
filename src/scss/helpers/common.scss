@@ -82,49 +82,7 @@ body {
 
 
 
-//navigation - nav parent module - can be extended
 
-.nav {
-
-	.nav--list {
-		padding: 0;
-		list-style: none;
-	}
-
-	.nav--item {
-		
-	}
-
-	.nav--link {
-		display:block;
-		text-decoration:none;
-
-		&:hover {
-			text-decoration:underline;
-		}
-	}
-
-
-	&.horizontal {
-		.nav--item {float:left}
-	}
-
-}
-
-
-//media object
-
-.media {
-	margin: 10px;
-	overflow: hidden;
-
-	//making sure image will fit - hopefully
-	.media--content {
-		width: 100%;
-		height: auto;
-	}
-
-}
 
 
 //captioned image
@@ -153,25 +111,6 @@ body {
 
 
 
-// content toggle - css-based navigation 
-
-//if applied to HTML, first .content-cell must be the last-of-type in order for css to work correctly
-
-.content-cell {
-	display:none;
-}
-
-.content-cell[id]:target {
-	display:block;
-}
-
-.content-cell:not(:target) ~ .content-cell:last-of-type {
-	display:block;
-}
-
-.content-cell:target ~ .content-cell:last-of-type {
-	display:none;
-}
 
 
 

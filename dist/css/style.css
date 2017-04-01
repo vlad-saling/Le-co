@@ -56,13 +56,6 @@
 .nav.horizontal .nav--item {
   float: left; }
 
-.media {
-  margin: 10px;
-  overflow: hidden; }
-  .media .media--content {
-    width: 100%;
-    height: auto; }
-
 .captioned {
   float: left;
   margin: 0 10px 10px 0; }
@@ -74,18 +67,6 @@
     text-align: center;
     display: block;
     font-size: .9em; }
-
-.content-cell {
-  display: none; }
-
-.content-cell[id]:target {
-  display: block; }
-
-.content-cell:not(:target) ~ .content-cell:last-of-type {
-  display: block; }
-
-.content-cell:target ~ .content-cell:last-of-type {
-  display: none; }
 
 .p-top-0 {
   padding-top: 0px !important; }
@@ -714,6 +695,25 @@ p {
       transition: border-color 0.3s; }
       .pager > li > a:hover {
         border-color: rgba(32, 32, 32, 0.8); }
+
+.content-cell {
+  display: none; }
+
+.content-cell[id]:target {
+  display: block; }
+
+.content-cell:not(:target) ~ .content-cell:last-of-type {
+  display: block; }
+
+.content-cell:target ~ .content-cell:last-of-type {
+  display: none; }
+
+.media {
+  margin: 10px;
+  overflow: hidden; }
+  .media .media--content {
+    width: 100%;
+    height: auto; }
 
 .nice-input, .nice-button, .nice-checkbox, .nice-radio, .nice-textarea {
   margin: 2px 0;

@@ -1,0 +1,15 @@
+
+//media object
+
+.media {
+	margin: 10px;
+	overflow: hidden;
+
+	//making sure image will fit - hopefully
+	.media--content {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
