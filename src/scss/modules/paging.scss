@@ -1,0 +1,25 @@
+//pager for listings
+
+
+
+.pager {
+	list-style: none;
+	text-align: center;
+
+	> li {
+		display: inline-block;
+
+		> a {
+			color: inherit;
+			display: inline-block;
+			padding: 3px 6px;
+			text-decoration: none;
+			border: 1px solid rgba(32,32,32,.5);
+			@include transition(border-color);
+
+			&:hover {
+				border-color: rgba(32,32,32,.8);
+			}		
+		}
+	}
+}

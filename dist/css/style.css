@@ -87,25 +87,6 @@
 .content-cell:target ~ .content-cell:last-of-type {
   display: none; }
 
-.pager {
-  list-style: none;
-  text-align: center; }
-  .pager > li {
-    display: inline-block; }
-    .pager > li > a {
-      color: inherit;
-      display: inline-block;
-      padding: 3px 6px;
-      text-decoration: none;
-      border: 1px solid rgba(32, 32, 32, 0.5);
-      -o-transition: border-color 0.3s;
-      -moz-transition: border-color 0.3s;
-      -webkit-transition: border-color 0.3s;
-      -ms-transition: border-color 0.3s;
-      transition: border-color 0.3s; }
-      .pager > li > a:hover {
-        border-color: rgba(32, 32, 32, 0.8); }
-
 .p-top-0 {
   padding-top: 0px !important; }
 
@@ -183,47 +164,6 @@
 .r-image {
   max-width: 100%;
   height: auto; }
-
-/* typography */
-/* responsive font size */
-body {
-  font-size: 16px; }
-
-/* default font stacks*/
-/* sans serif */
-/* serif */
-/* monospaced */
-/* font face mixin */
-/* heading */
-.heading {
-  line-height: 1em;
-  font-size: 1.15rem;
-  margin: .5em 0; }
-  .heading.space {
-    margin: 1em 0; }
-  .heading:first-child {
-    margin-top: 0px; }
-  .heading.peta {
-    font-size: 2.25rem; }
-  .heading.tera {
-    font-size: 2.0rem; }
-  .heading.giga {
-    font-size: 1.75rem; }
-  .heading.mega {
-    font-size: 1.5rem; }
-  .heading.kilo {
-    font-size: 1.25rem; }
-  .heading.micro {
-    font-size: 1rem; }
-  .heading.nano {
-    font-size: .75rem; }
-  .heading.piko {
-    font-size: .5rem; }
-
-/* general paragraph */
-p {
-  margin: 0;
-  line-height: 1.25em; }
 
 /* this will allow scoped overried of box-sizing */
 * {
@@ -714,6 +654,66 @@ table {
 /* fixing pixel "rounding" */
 [class*="c-"] + [class*="c-"]:last-child {
   float: right; }
+
+/* typography */
+/* responsive font size */
+body {
+  font-size: 16px; }
+
+/* default font stacks*/
+/* sans serif */
+/* serif */
+/* monospaced */
+/* font face mixin */
+/* heading */
+.heading {
+  line-height: 1em;
+  font-size: 1.15rem;
+  margin: .5em 0; }
+  .heading.space {
+    margin: 1em 0; }
+  .heading:first-child {
+    margin-top: 0px; }
+  .heading.peta {
+    font-size: 2.25rem; }
+  .heading.tera {
+    font-size: 2.0rem; }
+  .heading.giga {
+    font-size: 1.75rem; }
+  .heading.mega {
+    font-size: 1.5rem; }
+  .heading.kilo {
+    font-size: 1.25rem; }
+  .heading.micro {
+    font-size: 1rem; }
+  .heading.nano {
+    font-size: .75rem; }
+  .heading.piko {
+    font-size: .5rem; }
+
+/* general paragraph */
+p {
+  margin: 0;
+  line-height: 1.25em; }
+
+.pager {
+  list-style: none;
+  text-align: center; }
+  .pager > li {
+    display: inline-block; }
+    .pager > li > a {
+      color: inherit;
+      display: inline-block;
+      padding: 3px 6px;
+      text-decoration: none;
+      border: 1px solid rgba(32, 32, 32, 0.5);
+      -o-transition: border-color 0.3s;
+      -moz-transition: border-color 0.3s;
+      -webkit-transition: border-color 0.3s;
+      -ms-transition: border-color 0.3s;
+      transition: border-color 0.3s; }
+      .pager > li > a:hover {
+        border-color: rgba(32, 32, 32, 0.8); }
 
 .nice-input, .nice-button, .nice-checkbox, .nice-radio, .nice-textarea {
   margin: 2px 0;

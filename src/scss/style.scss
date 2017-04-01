@@ -26,25 +26,24 @@ $grid-cell: 12 !default;
 $block-grid-cell: 12 !default;
 
 
-// helpers
+// helpers (some of these should be last)
 @import "helpers/effects.scss",
         "helpers/common.scss",
         "helpers/rwd.scss";
 
-// typography
-@import "typography/typography.scss";
-
-// basic layout components
+// layout
 @import "layout/base.scss",
         "layout/container.scss";
 
-// grid components
+// grids
 @import "layout/grids/block.scss",
         "layout/grids/flex.scss",
         "layout/grids/float.scss",
         "layout/grids/fraction.scss";
 
-// ui components
-@import "forms/forms.scss",
-        "tables/tables.scss",
+// modules
+@import "modules/typography.scss",
+        "modules/paging.scss",
+        "modules/forms.scss",
+        "modules/tables.scss",
         "modules/overlay.scss";
