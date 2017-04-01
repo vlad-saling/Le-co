@@ -46,4 +46,5 @@ $block-grid-cell: 12 !default;
 
 // ui components
 @import "forms/forms.scss",
+        "tables/tables.scss",
         "modules/overlay.scss";

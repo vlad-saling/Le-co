@@ -11,27 +11,123 @@
   <title>Le-co. Modular (S)CSS library.</title>
 
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
     html {
       font-family: Lato
+    }
+    .fancy-block {
+      background-image: linear-gradient(to bottom, #0e67b3, #664ca8);
+      color: #fff;
+    }
+
+    .fancy-block a {
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
 
-  <header class="container full mprime header white">
+  <header class="container full mprime fancy-block">
     <div class="container fixed">
-      <div class="c-f1">
-        <h1 class="heading giga brick-red-text">Le-co. Modular (S)CSS library.</h1>
-        <p class="brick-red-text">documentation</p>
+      <div class="c-f2">
+        <h1 class="heading giga">Le-co</h1>
+        <p class=>Minimalistic-ish modular UI library</p>
+      </div>
+      <div class="c-f2">
+        <a class="f-right" href="https://github.com/vlad-saling/Le-co">git repo</a>
       </div>
     </div>
   </header>
 
+  <!-- ^^^^^^ cleaned up mark ^^^^^^^ -->
+
+
+  
+
   <div class="container fixed main mprime">
+
+ <section>
+
+      <h2 id="overview" class="heading mega">Introduction</h2>
+
+      <article>
+
+        <div class="c-f1">
+
+
+          <p>
+            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
+            well as parametric mixing to be called within custom SCSS files.
+          </p>
+
+        </div>
+
+        <div class="c-f1">
+          <h3 class="heading kilo">Instalation</h3>
+
+          <p>
+            Lemony can be included serveral way. You can download
+            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
+            this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
+            and extendable module you should download or clone whole
+            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
+          </p>
+
+          <h3 class="heading micro">Including compiled css file</h3>
+          <p class="f-code">
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
+          </p>
+
+          <h3 class="heading micro">Including scss file</h3>
+          <p>
+            Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
+          </p>
+          <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
+
+          <p>
+            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
+            the import of main SCSS file (example below show defautl values):
+          </p>
+
+          <p class="f-code">
+            $large: 960px;
+            <br/> $medium: 768px;
+            <br/> $small: 480px;
+          </p>
+
+          <p>
+            <strong>$large</strong> is the widest page if .container.fixed is used.
+            <br/>
+            <strong>$medium</strong> is breakpoint value for tablets or middle sized devices in case large nor small fits
+            the needs.
+            <br/>
+            <strong>$small</strong> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
+            cells go 100% wide.
+          </p>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section>
       <h2 class="heading mega space" id="modifiers">Modifiers</h2>
@@ -43,7 +139,7 @@
           <div class="container fixed space">
 
             <p class="f-code-desc">Completely hiding element:</p>
-            <p class="f-code">.hidden</p>
+            <pre>.hidden</pre>
 
             <p class="f-code-desc">Hiding text of the element:</p>
             <p class="f-code">.text-access</p>
@@ -61,6 +157,9 @@
         </div>
       </article>
     </section>
+
+
+
 
     <section>
       <h2 class="heading mega space" id="mixins">Mixins</h2>
@@ -1179,74 +1278,11 @@
 
     </section>
 
-    <section>
-
-      <h2 id="overview" class="heading mega">Introduction</h2>
-
-      <article>
-
-        <div class="c-f1">
-
-
-          <p>
-            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
-            well as parametric mixing to be called within custom SCSS files.
-          </p>
-
-        </div>
-
-        <div class="c-f1">
-          <h3 class="heading kilo">Instalation</h3>
-
-          <p>
-            Lemony can be included serveral way. You can download
-            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
-            this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
-            and extendable module you should download or clone whole
-            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
-          </p>
-
-          <h3 class="heading micro">Including compiled css file</h3>
-          <p class="f-code">
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;lemony-clwis/scss/lemony-slwic.css&quot;&gt;
-          </p>
-
-          <h3 class="heading micro">Including scss file</h3>
-          <p>
-            Best way to include lemony is to import it at the beggining of you own SCSS file so you can reuse mixins and functions.
-          </p>
-          <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
-
-          <p>
-            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
-            the import of main SCSS file (example below show defautl values):
-          </p>
-
-          <p class="f-code">
-            $large: 960px;
-            <br/> $medium: 768px;
-            <br/> $small: 480px;
-          </p>
-
-          <p>
-            <strong>$large</strong> is the widest page if .container.fixed is used.
-            <br/>
-            <strong>$medium</strong> is breakpoint value for tablets or middle sized devices in case large nor small fits
-            the needs.
-            <br/>
-            <strong>$small</strong> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
-            cells go 100% wide.
-          </p>
-
-        </div>
-
-      </article>
-
-    </section>
+   
 
   </div>
 
-  <footer class="container fixed mprime footer">
+  <footer class="container full mprime fancy-footer">
     <div class="container fixed">
       <div class="c-f1">
         <p>
@@ -1258,22 +1294,6 @@
       </div>
     </div>
   </footer>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-3088394-9']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-        '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
 
 </body>
 

@@ -1,0 +1,32 @@
+//tables
+
+table {
+	width: 100%;
+	text-align: left;
+
+	thead > tr,
+	tbody > tr,
+	tfoot > tr {
+		> th {
+			padding: 6px 4px;
+			border: 1px solid #e2e2e2;
+		}
+		> td {
+			padding: 4px;
+			border: 1px solid #e2e2e2;
+		}
+	}
+
+	tbody > tr:nth-child(even) > td {
+		background-color: #f9f9f9;
+	}
+
+	thead > tr > th,
+	tfoot > tr > td {
+		background-color: #f1f1f1;
+	}
+
+	tfoot > tr > td { 
+		color:  #777;
+	}
+}
