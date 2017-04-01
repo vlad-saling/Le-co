@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,14 @@
 
   <title>Le-co. Modular (S)CSS library.</title>
 
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
+  <style>
+    html {
+      font-family: Lato
+    }
+  </style>
 </head>
 
 <body>
@@ -28,11 +34,11 @@
   <div class="container fixed main mprime">
 
     <section>
-        <h2 class="heading mega space" id="modifiers">Modifiers</h2>
+      <h2 class="heading mega space" id="modifiers">Modifiers</h2>
       <article>
 
         <div class="c-f1">
-          
+
 
           <div class="container fixed space">
 
@@ -57,11 +63,11 @@
     </section>
 
     <section>
-         <h2 class="heading mega space" id="mixins">Mixins</h2>
+      <h2 class="heading mega space" id="mixins">Mixins</h2>
       <article>
         <div class="c-f1">
 
-         
+
 
           <div class="container fixed space">
 
@@ -114,7 +120,7 @@
             <p class="f-code">@mixin fx-inprint</p>
 
             <p class="f-code-desc">
-              Inprint effect mixin helper -  removes vertical jump caused by suddenly added border width:
+              Inprint effect mixin helper - removes vertical jump caused by suddenly added border width:
             </p>
             <p class="f-code">@mixin fx-inprint-helper</p>
 
@@ -131,11 +137,11 @@
     </section>
 
     <section>
-         <h2 class="heading mega space" id="modules">Modules</h2>
+      <h2 class="heading mega space" id="modules">Modules</h2>
       <article>
 
         <div class="c-f1">
-         
+
 
           <div class="container fixed space">
 
@@ -152,12 +158,12 @@
     </section>
 
     <section>
-        <h2 class="heading mega space" id="solutions">Solutions</h2>
+      <h2 class="heading mega space" id="solutions">Solutions</h2>
       <article>
 
         <div class="c-f1">
 
-          
+
 
           <div class="container fixed space">
 
@@ -177,19 +183,19 @@
     </section>
 
     <section>
-         <h2 class="heading mega" id="grid">Grid systems</h2>
+      <h2 class="heading mega" id="grid">Grid systems</h2>
       <article>
 
         <div class="c-f1">
 
-         
+
 
           <p>
-            Lemony provide three grid systems. <strong>Base grid</strong>
-            offers common grid functionality where a cell occupies as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>
-            on the other hand uses number in class as a spectification of occupied portion of the whole available with of parent container ( e.g. .c-f2 occupies one half of the row). Third system is
-            <strong>block grid</strong>
-            , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6 will display up to 6 items in a row).
+            Lemony provide three grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
+            as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>            on the other hand uses number in class as a spectification of occupied portion of the whole available with of
+            parent container ( e.g. .c-f2 occupies one half of the row). Third system is
+            <strong>block grid</strong> , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6
+            will display up to 6 items in a row).
           </p>
 
           <h2 class="heading mega space">Grid usage</h2>
@@ -237,7 +243,8 @@
           <p class="f-code">(.container) > (ul/ol).bgrid-large-6</p>
 
           <p class="f-code-desc">
-            Block grids have three variations that can be used together to alter responsive behaviour. Following example displays up to 6 items on desktop, 4 on tablet screen and 2 on smallest screens:
+            Block grids have three variations that can be used together to alter responsive behaviour. Following example displays up
+            to 6 items on desktop, 4 on tablet screen and 2 on smallest screens:
           </p>
           <p class="f-code">
             .container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2
@@ -703,20 +710,22 @@
     </section>
 
     <section>
-        <h2 id="patterns" class="heading mega">Text elements</h2>
+      <h2 id="patterns" class="heading mega">Text elements</h2>
       <article>
 
         <div class="c-f1">
-          
+
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <h2 class="heading mega">Headings</h2>
-          
+
           <h1 class="heading peta">.peta .heading</h1>
           <h2 class="heading tera">.tera .heading</h2>
           <h3 class="heading giga">.giga .heading</h3>
@@ -733,18 +742,27 @@
 
             <div class="c-f3">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f3">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f3">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
           </div>
@@ -753,24 +771,36 @@
 
             <div class="c-f4">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f4">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f4">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
             <div class="c-f4">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
           </div>
@@ -779,30 +809,45 @@
 
             <div class="c-f5">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f5">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f5">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
             <div class="c-f5">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
             <div class="c-f5">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
 
           </div>
@@ -810,18 +855,27 @@
           <div class="row tg-small">
             <div class="c-f1">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
           </div>
 
           <div class="row tg-medium">
             <div class="c-f2">
               I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers. I have reset the sensors to scan for
-              <a href="#">frequencies</a>
-              outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers. I have reset the sensors to scan for
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
             </div>
             <div class="c-f2">
 
@@ -829,20 +883,24 @@
 
                 <li>
                   USS Enterprise - NCC-1701 -
-                  <a href="#">Commanded by Robert April (2245–2250)</a>
-                  , Christopher Pike (2250–2265), James T. Kirk (2265-2270, 2271–2285), and Willard Decker (2270-2271), Vessel's self-destruction carried out while in orbit of the Genesis Planet, to prevent ship from falling into Klingon hands.
+                  <a href="#">Commanded by Robert April (2245–2250)</a> , Christopher Pike (2250–2265), James T. Kirk (2265-2270,
+                  2271–2285), and Willard Decker (2270-2271), Vessel's self-destruction carried out while in orbit of the
+                  Genesis Planet, to prevent ship from falling into Klingon hands.
                 </li>
 
                 <li>
-                  USS Reliant - NCC-1864 - Ship on which Pavel Chekov serves as first officer. Assigned to Project Genesis and later hijacked by Khan Noonien Singh. Destroyed by Genesis Device detonation.
+                  USS Reliant - NCC-1864 - Ship on which Pavel Chekov serves as first officer. Assigned to Project Genesis and later hijacked
+                  by Khan Noonien Singh. Destroyed by Genesis Device detonation.
                 </li>
 
                 <li>
-                  USS Excalibur - NCC-26517 - Part of the tachyon blockade during the Klingon Civil War. Later commanded by Captain Mackenzie Calhoun in Star Trek: New Frontier.
+                  USS Excalibur - NCC-26517 - Part of the tachyon blockade during the Klingon Civil War. Later commanded by Captain Mackenzie
+                  Calhoun in Star Trek: New Frontier.
                 </li>
 
                 <li>
-                  USS Shenandoah - NCC-73024 - Taken by Dax and Worf to rescue a Cardassian informant from the Dominion. Severely damaged by the Jem'Hadar en route to deliver diplomatic message to Grand Nagus Zek.
+                  USS Shenandoah - NCC-73024 - Taken by Dax and Worf to rescue a Cardassian informant from the Dominion. Severely damaged by
+                  the Jem'Hadar en route to deliver diplomatic message to Grand Nagus Zek.
                 </li>
 
                 <li>
@@ -866,22 +924,22 @@
 
           <label for="text-input">Text input:</label>
           <br />
-          <input type="text" class="nice-input" id="text-input" value="Text input"/>
+          <input type="text" class="nice-input" id="text-input" value="Text input" />
           <p class="f-code">.nice-input</p>
 
           <label for="button-input">Button:</label>
           <br />
-          <input type="button" class="nice-button"  id="button-input" value="Button"/>
+          <input type="button" class="nice-button" id="button-input" value="Button" />
           <p class="f-code">.nice-button</p>
 
           <label for="button-input-anchor">Button - anchor:</label>
           <br />
-          <a class="nice-button"  id="button-input-anchor">Button - anchor</a>
+          <a class="nice-button" id="button-input-anchor">Button - anchor</a>
           <p class="f-code">.nice-button</p>
 
           <label for="button-input1">Disabled button:</label>
           <br />
-          <input type="button" class="nice-button disabled" disabled  id="button-input1" value="Button"/>
+          <input type="button" class="nice-button disabled" disabled id="button-input1" value="Button" />
           <p class="f-code">.nice-button.disabled</p>
 
           <select class="nice-input">
@@ -996,7 +1054,8 @@
           <h2 class="heading mega">Captioned imagery</h2>
 
           <div class="captioned">
-            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg" width="350">
+            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg"
+              width="350">
             <span class="captioned--text">
               Text describing image (
               <a href="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg">image source</a>
@@ -1006,24 +1065,31 @@
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <div class="captioned f-right">
-            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg" width="350">
+            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg"
+              width="350">
             <span class="captioned--text">
               Text describing image (
               <a href="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg">image source</a>
@@ -1033,20 +1099,26 @@
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
           <p>
             I have reset the sensors to scan for
-            <a href="#">frequencies</a>
-            outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
+            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
         </div>
@@ -1107,19 +1179,18 @@
 
     </section>
 
-    <!-- first section | has to be last in order for CSS navigation to work -->
-
     <section>
 
-           <h2 id="overview" class="heading mega">Introduction</h2>
+      <h2 id="overview" class="heading mega">Introduction</h2>
 
       <article>
 
         <div class="c-f1">
 
-       
+
           <p>
-            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as well as parametric mixing to be called within custom SCSS files.
+            Lemony-clwis is a CSS framework written in SASS (SCSS syntax). It offers wide range of ready to use modules and classes as
+            well as parametric mixing to be called within custom SCSS files.
           </p>
 
         </div>
@@ -1127,12 +1198,12 @@
         <div class="c-f1">
           <h3 class="heading kilo">Instalation</h3>
 
-          <p >
+          <p>
             Lemony can be included serveral way. You can download
-            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a>
-            , though this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins and extendable module you should download or clone whole
-            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a>
-            (includes offline documentation).
+            <a href="https://github.com/vlad-saling/lemony-clwis/blob/master/scss/lemony-clwis.css">compiled css</a> , though
+            this way, you can only use ready-made modules like grid, form elements etc. To utilize the full power of mixins
+            and extendable module you should download or clone whole
+            <a href="https://github.com/vlad-saling/lemony-clwis">git repository</a> (includes offline documentation).
           </p>
 
           <h3 class="heading micro">Including compiled css file</h3>
@@ -1147,26 +1218,24 @@
           <p class="f-code">@import &quot;../../../scss/lemony-clwis&quot;;</p>
 
           <p>
-            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before the import of main SCSS file (example below show defautl values):
+            Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
+            the import of main SCSS file (example below show defautl values):
           </p>
 
           <p class="f-code">
             $large: 960px;
-            <br/>
-            $medium: 768px;
-            <br/>
-            $small: 480px;
+            <br/> $medium: 768px;
+            <br/> $small: 480px;
           </p>
 
           <p>
-            <strong>$large</strong>
-            is the widest page if .container.fixed is used.
+            <strong>$large</strong> is the widest page if .container.fixed is used.
             <br/>
-            <strong>$medium</strong>
-            is breakpoint value for tablets or middle sized devices in case large nor small fits the needs.
+            <strong>$medium</strong> is breakpoint value for tablets or middle sized devices in case large nor small fits
+            the needs.
             <br/>
-            <strong>$small</strong>
-            defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid cells go 100% wide.
+            <strong>$small</strong> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
+            cells go 100% wide.
           </p>
 
         </div>
@@ -1177,7 +1246,7 @@
 
   </div>
 
-  <footer  class="container fixed mprime footer">
+  <footer class="container fixed mprime footer">
     <div class="container fixed">
       <div class="c-f1">
         <p>
@@ -1186,23 +1255,26 @@
             <p>
               <a href="https://github.com/vlad-saling">author's github</a>
             </p>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
 
-      <script type="text/javascript">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3088394-9']);
+    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3088394-9']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 
 </body>
-    </html>
+
+</html>
