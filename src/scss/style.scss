@@ -1,7 +1,22 @@
 // This is master file. It serves a wrapper for all your imports
 // In other words, this file defines css build
 
-// config
+// config example
+// $large: 960px;
+// $medium: 768px;
+// $small: 450px;
+
+$optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
+$min-width: 320px;
+
+/* native css variables for future use */
+:root {
+    --min-width: $min-width;
+    --optimal-line-width: $optimal-line-width; 
+}
+
+
+$large: $optimal-line-width;
 
 /* adding default widths value in case it wasn't set in main css */
 $large: null !default;
@@ -39,8 +54,7 @@ $block-grid-cell: 12 !default;
 // grids  (recommended)
 @import "layout/grids/block.scss",
         "layout/grids/flex.scss",
-        "layout/grids/float.scss",
-        "layout/grids/fraction.scss";
+        "layout/grids/float.scss";
 
 // modules (optional)
 @import "modules/typography.scss",

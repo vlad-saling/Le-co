@@ -132,6 +132,7 @@ $text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
 
 }
 
+/* fixing pixel "rounding" */
 [class*="c-"] + [class*="c-"]:last-child {
   float:right;
 }

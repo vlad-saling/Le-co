@@ -1,14 +1,5 @@
 /* general container */
 
-$optimal-line-width: calc((1em/2.2) * 85);
-$min-width: 320px;
-
-/* native css variables for future use */
-:root {
-    --min-width: $min-width;
-    --optimal-line-width: $optimal-line-width; /* roughtly estimating width on optimal number of characters per line */
-}
-
 .container {
   margin: 0 auto;
   clear: both;
