@@ -6,15 +6,6 @@
 
 /* adding default widths value in case it wasn't set in main css */
 /* mixins */
-/* mixin: fade in hover transition efect */
-/* universal transition efect mixin for all or defined attributes */
-/* mixins for border radiuses | s-shorthand, c-complex */
-/* mixins for gradients | top->down td-gradient */
-/* mixins for gradients | left->right rl-gradient */
-/* transform mixing for compatibilty */
-/* effects */
-/* adding imprint look with white-ish border from top a black-ish at the bottom */
-/* css triangles */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -505,11 +496,7 @@ body {
       padding: 3px 6px;
       text-decoration: none;
       border: 1px solid rgba(32, 32, 32, 0.5);
-      -o-transition: border-color 0.3s;
-      -moz-transition: border-color 0.3s;
-      -webkit-transition: border-color 0.3s;
-      -ms-transition: border-color 0.3s;
-      transition: border-color 0.3s; }
+      transition: border-color 0.2s; }
       .pager > li > a:hover {
         border-color: rgba(32, 32, 32, 0.8); }
 
@@ -560,55 +547,16 @@ body {
   color: #222;
   padding: 5px;
   cursor: pointer;
-  background: #eee;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #eee, #ddd);
-  /* FF3.6+ */
-  background: -webkit-linear-gradient(top, #eee, #ddd);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #eee, #ddd);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #eee, #ddd);
-  /* IE10+ */
-  background: linear-gradient(top, #eee, #ddd);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#eee, endColorstr=#ddd,GradientType=0 );
-  /* IE6-9 */ }
+  background-image: linear-gradient(to bottom, #eee, #ddd); }
   .nice-button:hover {
-    background: #fff;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #fff, #eee);
-    /* FF3.6+ */
-    background: -webkit-linear-gradient(top, #fff, #eee);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fff, #eee);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fff, #eee);
-    /* IE10+ */
-    background: linear-gradient(top, #fff, #eee);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#fff, endColorstr=#eee,GradientType=0 );
-    /* IE6-9 */
+    background-image: linear-gradient(to bottom, #fff, #eee);
     text-decoration: none; }
   .nice-button.disabled, .nice-button[disabled] {
     cursor: default;
     color: #888;
     text-shadow: 1px 1px 0px #fff; }
     .nice-button.disabled:hover, .nice-button[disabled]:hover {
-      background: #eee;
-      /* Old browsers */
-      background: -moz-linear-gradient(top, #eee, #ddd);
-      /* FF3.6+ */
-      background: -webkit-linear-gradient(top, #eee, #ddd);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #eee, #ddd);
-      /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, #eee, #ddd);
-      /* IE10+ */
-      background: linear-gradient(top, #eee, #ddd);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#eee, endColorstr=#ddd,GradientType=0 );
-      /* IE6-9 */ }
+      background-image: linear-gradient(to bottom, #eee, #ddd); }
 
 .nice-label {
   margin: 2px;
@@ -621,8 +569,6 @@ body {
   margin: 2px;
   padding: 2px;
   position: relative;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
   border-radius: 24px; }
   .nice-radio input[type=radio] {
     visibility: hidden; }
@@ -644,8 +590,6 @@ body {
       position: absolute;
       width: 16px;
       height: 16px;
-      -webkit-border-radius: 16px;
-      -moz-border-radius: 16px;
       border-radius: 16px;
       background: transparent;
       top: 1px;
@@ -661,8 +605,6 @@ body {
   .nice-checkbox input[type=checkbox] {
     visibility: hidden; }
     .nice-checkbox input[type=checkbox]:checked + label:after {
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-      filter: alpha(opacity=100);
       opacity: 1; }
   .nice-checkbox label {
     cursor: pointer;
@@ -675,8 +617,6 @@ body {
     overflow: hidden;
     white-space: nowrap; }
     .nice-checkbox label:after {
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
       opacity: 0;
       content: '';
       position: absolute;
@@ -688,10 +628,6 @@ body {
       border: 3px solid #000;
       border-top: none;
       border-right: none;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
 table {

@@ -9,6 +9,12 @@
 $optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
 $min-width: 320px;
 
+// animation
+$transition-duration: 0.2s;
+
+// design
+$border-radius: 2px;
+
 /* native css variables for future use */
 :root {
     --min-width: $min-width;
@@ -43,7 +49,6 @@ $block-grid-cell: 12 !default;
 
 // helpers (recommended)
 @import "helpers/mixins.scss",
-        "helpers/effects.scss",
         "helpers/spacing.scss",
         "helpers/rwd.scss";
 

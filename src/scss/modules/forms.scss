@@ -53,12 +53,11 @@
 		color: #222;
 		padding: 5px;
 		cursor: pointer;
+		background-image: linear-gradient(to bottom, #eee,#ddd);
 
-
-		@include td-gradient(#eee,#ddd);
 
 		&:hover {
-			@include td-gradient(#fff,#eee);
+			background-image: linear-gradient(to bottom, #fff,#eee);
 			text-decoration: none;
 		}
 
@@ -68,7 +67,7 @@
 			text-shadow: 1px 1px 0px #fff;
 
 			&:hover {
-				@include td-gradient(#eee,#ddd);
+				background-image: linear-gradient(to bottom, #eee,#ddd);
 			}
 		} 
 	}
@@ -91,7 +90,7 @@
 		margin: 2px;
 		padding: 2px;
 		position: relative;
-		@include bradius-s(24px);
+		border-radius: 24px;
 
 		input[type=radio] {
 			visibility: hidden;
@@ -116,7 +115,7 @@
 				position: absolute;
 				width: 16px;
 				height: 16px;
-				@include bradius-s(16px);
+				border-radius: 16px;
 				background: transparent;
 				top: 1px;
 				left: 1px;
@@ -145,8 +144,6 @@
 			visibility: hidden;
 
 			&:checked + label:after {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-				filter: alpha(opacity=100);
 				opacity: 1;
 			}
 		}
@@ -162,8 +159,6 @@
 			@include text-access;
 
 			&:after {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-				filter: alpha(opacity=0);
 				opacity: 0;
 				content: '';
 				position: absolute;
@@ -175,16 +170,10 @@
 				border: 3px solid #000;
 				border-top: none;
 				border-right: none;
-
-				@include transform(rotate(-45deg));
+				transform: rotate(-45deg);
 
 			}
 
-			// &:hover::after {
-			// 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-			// 	filter: alpha(opacity=30);
-			// 	opacity: 0.3;
-			// }
 		}
 	}
 
