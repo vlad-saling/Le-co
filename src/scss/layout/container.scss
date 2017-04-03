@@ -1,15 +1,18 @@
 /* general container */
 
-/* vars */
+$optimal-line-width: calc((1em/2.2) * 85);
+$min-width: 320px;
+
+/* native css variables for future use */
 :root {
-    --min-width: 320px;
-    --optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
+    --min-width: $min-width;
+    --optimal-line-width: $optimal-line-width; /* roughtly estimating width on optimal number of characters per line */
 }
 
 .container {
   margin: 0 auto;
   clear: both;
-  min-width: var(--min-width);
+  min-width: $min-width;
 }
 
   .container:after {
@@ -23,7 +26,7 @@
 }
 
 .container.fixed {
-  max-width: var(--optimal-line-width);
+  max-width: $optimal-line-width;
 }
 
 

@@ -26,22 +26,23 @@ $grid-cell: 12 !default;
 $block-grid-cell: 12 !default;
 
 
-// helpers (some of these should be last)
-@import "helpers/effects.scss",
-        "helpers/common.scss",
+// helpers (recommended)
+@import "helpers/mixins.scss",
+        "helpers/effects.scss",
+        "helpers/spacing.scss",
         "helpers/rwd.scss";
 
-// layout
+// layout (recommended)
 @import "layout/base.scss",
         "layout/container.scss";
 
-// grids
+// grids  (recommended)
 @import "layout/grids/block.scss",
         "layout/grids/flex.scss",
         "layout/grids/float.scss",
         "layout/grids/fraction.scss";
 
-// modules
+// modules (optional)
 @import "modules/typography.scss",
         "modules/navigation.scss",
         "modules/paging.scss",
@@ -49,4 +50,5 @@ $block-grid-cell: 12 !default;
         "modules/media-object.scss",
         "modules/forms.scss",
         "modules/tables.scss",
+        "modules/captioned-imagery.scss",
         "modules/overlay.scss";

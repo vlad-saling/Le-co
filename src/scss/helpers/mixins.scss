@@ -1,0 +1,26 @@
+/* mixins */
+
+//universal background mixin
+
+@mixin icon-sprite($is-bposition: 0 0, $icon-sprite:'pc.png') {
+	background: transparent;
+	background-image: url($icon-sprite);
+	background-repeat: no-repeat;
+	background-position: $is-bposition;
+}
+
+// clearfix mixin
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display:block;
+    clear:both;
+  }
+}
+
+// text access
+@mixin text-access {
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}

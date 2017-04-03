@@ -1,0 +1,69 @@
+// generic spacing helpers 	
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* classes */
+
+.hidden {
+    display:none !important;
+}
+
+
+.text-access {
+	@include text-access
+}
+
+.f-left {
+	float: left !important;
+}
+
+.f-right {
+	float: right !important;
+}
+
+
+@for $i from 0 through 2 {
+	// 15px should be substituted for common vertical rythm
+	$calculated: $i * 15;
+
+	.p-top-#{$i} {
+		padding-top: #{$i * 15}px !important;
+	}
+
+	.p-bottom-#{$i} {
+		padding-bottom: #{$calculated}px !important;
+	}
+
+	.m-top-#{$i} {
+		margin-top: #{$calculated}px !important;
+	}
+
+	.m-bottom-#{$i} {
+		margin-bottom: #{$calculated}px !important;
+	}
+
+	// redefining temp variable since we need different jumps in vw units
+	$calculated: $i * 1.25 * $i;
+
+	.p-top-r#{$i} {
+		padding-top: #{$calculated}vw !important;
+	}
+
+	.p-bottom-r#{$i} {
+		padding-bottom: #{$calculated}vw !important;
+	}
+
+	.m-top-r#{$i} {
+		margin-top: #{$calculated}vw !important;
+	}
+
+	.m-bottom-r#{$i} {
+		margin-bottom: #{$calculated}vw !important;
+	}
+}
+
+

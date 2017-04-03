@@ -1,4 +1,5 @@
 /* adding default widths value in case it wasn't set in main css */
+/* mixins */
 /* mixin: fade in hover transition efect */
 /* universal transition efect mixin for all or defined attributes */
 /* mixins for border radiuses | s-shorthand, c-complex */
@@ -8,17 +9,6 @@
 /* effects */
 /* adding imprint look with white-ish border from top a black-ish at the bottom */
 /* css triangles */
-/* common styling */
-@media only screen and (max-width: 960px) {
-  body {
-    min-width: 320px;
-    width: auto; } }
-
-@media only screen and (max-width: 480px) {
-  body {
-    min-width: 240px;
-    width: auto; } }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -38,35 +28,6 @@
 
 .f-right {
   float: right !important; }
-
-.space {
-  margin-bottom: 1em; }
-
-/* mixins */
-.nav .nav--list {
-  padding: 0;
-  list-style: none; }
-
-.nav .nav--link {
-  display: block;
-  text-decoration: none; }
-  .nav .nav--link:hover {
-    text-decoration: underline; }
-
-.nav.horizontal .nav--item {
-  float: left; }
-
-.captioned {
-  float: left;
-  margin: 0 10px 10px 0; }
-  .captioned:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  .captioned .captioned--text {
-    text-align: center;
-    display: block;
-    font-size: .9em; }
 
 .p-top-0 {
   padding-top: 0px !important; }
@@ -154,99 +115,24 @@
 html {
   box-sizing: border-box; }
 
+html,
 body {
-  margin: 0; }
-
-/* normalization and reset rules - partially based on normalize.css */
-/* layout */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-strike, strong, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  font-size: 100%; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
-
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
-
-body {
-  *margin: 0; }
-
-/* lists */
-dl,
-menu,
-ol,
-ul {
-  margin: .5em 0; }
-
-dd {
-  margin: 0 0 0 20px; }
-
-menu,
-ol,
-ul {
-  padding: 0 0 0 20px; }
-
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* blockquote */
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-/* form */
-form {
+body {
   margin: 0; }
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  *overflow: visible; }
-
-/* table */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  @media only screen and (max-width: 960px) {
+    body {
+      min-width: 320px;
+      width: auto; } }
+  @media only screen and (max-width: 480px) {
+    body {
+      min-width: 240px;
+      width: auto; } }
 
 /* general container */
-/* vars */
+/* native css variables for future use */
 :root {
   --min-width: 320px;
   --optimal-line-width: calc((1em/2.2) * 85);
@@ -255,7 +141,7 @@ table {
 .container {
   margin: 0 auto;
   clear: both;
-  min-width: var(--min-width); }
+  min-width: 320px; }
 
 .container:after {
   content: " ";
@@ -266,7 +152,7 @@ table {
   width: 100%; }
 
 .container.fixed {
-  max-width: var(--optimal-line-width); }
+  max-width: calc((1em/2.2) * 85); }
 
 .bgrid-large-1 > li {
   width: 100%; }
@@ -677,6 +563,19 @@ p {
   margin: 0;
   line-height: 1.25em; }
 
+.nav .nav--list {
+  padding: 0;
+  list-style: none; }
+
+.nav .nav--link {
+  display: block;
+  text-decoration: none; }
+  .nav .nav--link:hover {
+    text-decoration: underline; }
+
+.nav.horizontal .nav--item {
+  float: left; }
+
 .pager {
   list-style: none;
   text-align: center; }
@@ -897,6 +796,18 @@ table {
     background-color: #f1f1f1; }
   table tfoot > tr > td {
     color: #777; }
+
+.captioned {
+  float: left;
+  margin: 0 10px 10px 0; }
+  .captioned:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .captioned .captioned--text {
+    text-align: center;
+    display: block;
+    font-size: .9em; }
 
 /* overlay background dim mixin */
 .overlay-dim {

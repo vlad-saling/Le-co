@@ -1,0 +1,25 @@
+
+
+//captioned image
+
+.captioned {
+	@include clearfix;
+	float:left;
+	margin: 0 10px 10px 0;
+
+	//f-right class can be used to position image the right
+
+	.captioned--image,
+	.captioned--text {
+		// float: left;
+		// clear: both;
+	}
+
+	.captioned--text {
+		text-align: center;
+		display: block;
+		font-size: .9em;
+	}
+
+
+}
