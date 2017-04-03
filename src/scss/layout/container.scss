@@ -2,22 +2,59 @@
 
 .container {
   margin: 0 auto;
-  clear: both;
-  min-width: $min-width;
-}
+  /*padding: 0 1%;*/
+  clear:both;
+  
+  @include clearfix;
 
-  .container:after {
-    content: " ";
-    display: block;
-    clear: both;
+  
+  &.full { 
+    width: 100%;
   }
 
-.container.full {
-  width: 100%;
+
+
+  @if $responsive {
+
+     &.fixed { 
+      max-width: $large;
+    }
+
+    @media only screen and (max-width: $large) {
+      min-width: 320px;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $small) {
+      min-width: 240px;
+      width: auto;
+    }
+
+    .container {
+      @media only screen and (max-width: $large) {
+        min-width: 0px;
+      }
+
+      @media only screen and (max-width: $small) {
+        min-width: 0px;
+      }
+    }
+
+    /* grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper */
+    &.mprime {
+      @media only screen and (max-width: $large) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+  }
+
+  //if container is set ot fixed with, whole responsivity goes off
+  @else {
+      &.fixed { 
+        width: $large;
+    }
+  }
+
 }
-
-.container.fixed {
-  max-width: $optimal-line-width;
-}
-
-
