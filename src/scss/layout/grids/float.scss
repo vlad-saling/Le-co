@@ -1,7 +1,12 @@
-/* the grid */
+// the grid
 
+/* 
+   dependencies:
+     $breakpoints
+     $grid-columns
+*/
 
-/* column container */
+// column container
 
 .row {
   width: 100%;
@@ -15,45 +20,7 @@
   }
 }
 
-
-/* columns */
-
-/* text grid gutter (not for general layout) */
-
-$text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
-
-@each $text-gutter in $text-gutters {
-  $tg-classname: nth($text-gutter, 1);
-  $tg-padding: nth($text-gutter, 2);
-
-  .#{$tg-classname}, .#{$tg-classname} .row  {
-    > [class*="c-"] {padding: 0 $tg-padding $tg-padding 0;}
-    > [class*="c-full"], [class*="c-"] + [class*="c-full"],
-    > [class*="c-twelve"], [class*="c-"] + [class*="c-twelve"] {padding: 0 0 $tg-padding 0} 
-    > [class*="c-"] {padding: 0 $tg-padding $tg-padding 0;}
-  }
-}
-
-
-//base grid
-@for $i from 1 through $grid-cell {
-  .c-#{($i)} {
-    width: 100%/$grid-cell * $i;
-  }
-}
-
-//fraction grid
-@for $i from 1 through $grid-cell {
-  .c-f#{($i)} {
-    width: 100%/$i;
-  }
-}
-
-
-/* column nesting limit -> 4 levels allowed - may be removed or tweaked if needed */
-[class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] {
-    width: 100%;
-}
+// columns  
 
 /* structural grid (layout) */
 
@@ -62,12 +29,7 @@ $text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
   min-height: 1px;
   padding: 0 10px;
   word-wrap: break-word;
-
-  @media only screen and (max-width: $small) {
-    /* all columns go 100% frenzy on small screen */
-    width: 100%;
-  }
-
+  width: 100%;
 }
 
 /* fixing pixel "rounding" */
@@ -77,3 +39,41 @@ $text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
 
 
 
+// generating all breakpoint overrides
+@each $breakpointName, $breakpointStartingPoint in $breakpoints {
+    // if there is a named breakpoint, well make sure name gets separeted by dash
+    @if $breakpointName != "" {
+      $breakpointName: $breakpointName + "-";
+    }
+    @media only screen and (min-width: ($breakpointStartingPoint)) {
+        @for $i from 1 through $grid-columns{
+            .c-#{$breakpointName}#{($i)} {
+              width: 100%/$grid-columns * $i;
+            }
+            .c-#{$breakpointName}f#{($i)} {
+              width: 100%/$i;
+            }
+        }
+    }
+}
+
+
+/* column nesting limit -> 4 levels allowed - may be removed or tweaked if needed */
+[class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] {
+    width: 100%;
+}
+
+
+
+
+// text grid gutter (not for general layout)
+$text-gutters: tg-small 10px, tg-medium 20px, tg-large 30px;
+
+@each $text-gutter in $text-gutters {
+  $tg-classname: nth($text-gutter, 1);
+  $tg-padding: nth($text-gutter, 2);
+
+  .#{$tg-classname}, .#{$tg-classname} .row  {
+    > [class*="c-"] {padding: 0 $tg-padding $tg-padding 0;}
+  }
+}

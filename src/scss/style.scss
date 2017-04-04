@@ -24,6 +24,22 @@ $border-radius: 2px;
 
 $large: $optimal-line-width;
 
+
+// define breakpoint(s)
+$breakpoints: (
+//  breakpointAlias: startingPointInSomeUnit
+//  breakpointAlias can be empty. non *fixed class name will be offered
+    "": "481px",
+    "l": "767px"
+);
+
+// reference
+@each $breakpointName, $breakpointStartingPoint in $breakpoints {
+    @debug $breakpointName + " would start at " + $breakpointStartingPoint;
+}
+
+
+
 /* adding default widths value in case it wasn't set in main css */
 $large: null !default;
 @if $large {}
@@ -41,10 +57,10 @@ $small: null !default;
 $responsive: true !default;
 
 //number of grid cells
-$grid-cell: 12 !default;
+$grid-columns: 12 !default;
 
-//number of block-grid cells
-$block-grid-cell: 12 !default;
+//number of block grid columns
+$block-grid-columns: 12 !default;
 
 
 // helpers (recommended)
@@ -56,7 +72,7 @@ $block-grid-cell: 12 !default;
 @import "layout/base.scss",
         "layout/container.scss";
 
-// grids  (recommended)
+// grids  (optional)
 @import "layout/grids/block.scss",
         "layout/grids/flex.scss",
         "layout/grids/float.scss";

@@ -15,15 +15,5 @@ body {
 }
 
 body {
-    margin: 0;
-
-	@media only screen and (max-width: $large) {
-		min-width: 320px;
-		width: auto;
-	}
-
-	@media only screen and (max-width: $small) {
-		min-width: 240px;
-		width: auto;
-	}
+    min-width: $min-width;
 }
