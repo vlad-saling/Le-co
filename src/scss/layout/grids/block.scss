@@ -1,44 +1,7 @@
-//block grid for lemony
-
-//blockgrid behaviour for large viewport
-
-@for $i from 1 through $block-grid-cell{
-  .bgrid-large-#{($i)} {
-    &>li {
-        width: 100%/$i;
-    }
-  }
-}
-
-
-//blockgrid behaviour for medium viewport
-
-@media only screen and (max-width: $medium) {
-    @for $i from 1 through $block-grid-cell{
-      .bgrid-medium-#{($i)} {
-        &>li {
-            width: 100%/$i;
-        }
-      }
-    }
-}
-
-
-//blockgrid behaviour for small viewport
-
-@media only screen and (max-width: $small) {
-    @for $i from 1 through $block-grid-cell{
-      .bgrid-small-#{($i)} {
-        &>li {
-            width: 100%/$i;
-        }
-      }
-    }
-}
+//block grid
 
 //common block grid styles
-
-[class*="bgrid-large"] {
+[class*="bgrid-"] {
     display: block;
     list-style: none;
     padding: 0;
@@ -46,8 +9,20 @@
     @include clearfix;
 
      &>li {
-        display: inline;
         float: left;
         padding: 10px;
+    }
+}
+
+// generating all breakpoint overrides
+@each $breakpointName, $breakpointStartingPoint in $breakpoints {
+    @media only screen and (min-width: ($breakpointStartingPoint)) {
+        @for $i from 1 through $block-grid-columns{
+            .bgrid-#{$breakpointName}-#{($i)} {
+                &>li {
+                    width: 100%/$i;
+                }
+            }
+        }
     }
 }
