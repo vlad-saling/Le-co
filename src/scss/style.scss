@@ -7,22 +7,12 @@
 // $small: 450px;
 
 $optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
+$large: $optimal-line-width;
 $min-width: 320px;
 
-// animation
+// global animation timer
 $transition-duration: 0.2s;
 
-// design
-$border-radius: 2px;
-
-/* native css variables for future use */
-:root {
-    --min-width: $min-width;
-    --optimal-line-width: $optimal-line-width; 
-}
-
-
-$large: $optimal-line-width;
 
 
 // define breakpoint(s)
@@ -53,7 +43,7 @@ $small: null !default;
 @if $small {}
 @else  {$small: 480px !global;}
 
-//kill switch for responsivity - set to FALSE to remove any build in responsive behaviour
+//kill switch for responsivity - set to FALSE to switch off any built in responsive behaviour
 $responsive: true !default;
 
 //number of grid cells

@@ -1,9 +1,4 @@
 /* roughtly estimating width on optimal number of characters per line */
-/* native css variables for future use */
-:root {
-  --min-width: 320px;
-  --optimal-line-width: calc((1em/2.2) * 85); }
-
 /* adding default widths value in case it wasn't set in main css */
 /* mixins */
 /* if this grows, it will need to be split */
