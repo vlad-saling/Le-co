@@ -33,7 +33,7 @@ $breakpoints: (
     "l": "767px"
 );
 
-// reference
+// reference loop for implmentation at any point of the code base
 @each $breakpointName, $breakpointStartingPoint in $breakpoints {
     @debug $breakpointName + " would start at " + $breakpointStartingPoint;
 }
@@ -65,6 +65,7 @@ $block-grid-columns: 12 !default;
 
 // helpers (recommended)
 @import "helpers/mixins.scss",
+        "helpers/general.scss",
         "helpers/spacing.scss",
         "helpers/rwd.scss";
 

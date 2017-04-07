@@ -1,0 +1,17 @@
+/* if this grows, it will need to be split */
+
+.hidden {
+    display:none !important;
+}
+
+.text-access {
+	@include text-access
+}
+
+.f-left {
+	float: left !important;
+}
+
+.f-right {
+	float: right !important;
+}

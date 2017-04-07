@@ -1,25 +1,5 @@
 // generic spacing helpers 	
 
-/* classes */
-
-.hidden {
-    display:none !important;
-}
-
-
-.text-access {
-	@include text-access
-}
-
-.f-left {
-	float: left !important;
-}
-
-.f-right {
-	float: right !important;
-}
-
-
 @for $i from 0 through 2 {
 	// 15px should be substituted for common vertical rythm
 	$calculated: $i * 15;
@@ -59,5 +39,3 @@
 		margin-bottom: #{$calculated}vw !important;
 	}
 }
-
-
