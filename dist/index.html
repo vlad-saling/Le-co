@@ -79,27 +79,21 @@
         <pre>@import &quot;../../../scss/lemony-clwis&quot;;</pre>
 
         <p>
-          Since grid itself is precentage based, you can tweak page width all you like using two variables that you can set before
-          the import of main SCSS file (example below show defautl values):
+          For grids and other responsive patters you can specify set of breakpoints they will be generated against.
         </p>
 
         <pre>
-$large: 960px;
-$medium: 768px;
-$small: 480px;
+$breakpoints: (
+    "": "481px",
+    "l": "767px"
+);
         </pre>
 
         <p>
-          <code>$large</code> is the widest page if .container.fixed is used.
+          Setting above will produce grid structure with classes like <code>c-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
         </p>
-          <p>
-          <code>$medium</code> is breakpoint value for tablets or middle sized devices in case large nor small fits
-          the needs.
-          </p>
-            <p>
-          <code>$small</code> defines a breakpoint, when modules like grid do a fallback to mobile view, e.g all grid
-          cells go 100% wide.
-        </p>
+
+
 
       </div>
 
