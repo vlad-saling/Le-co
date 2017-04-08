@@ -23,13 +23,12 @@
 
 .overlay-content-w {
 	position: relative;
-	width: 50%;
+	width: 90%;
 	background-color: white;
 	margin: 0 auto;
 
-	@media only screen and (max-width: $large) {
-		width: 90%;
-		min-width: 240px;
+	&.overlay-content-w--half {
+		width: 50%;
 	}
 
 	.close {
@@ -54,7 +53,7 @@
 			top: 0px;
 		}
 	}
-	
+
 	&:after {
 		content: " ";
 		display: block;
