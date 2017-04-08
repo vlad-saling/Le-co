@@ -1,70 +1,15 @@
-// This is master file. It serves a wrapper for all your imports
-// In other words, this file defines css build
+// core (must-have)
+@import "core/config.scss",
+        "core/mixins.scss";
 
-// config example
-// $large: 960px;
-// $medium: 768px;
-// $small: 450px;
-
-$optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
-$large: $optimal-line-width;
-$min-width: 320px;
-
-// global animation timer
-$transition-duration: 0.2s;
-
-
-
-// define breakpoint(s)
-$breakpoints: (
-//  breakpointAlias: startingPointInSomeUnit
-//  breakpointAlias can be empty. non *fixed class name will be offered
-    "": "481px",
-    "l": "767px"
-);
-
-// reference loop for implmentation at any point of the code base
-@each $breakpointName, $breakpointStartingPoint in $breakpoints {
-    @debug $breakpointName + " would start at " + $breakpointStartingPoint;
-}
-
-
-
-/* adding default widths value in case it wasn't set in main css */
-$large: null !default;
-@if $large {}
-@else  {$large: 960px !global;}
-
-$medium: null !default;
-@if $medium {}
-@else  {$medium: 768px !global;}
-
-$small: null !default;
-@if $small {}
-@else  {$small: 480px !global;}
-
-//kill switch for responsivity - set to FALSE to switch off any built in responsive behaviour
-$responsive: true !default;
-
-//number of grid cells
-$grid-columns: 12 !default;
-
-//number of block grid columns
-$block-grid-columns: 12 !default;
-
-
-// helpers (recommended)
-@import "helpers/mixins.scss",
-        "helpers/general.scss",
+// helpers (helpful)
+@import "helpers/general.scss",
         "helpers/spacing.scss",
         "helpers/rwd.scss";
 
 // layout (recommended)
 @import "layout/base.scss",
-        "layout/container.scss";
-
-// grids  (optional)
-@import "layout/grids/block.scss",
+        "layout/grids/block.scss",
         "layout/grids/flex.scss",
         "layout/grids/float.scss";
 
