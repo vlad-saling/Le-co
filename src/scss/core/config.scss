@@ -10,6 +10,13 @@ $optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optim
 $large: $optimal-line-width;
 $min-width: 320px;
 
+
+//kill switch for responsivity - set to FALSE to switch off any built in responsive behaviour
+$responsive: true !default;
+// if resposivity is OFF we fixed width should be set here
+$fixed-width: $large;
+
+
 // global animation timer
 $transition-duration: 0.2s;
 
@@ -19,8 +26,8 @@ $transition-duration: 0.2s;
 $breakpoints: (
 //  breakpointAlias: startingPointInSomeUnit
 //  breakpointAlias can be empty. non *fixed class name will be offered
-    "": "481px",
-    "l": "767px"
+	"": "481px",
+	"l": "767px"
 );
 
 // reference loop for implmentation at any point of the code base
@@ -43,8 +50,7 @@ $small: null !default;
 @if $small {}
 @else  {$small: 480px !global;}
 
-//kill switch for responsivity - set to FALSE to switch off any built in responsive behaviour
-$responsive: true !default;
+
 
 //number of grid cells
 $grid-columns: 12 !default;

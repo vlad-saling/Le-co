@@ -561,7 +561,8 @@ body {
 
 table {
   width: 100%;
-  text-align: left; }
+  text-align: left;
+  border-collapse: collapse; }
   table thead > tr > th,
   table tbody > tr > th,
   table tfoot > tr > th {

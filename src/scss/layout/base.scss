@@ -18,14 +18,14 @@ body {
     min-width: $min-width;
 
     @if $responsive != true {
-        width: $large;
+        width: $fixed-width;
     }
 }
 
 /* general container */
 
 .container {
-  margin: 0 auto;
-  clear:both;
-  @include clearfix;
+	margin: 0 auto;
+	clear:both;
+	@include clearfix;
 }
