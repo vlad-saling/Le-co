@@ -1,37 +1,23 @@
 /* flex box grid */
 
-// http://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-.flex-row {
+.flex {
     margin-bottom: 10px;
     display:flex;
-    flex-direction: row; //default
-    // flex-wrap: nowrap | wrap | wrap-reverse;
-    // flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-    // justify-content: flex-start | flex-end | center | space-between | space-around;
-    // align-items: flex-start | flex-end | center | baseline | stretch;
-    // align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    flex-direction: row;
+}
 
-    &.revers {
+	.flex--reverse {
         flex-direction:  row-reverse
     }
 
-    &.column {
+	.flex--columns {
         flex-direction: column;
     }
 
-    &.column-reverse {
+    .flex--column-reverse {
         flex-direction: column-reverse;
     }
-
-    @media only screen and (max-width: $medium) {
-        flex-wrap: wrap;
-    }    
-
-    @media only screen and (max-width: $small) {
-        flex-direction: column;
-    }
-}
 
     .flex-cell {
         background: #ccc;
