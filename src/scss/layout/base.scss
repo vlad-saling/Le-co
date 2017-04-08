@@ -16,4 +16,16 @@ body {
 
 body {
     min-width: $min-width;
+
+    @if $responsive != true {
+        width: $large;
+    }
+}
+
+/* general container */
+
+.container {
+  margin: 0 auto;
+  clear:both;
+  @include clearfix;
 }

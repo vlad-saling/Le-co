@@ -113,35 +113,11 @@ body {
 /* general container */
 .container {
   margin: 0 auto;
-  /*padding: 0 1%;*/
-  clear: both;
-  /* grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper */ }
+  clear: both; }
   .container:after {
     content: " ";
     display: block;
     clear: both; }
-  .container.full {
-    width: 100%; }
-  .container.fixed {
-    max-width: calc((1em/2.2) * 85); }
-  @media only screen and (max-width: calc((1em/2.2) * 85)) {
-    .container {
-      min-width: 320px;
-      width: auto; } }
-  @media only screen and (max-width: 480px) {
-    .container {
-      min-width: 240px;
-      width: auto; } }
-  @media only screen and (max-width: calc((1em/2.2) * 85)) {
-    .container .container {
-      min-width: 0px; } }
-  @media only screen and (max-width: 480px) {
-    .container .container {
-      min-width: 0px; } }
-  @media only screen and (max-width: calc((1em/2.2) * 85)) {
-    .container.mprime {
-      padding-left: 5%;
-      padding-right: 5%; } }
 
 /* 
    dependencies:
@@ -439,7 +415,8 @@ body {
 
 .pager {
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
   .pager > li {
     display: inline-block; }
     .pager > li > a {
