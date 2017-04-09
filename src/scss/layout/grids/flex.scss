@@ -10,7 +10,7 @@
         flex-direction:  row-reverse
     }
 
-	.flex--columns {
+	.flex--column {
         flex-direction: column;
     }
 
@@ -18,18 +18,26 @@
         flex-direction: column-reverse;
     }
 
-	.flex-cell {
+	.flex__cell {
 		background: #ccc;
 		flex: 1; 
 		padding: 2%;
+		margin-bottom: 2%;
 
-		& + & {
-			margin-left: 2%;
+		// & + & {
+		// 	margin: 0 0 2% 0;
+		// } 
+	}
+
+	// generating all breakpoint overrides
+	@each $breakpointName, $breakpointStartingPoint in $breakpoints {
+		@media only screen and (min-width: ($breakpointStartingPoint)) {
+			@for $i from 1 through $grid-columns{
+				.flex__cell--#{$breakpointName}-f#{($i)} {
+					flex-basis: 100%/$i;
+				}
+			}
 		}
-
-		[class~=flex--columns] & {
-			margin: 0 0 2% 0;
-		}        
 	}
 
 	

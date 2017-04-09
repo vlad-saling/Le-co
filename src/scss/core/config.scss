@@ -1,10 +1,4 @@
-// This is master file. It serves a wrapper for all your imports
-// In other words, this file defines css build
-
-// config example
-// $large: 960px;
-// $medium: 768px;
-// $small: 450px;
+// This is config file
 
 $optimal-line-width: calc((1em/2.2) * 85); /* roughtly estimating width on optimal number of characters per line */
 $large: $optimal-line-width;
@@ -21,35 +15,17 @@ $fixed-width: $large;
 $transition-duration: 0.2s;
 
 
-
 // define breakpoint(s)
 $breakpoints: (
 //  breakpointAlias: startingPointInSomeUnit
-//  breakpointAlias can be empty. non *fixed class name will be offered
-	"": "481px",
-	"l": "767px"
+	"m": "481px", 
+	"l": "769px" 
 );
 
 // reference loop for implmentation at any point of the code base
 // @each $breakpointName, $breakpointStartingPoint in $breakpoints {
 //     @debug $breakpointName + " would start at " + $breakpointStartingPoint;
 // }
-
-
-
-/* adding default widths value in case it wasn't set in main css */
-$large: null !default;
-@if $large {}
-@else  {$large: 960px !global;}
-
-$medium: null !default;
-@if $medium {}
-@else  {$medium: 768px !global;}
-
-$small: null !default;
-@if $small {}
-@else  {$small: 480px !global;}
-
 
 
 //number of grid cells

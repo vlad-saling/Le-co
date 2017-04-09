@@ -39,13 +39,13 @@
 
 <body>
 
-  <header class="container full fancy-block p-top-2 p-bottom-2">
-    <div class="container fixed">
-      <div class="c-f2">
+  <header class="container fancy-block p-top-2 p-bottom-2">
+    <div class="container container--fixed">
+      <div class="c-m-f2">
         <h1 class="heading giga">Le-co</h1>
         <p>Minimalistic-ish modular UI library</p>
       </div>
-      <div class="c-f2">
+      <div class="c-m-f2">
         <a class="f-right" href="https://github.com/vlad-saling/Le-co">git repo</a>
       </div>
     </div>
@@ -54,11 +54,11 @@
 
   
 
-  <main class="container fixed main p-bottom-2">
+  <main class="container container--fixed main p-bottom-2">
 
     <section>
 
-      <div class="c-f1 p-top-1">
+      <div class="c-m-f1 p-top-1">
         <h3 class="heading kilo">Instalation</h3>
 
         <p>
@@ -78,7 +78,7 @@ $breakpoints: (
         </pre>
 
         <p>
-          Setting above will produce grid structure with classes like <code>c-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
+          Setting above will produce grid structure with classes like <code>c-m-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
         </p>
 
 
@@ -93,12 +93,12 @@ $breakpoints: (
 
     <section>
 
-        <div class="c-f1">
+        <div class="c-m-f1">
 
           <h2 class="heading mega space" id="modifiers">Modifiers</h2>
 
 
-          <div class="container fixed space">
+          <div class="container container--fixed space">
 
             <p class="[DISABLEDCLASS]f-code-desc">Completely hiding element:</p>
             <pre>.hidden</pre>
@@ -125,11 +125,11 @@ $breakpoints: (
 
     <section>
 
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 class="heading mega space" id="mixins">Mixins</h2>
 
 
-          <div class="container fixed space">
+          <div class="container container--fixed space">
 
             <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
             <pre>@mixin clearfix</pre>
@@ -196,10 +196,10 @@ $breakpoints: (
     </section>
 
     <section>
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 class="heading mega space" id="modules">Modules</h2>
 
-          <div class="container fixed space">
+          <div class="container container--fixed space">
 
             <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
             <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
@@ -215,11 +215,11 @@ $breakpoints: (
 
     <section>
 
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 class="heading mega space" id="solutions">Solutions</h2>
 
 
-          <div class="container fixed space">
+          <div class="container container--fixed space">
 
             <h2 class="heading kilo space">CSS navigation</h2>
 
@@ -238,14 +238,14 @@ $breakpoints: (
     <section>
       
 
-        <div class="c-f1">
+        <div class="c-m-f1">
 
           <h2 class="heading mega" id="grid">Grid systems</h2>
 
           <p>
             Lemony provide three grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
             as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>            on the other hand uses number in class as a spectification of occupied portion of the whole available with of
-            parent container ( e.g. .c-f2 occupies one half of the row). Third system is
+            parent container ( e.g. .c-m-f2 occupies one half of the row). Third system is
             <strong>block grid</strong> , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6
             will display up to 6 items in a row).
           </p>
@@ -287,9 +287,9 @@ $breakpoints: (
           <pre>.row</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">Grid structure:</p>
-          <pre>(.container) > .row > .c-1/.c-f1</pre>
+          <pre>(.container) > .row > .c-1/.c-m-f1</pre>
           <p>OR</p>
-          <pre>.container > .c-1/.c-f1</pre>
+          <pre>.container > .c-1/.c-m-f1</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">Block grid:</p>
           <pre>(.container) > (ul/ol).bgrid-large-6</pre>
@@ -330,74 +330,74 @@ $breakpoints: (
 
             <div class="row">
 
-              <div class="c-12">
-                <p>c-12</p>
+              <div class="c-m-12">
+                <p>c-m-12</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-1">
-                <p>c-1</p>
+              <div class="c-m-1">
+                <p>c-m-1</p>
               </div>
-              <div class="c-11">
-                <p>c-11</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-2 c-l-6">
-                <p>c-2 c-l-6</p>
-              </div>
-              <div class="c-10 c-l-6">
-                <p>c-10 c-l-6</p>
+              <div class="c-m-11">
+                <p>c-m-11</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-3">
-                <p>c-3</p>
+              <div class="c-m-2 c-l-6">
+                <p>c-m-2 c-l-6</p>
               </div>
-              <div class="c-9">
-                <p>c-9</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-4">
-                <p>c-4</p>
-              </div>
-              <div class="c-8">
-                <p>c-8</p>
+              <div class="-m-10 c-l-6">
+                <p>c-m-10 c-l-6</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-5">
-                <p>c-5</p>
+              <div class="c-m-3">
+                <p>c-m-3</p>
               </div>
-              <div class="c-7">
-                <p>c-7</p>
+              <div class="c-m-9">
+                <p>c-m-9</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-6">
-                <p>c-6</p>
+              <div class="c-m-4">
+                <p>c-m-4</p>
               </div>
-              <div class="c-6">
-                <p>c-6</p>
+              <div class="c-m-8">
+                <p>c-m-8</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-m-5">
+                <p>c-m-5</p>
+              </div>
+              <div class="c-m-7">
+                <p>c-m-7</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="c-m-6">
+                <p>c-m-6</p>
+              </div>
+              <div class="c-m-6">
+                <p>c-m-6</p>
               </div>
 
             </div>
@@ -410,48 +410,48 @@ $breakpoints: (
 
             <div class="row">
 
-              <div class="c-f1">
-                <p>c-f1</p>
+              <div class="c-m-f1">
+                <p>c-m-f1</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-f2">
-                <p>c-f2</p>
+              <div class="c-m-f2">
+                <p>c-m-f2</p>
               </div>
-              <div class="c-f4">
-                <p>c-f4</p>
+              <div class="c-m-f4">
+                <p>c-m-f4</p>
               </div>
-              <div class="c-f4">
-                <p>c-f4</p>
+              <div class="c-m-f4">
+                <p>c-m-f4</p>
               </div>
 
             </div>
 
             <div class="row">
 
-              <div class="c-f3">
-                <p>c-f3</p>
+              <div class="c-m-f3">
+                <p>c-m-f3</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
-              <div class="c-f9">
-                <p>c-f9</p>
+              <div class="c-m-f9">
+                <p>c-m-f9</p>
               </div>
 
 
@@ -496,23 +496,20 @@ $breakpoints: (
 
           <h2 class="heading mega space">Flex grid</h2>
 
-          <h3 class="heading kilo space">Flex row with first and dominant cells</h3>
 
-          <div class="flex-row">
-            <div class="flex-cell">regular flex cell</div>
-            <div class="flex-cell first">first on small screen</div>
-            <div class="flex-cell dominant">earliest to go 100%</div>
+          <div class="flex">
+            <div class="flex__cell flex__cell--l-f2">flex cell 3 > 2</div>
+            <div class="flex__cell flex__cell--l-f4">flex cell 3 > 4</div>
+            <div class="flex__cell flex__cell--l-f4">flex cell 3 > 4</div>
           </div>
 
 
-          <h3 class="heading kilo space">Flex column with first cell</h3>
-
-
-          <div class="flex-row column">
-            <div class="flex-cell">regular flex cell</div>
-            <div class="flex-cell first">first on small screen</div>
-            <div class="flex-cell">regular flex cell</div>
+        <div class="flex flex--column">
+            <div class="flex__cell">flex cell</div>
+            <div class="flex__cell">flex cell</div>
+            <div class="flex__cell">flex cell</div>
           </div>
+
 
         </div>
 
@@ -522,7 +519,7 @@ $breakpoints: (
       
 
 
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 id="patterns" class="heading mega">Text elements</h2>
 
           <p>
@@ -556,7 +553,7 @@ $breakpoints: (
 
           <div class="row tg-small">
 
-            <div class="c-f3">
+            <div class="c-m-f3">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -564,7 +561,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f3">
+            <div class="c-m-f3">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -572,7 +569,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f3">
+            <div class="c-m-f3">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -585,7 +582,7 @@ $breakpoints: (
 
           <div class="row tg-large">
 
-            <div class="c-f4">
+            <div class="c-m-f4">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -593,7 +590,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f4">
+            <div class="c-m-f4">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -601,7 +598,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f4">
+            <div class="c-m-f4">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -610,7 +607,7 @@ $breakpoints: (
               phasers.
             </div>
 
-            <div class="c-f4">
+            <div class="c-m-f4">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -623,7 +620,7 @@ $breakpoints: (
 
           <div class="row tg-medium">
 
-            <div class="c-f5">
+            <div class="c-m-f5">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -631,7 +628,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f5">
+            <div class="c-m-f5">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -639,16 +636,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-            <div class="c-f5">
+            <div class="c-m-f5">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -657,7 +645,16 @@ $breakpoints: (
               phasers.
             </div>
 
-            <div class="c-f5">
+            <div class="c-m-f5">
+              I have reset the sensors to scan for
+              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
+              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
+              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
+              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
+              phasers.
+            </div>
+
+            <div class="c-m-f5">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -669,7 +666,7 @@ $breakpoints: (
           </div>
 
           <div class="row tg-small">
-            <div class="c-f1">
+            <div class="c-m-f1">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -680,7 +677,7 @@ $breakpoints: (
           </div>
 
           <div class="row tg-medium">
-            <div class="c-f2">
+            <div class="c-m-f2">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
               We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
@@ -693,7 +690,7 @@ $breakpoints: (
               hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
               phasers.
             </div>
-            <div class="c-f2">
+            <div class="c-m-f2">
 
               <ul>
 
@@ -731,12 +728,12 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 class="heading mega">Form elements WORK IN PROGRESS</h2>
 
         </div>
 
-        <div class="c-f2">
+        <div class="c-m-f2">
 
           <label for="text-input">Text input:</label>
           <br />
@@ -768,7 +765,7 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-f2">
+        <div class="c-m-f2">
 
           <h2 class="heading">Radio buttons:</h2>
 
@@ -833,7 +830,7 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-f1 space">
+        <div class="c-m-f1 space">
           <h2 class="heading mega">Listing/pager</h2>
 
           <ul class="pager">
@@ -866,7 +863,7 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-f1 space">
+        <div class="c-m-f1 space">
           <h2 class="heading mega">Captioned imagery</h2>
 
           <div class="captioned">
@@ -939,7 +936,7 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-f1">
+        <div class="c-m-f1">
           <h2 class="heading mega">Tables</h2>
 
           <table>
@@ -997,9 +994,9 @@ $breakpoints: (
 
   </main>
 
-  <footer class="container full fancy-footer p-top-1 p-bottom-1">
-    <div class="container fixed">
-      <div class="c-f1">
+  <footer class="container fancy-footer p-top-1 p-bottom-1">
+    <div class="container container--fixed">
+      <div class="c-m-f1">
         <p>
           Library is free for non-comercial and commercial use but cannot be re-sold as a standalone product.
           <p>

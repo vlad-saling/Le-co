@@ -39,10 +39,6 @@
 
 // generating all breakpoint overrides
 @each $breakpointName, $breakpointStartingPoint in $breakpoints {
-	// if there is a named breakpoint, well make sure name gets separeted by dash
-	@if $breakpointName !="" {
-		$breakpointName: $breakpointName + "-";
-	}
 	@media only screen and (min-width: ($breakpointStartingPoint)) {
 		@for $i from 1 through $grid-columns {
 			.c-#{$breakpointName}#{($i)} {
