@@ -29,3 +29,7 @@ body {
 	clear:both;
 	@include clearfix;
 }
+
+	.container--fixed {
+		max-width: $fixed-width;
+	}
