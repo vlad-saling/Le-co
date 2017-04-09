@@ -72,7 +72,7 @@
 
         <pre>
 $breakpoints: (
-    "": "481px",
+    "m": "481px",
     "l": "767px"
 );
         </pre>
@@ -279,7 +279,7 @@ $breakpoints: (
           <p class="[DISABLEDCLASS]f-code-desc">
             Adding small (1%), medium (2%) or lartbe (5%) left and right padding (text gutter for grid):
           </p>
-          <pre>(.container).tg-small/medium/large</pre>
+          <pre>(.container/.row).text-gutter</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">
             Grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper:
@@ -352,7 +352,7 @@ $breakpoints: (
               <div class="c-m-2 c-l-6">
                 <p>c-m-2 c-l-6</p>
               </div>
-              <div class="-m-10 c-l-6">
+              <div class="c-m-10 c-l-6">
                 <p>c-m-10 c-l-6</p>
               </div>
 
@@ -464,7 +464,7 @@ $breakpoints: (
 
           <h2 class="heading mega space">Block grid</h2>
 
-          <ul class="bgrid-l-6 bgrid-3">
+          <ul class="bgrid-l-6 bgrid-m-3">
             <li>
               <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
             <li>
@@ -498,9 +498,9 @@ $breakpoints: (
 
 
           <div class="flex">
-            <div class="flex__cell flex__cell--l-f2">flex cell 3 > 2</div>
-            <div class="flex__cell flex__cell--l-f4">flex cell 3 > 4</div>
-            <div class="flex__cell flex__cell--l-f4">flex cell 3 > 4</div>
+            <div class="flex__cell flex__cell--l-f2">flex cell m3 > l2</div>
+            <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
+            <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
           </div>
 
 
@@ -551,7 +551,7 @@ $breakpoints: (
 
           <h3 class="heading mega">Text gutter</h3>
 
-          <div class="row tg-small">
+          <div class="row text-gutter">
 
             <div class="c-m-f3">
               I have reset the sensors to scan for
@@ -580,7 +580,7 @@ $breakpoints: (
 
           </div>
 
-          <div class="row tg-large">
+          <div class="row text-gutter">
 
             <div class="c-m-f4">
               I have reset the sensors to scan for
@@ -618,7 +618,7 @@ $breakpoints: (
 
           </div>
 
-          <div class="row tg-medium">
+          <div class="row text-gutter">
 
             <div class="c-m-f5">
               I have reset the sensors to scan for
@@ -665,7 +665,7 @@ $breakpoints: (
 
           </div>
 
-          <div class="row tg-small">
+          <div class="row text-gutter">
             <div class="c-m-f1">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
@@ -676,7 +676,7 @@ $breakpoints: (
             </div>
           </div>
 
-          <div class="row tg-medium">
+          <div class="row text-gutter">
             <div class="c-m-f2">
               I have reset the sensors to scan for
               <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.

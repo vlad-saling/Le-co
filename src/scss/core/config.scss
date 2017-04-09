@@ -29,7 +29,7 @@ $breakpoints: (
 
 
 //number of grid cells
-$grid-columns: 12 !default;
+$grid-columns: 12;
 
-//number of block grid columns
-$block-grid-columns: 12 !default;
+//number of block grid columns - by default same as regular grid
+$block-grid-columns: $grid-columns;

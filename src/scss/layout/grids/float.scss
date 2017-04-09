@@ -41,10 +41,10 @@
 @each $breakpointName, $breakpointStartingPoint in $breakpoints {
 	@media only screen and (min-width: ($breakpointStartingPoint)) {
 		@for $i from 1 through $grid-columns {
-			.c-#{$breakpointName}#{($i)} {
+			.c-#{$breakpointName}-#{($i)} {
 				width: 100%/$grid-columns * $i;
 			}
-			.c-#{$breakpointName}f#{($i)} {
+			.c-#{$breakpointName}-f#{($i)} {
 				width: 100%/$i;
 			}
 		}
@@ -59,16 +59,6 @@
 }
 
 // text grid gutter (not for general layout)
-$text-gutters: tg-small 10px,
-tg-medium 20px,
-tg-large 30px;
-@each $text-gutter in $text-gutters {
-	$tg-classname: nth($text-gutter, 1);
-	$tg-padding: nth($text-gutter, 2);
-	.#{$tg-classname},
-	.#{$tg-classname} .row {
-		>[class*="c-"] {
-			padding: 0 $tg-padding $tg-padding 0;
-		}
-	}
+.text-gutter > [class*="c-"] {
+	padding: 0 10px 10px 0;
 }
