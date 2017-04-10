@@ -389,7 +389,7 @@ body {
 [class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] > [class*="c-"] {
   width: 100%; }
 
-.grid--text-gutter > [class*="c-"] {
+.text-gutter > [class*="c-"] {
   padding: 0 10px 10px 0; }
 
 /* typography */
