@@ -30,6 +30,20 @@ body {
 	@include clearfix;
 }
 
-	.container--fixed {
-		max-width: $fixed-width;
+	@if variable-exists(max-width) {
+		.container--fixed {
+			max-width: $max-width;
+		}
 	}
+
+	@else {
+		// generating all breakpoint overrides
+		@each $breakpointName, $breakpointStartingPoint in $breakpoints {
+			@media only screen and (min-width: ($breakpointStartingPoint)) {
+				.container--fixed {
+					max-width: #{$breakpointStartingPoint};
+				}
+			}
+		}
+	}
+	
