@@ -107,8 +107,7 @@ body {
   padding: 0; }
 
 body {
-  min-width: 320px;
-  width: calc((1em/2.2) * 85); }
+  min-width: 320px; }
 
 /* general container */
 .container {
@@ -118,6 +117,14 @@ body {
     content: " ";
     display: block;
     clear: both; }
+
+@media only screen and (min-width: 481px) {
+  .container--fixed {
+    max-width: 481px; } }
+
+@media only screen and (min-width: 769px) {
+  .container--fixed {
+    max-width: 769px; } }
 
 [class*="bgrid-"] {
   display: block;
