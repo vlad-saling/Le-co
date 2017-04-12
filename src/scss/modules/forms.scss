@@ -67,9 +67,8 @@
 	input[type="checkbox"],
     input[type="radio"] {
 		opacity: 0;
-		/* display: none; */
-		height: 0px;
-		width: 0px;
+		height: 0;
+		width: 0;
 		margin: 0;
 	}
 
@@ -84,6 +83,7 @@
 	label:before {
 		content: "";
 		position: absolute;
+		transition: all $transition-duration;
 	}
 
 	label:after {
@@ -91,7 +91,11 @@
 		left: 6px;
 		height: 14px;
 		width: 14px;
-		border: 1px solid #333;
+		border: 1px solid rgba(32,32,32,.5);
+	}
+
+	label:hover::after {
+		border: 1px solid rgba(32,32,32,.8);
 	}
 
 	label:before {
@@ -99,22 +103,17 @@
 		left: 10px;
 		height: 8px;
 		width: 8px;
-		background-color: transparent;
-		transition: all $transition-duration;
 	}
-
 	
 	input[type="radio"] {
 		+ label:after,
 		+ label:before {
 			border-radius: 50%;
 		}
-		&:checked + label:before {
-			background-color: #333;
-		}
 	}
 
-	input[type="checkbox"] {
+	input[type="checkbox"],
+	input[type="radio"] {
 		&:checked + label:before {
 			background-color: #333;
 		}
