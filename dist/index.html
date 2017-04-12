@@ -56,15 +56,9 @@
 
   <main class="container container--fixed main p-bottom-2">
 
-    <section>
+    <section class="c-m-f1 p-top-1">
 
-      <div class="c-m-f1 p-top-1">
-        <h3 class="heading kilo">Instalation</h3>
-
-        <p>
-          However ever you like: use compiled css with all possible modules from <code>dist</code> folder, call trough npm, fork/clone or include into your scss.
-        </p>
-
+        <h3 class="heading kilo">Configuration</h3>
 
         <p>
           For grids and other responsive patters you can specify set of breakpoints they will be generated against.
@@ -78,29 +72,21 @@ $breakpoints: (
         </pre>
 
         <p>
-          Setting above will produce grid structure with classes like <code>c-m-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
+          Example setting above will produce grid structure with classes like <code>c-m-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
         </p>
 
-
-
-      </div>
-
+        TODO: add other config options
 
     </section>
 
-  <!-- ^^^^^^ cleaned up mark ^^^^^^^ -->
 
 
-    <section>
+    <section class="c-m-f1">
 
-        <div class="c-m-f1">
-
-          <h2 class="heading mega space" id="modifiers">Modifiers</h2>
+          <h2 class="heading mega space" id="helpers">Helpers</h2>
 
 
-          <div class="container container--fixed space">
-
-            <p class="[DISABLEDCLASS]f-code-desc">Completely hiding element:</p>
+            <p class="[DISABLEDCLASS]f-code-desc">Hiding element:</p>
             <pre>.hidden</pre>
 
             <p class="[DISABLEDCLASS]f-code-desc">Hiding text of the element:</p>
@@ -112,24 +98,23 @@ $breakpoints: (
             <p class="[DISABLEDCLASS]f-code-desc">Float right:</p>
             <pre>.f-right</pre>
 
-            <p class="[DISABLEDCLASS]f-code-desc">Ensuring image will keep proportions</p>
+              
+            <p class="[DISABLEDCLASS]f-code-desc">THIS SHOULD BE MOVED TO RESPONSIVE SECTION Ensuring image will keep proportions</p>
             <pre>.r-image</pre>
 
-          </div>
-        </div>
 
     </section>
 
 
 
 
-    <section>
+    <section class="c-m-f1">
 
-        <div class="c-m-f1">
+   
           <h2 class="heading mega space" id="mixins">Mixins</h2>
 
 
-          <div class="container container--fixed space">
+         
 
             <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
             <pre>@mixin clearfix</pre>
@@ -189,17 +174,16 @@ $breakpoints: (
               @mixin triangle($size:5px, $direction:left, $inverted:false, $color:#000)
             </p>
 
-          </div>
-
-        </div>
+      
+   
 
     </section>
 
-    <section>
-        <div class="c-m-f1">
+    <section class="c-m-f1">
+      
           <h2 class="heading mega space" id="modules">Modules</h2>
 
-          <div class="container container--fixed space">
+        
 
             <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
             <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
@@ -207,9 +191,6 @@ $breakpoints: (
             <p class="[DISABLEDCLASS]f-code-desc">Media module (NOT FINISHED):</p>
             <pre>.media > .media--content</pre>
 
-          </div>
-
-        </div>
 
     </section>
 

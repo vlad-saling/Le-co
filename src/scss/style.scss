@@ -1,19 +1,19 @@
-// core (must-have)
-@import "core/config.scss",
-        "core/mixins.scss";
+// variables and settings
+@import "config.scss";
 
-// helpers (helpful)
-@import "helpers/general.scss",
+// helpers
+@import "helpers/mixins.scss",
+        "helpers/general.scss",
         "helpers/spacing.scss",
         "helpers/rwd.scss";
 
-// layout (recommended)
+// layout 
 @import "layout/base.scss",
         "layout/grids/block.scss",
         "layout/grids/flex.scss",
         "layout/grids/float.scss";
 
-// modules (optional)
+// modules
 @import "modules/typography.scss",
         "modules/navigation.scss",
         "modules/paging.scss",
