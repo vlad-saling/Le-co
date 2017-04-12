@@ -1,85 +1,73 @@
 // form	elements
 // needs fragmentation
 
-.nice {
+@mixin common-form-style {
+	padding: 5px;
+	font-size: 1rem;
+}
 
-	&-input,
-	&-button, 
-	&-checkbox,
-	&-radio,
-	&-textarea {
-		margin: 2px 0;
-		border:none;
-	}
+.fe {
+	@include common-form-style;
+	border: 1px solid rgba(32,32,32,.5);
+	color: #888;
+	background: #fff;
+	transition: all $transition-duration;
 
-	&-input,
-	&-checkbox,
-	&-radio,
-	&-textarea {
-		border: 1px solid rgba(0,0,0,.5);
-	}
+	&:hover {
+		border-color: rgba(32,32,32,.8);
+	}	
 
-
-
-	//universal input style
-
-	&-input,
-	&-textarea {
-		color: #888;
-		width: 100%;
-		background: #fff;
-		padding: 5px;
-	}
-
-	&-input:focus,
-	&-textarea:focus {
+	&:focus {
 		color: #555;
 	}
 
-	//universal textarea
-
-	&-textarea {
-		min-height: 100px;
+	@at-root select#{&} {
+		// TODO finish select style
+		//-webkit-appearance: none;
 	}
 
-	//universal button style
+}
 
-	&-button {
+.fe-btn {
+	@include common-form-style;
+	border: 0px;
+	min-width: 50px;
+	text-align: center;
+	color: #222;
+		
+	background-color: #ddd;
+	transition: background-color $transition-duration;
+
+	&.fe--anch {
 		display: inline-block;
-		border: 1px solid #aaa;
 		text-decoration: none;
-		min-width: 50px;
-		text-align: center;
-		color: #222;
-		padding: 5px;
-		cursor: pointer;
-		background-image: linear-gradient(to bottom, #eee,#ddd);
+		cursor: default;
+	}
 
+
+	&:hover {
+		background-color: #eee;
+		text-decoration: none;
+	}
+
+	&.disabled, &[disabled] {
+		cursor: default;
+		color: #888;
 
 		&:hover {
-			background-image: linear-gradient(to bottom, #fff,#eee);
-			text-decoration: none;
+			background-color: #ddd;
 		}
-
-		&.disabled, &[disabled] {
-			cursor: default;
-			color: #888;
-			text-shadow: 1px 1px 0px #fff;
-
-			&:hover {
-				background-image: linear-gradient(to bottom, #eee,#ddd);
-			}
-		} 
-	}
+	} 
+}
 
 
 
-	//common label for checkboxes and radiobuttons
+.nice {
 
-	&-label {
-		margin: 2px;
-		display: inline-block;
-	}
+
+
+
+
 
 	//radio button style
 
@@ -121,11 +109,6 @@
 				left: 1px;
 			}
 
-			// &:hover::after {
-			// 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-			// 	filter: alpha(opacity=30);
-			// 	opacity: 0.3;
-			// }
 		}
 
 	}
