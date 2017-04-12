@@ -2,7 +2,7 @@
 // needs fragmentation
 
 @mixin common-form-style {
-	padding: 5px;
+	padding: 3px 6px;
 	font-size: 1rem;
 }
 
@@ -20,20 +20,34 @@
 	&:focus {
 		color: #555;
 	}
+}
 
-	@at-root select#{&} {
+.fe-select {
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+
+	&:after {
+		content: "";
+		height: 10px;
+		width: 10px;
+		background-color: rgba(32,32,32,.8);
+		right: 8px;
+		top: 8px;
+		position: absolute;
+		border-radius: 50%;
+		transition: all $transition-duration;
+	}
+
+	&:hover::after {
+		background-color: rgba(32,32,32,1);
+	}
+
+	select.fe {
 		-webkit-appearance: none;
 		border-radius: 0;
 		padding-right: 25px;
-		position: relative;
-
-		&:after {
-			content: "";
-			right: 0;
-			position: absolute;
-		}
 	}
-
 }
 
 .fe-btn {
@@ -63,7 +77,7 @@
 		color: #888;
 
 		&:hover {
-			background-color: #ddd;
+			background-color: rgba(32,32,32,1);
 		}
 	} 
 }
