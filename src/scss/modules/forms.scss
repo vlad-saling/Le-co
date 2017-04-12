@@ -22,8 +22,16 @@
 	}
 
 	@at-root select#{&} {
-		// TODO finish select style
-		//-webkit-appearance: none;
+		-webkit-appearance: none;
+		border-radius: 0;
+		padding-right: 25px;
+		position: relative;
+
+		&:after {
+			content: "";
+			right: 0;
+			position: absolute;
+		}
 	}
 
 }
