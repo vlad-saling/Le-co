@@ -33,9 +33,9 @@
 	border: 0px;
 	min-width: 50px;
 	text-align: center;
-	color: #222;
+	color: #fff;
 		
-	background-color: #ddd;
+	background-color: rgba(32,32,32,1);
 	transition: background-color $transition-duration;
 
 	&.fe--anch {
@@ -46,7 +46,7 @@
 
 
 	&:hover {
-		background-color: #eee;
+		background-color: rgba(32,32,32,.8);
 		text-decoration: none;
 	}
 
@@ -106,9 +106,11 @@
 	}
 	
 	input[type="radio"] {
-		+ label:after,
-		+ label:before {
-			border-radius: 50%;
+		+ label {
+			&:after,
+			&:before {
+				border-radius: 50%;
+			}
 		}
 	}
 
