@@ -42,7 +42,7 @@
   <header class="container fancy-block p-top-2 p-bottom-2">
     <div class="container container--fixed">
       <div class="c-m-f2">
-        <h1 class="heading giga">Le-co</h1>
+        <h1 class="heading peta">Le-co</h1>
         <p>Minimalistic-ish modular UI library</p>
       </div>
       <div class="c-m-f2">
@@ -52,251 +52,225 @@
   </header>
 
 
-  
+
 
   <main class="container container--fixed main p-bottom-2">
 
-    <section class="c-m-f1 p-top-1">
+    <section class="p-top-1">
 
-        <h3 class="heading kilo">Configuration</h3>
+      <h3 class="heading tera">Configuration</h3>
 
-        <p>
-          For grids and other responsive patters you can specify set of breakpoints they will be generated against.
-        </p>
+      <p>
+        For grids and other responsive patters you can specify set of breakpoints they will be generated against.
+      </p>
 
-        <pre>
+      <pre>
 $breakpoints: (
     "m": "481px",
     "l": "767px"
 );
         </pre>
 
-        <p>
-          Example setting above will produce grid structure with classes like <code>c-m-f1</code> that will kick in at 481px of width and <code>c-l-f1</code> be effective at 767px and up.
-        </p>
+      <p>
+        Example setting above will produce grid structure with classes like <code>c-m-f1</code> that will kick in at 481px
+        of width and <code>c-l-f1</code> be effective at 767px and up.
+      </p>
 
-        TODO: add other config options
+      <p>There's configuration options in <code>config.scss</code>.</p>
+      
 
     </section>
 
 
+    <section>
+
+
+      <h2 class="heading tera m-bottom-1" id="layout">Layout</h2>
+
+      <h3 class="heading giga m-top-2">Container</h3>
+
+
+      <p>
+        Main <code>.container</code> can be used as generic "row" practically anywhere.
+      </p> 
+
+      <p>
+        If combined with <code>.container--fixed</code> it will get centered and it will apply max-width specs based on breakpoint specification.
+      </p>
+
+
+
+
+
+      <h3 class="heading giga m-top-2">Grids</h3>
 
    
+      <h4 class="heading kilo m-top-1">Base grid</h4>
 
-    <section class="c-m-f1">
-      
 
 
-          <h2 class="heading mega" id="layout">Layout</h2>
+      <div class="row">
 
-          <h3 class="heading kilo">Main <code>container</code></h3>
+        <div class="c-m-12">
+          <p>c-m-12</p>
+        </div>
 
-          
+      </div>
 
-          <h3 class="heading kilo">Grid system</h3>
+      <div class="row">
 
-          <p>
-            Lemony provide several grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
-            as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>            on the other hand uses number in class as a spectification of occupied portion of the whole available with of
-            parent container ( e.g. .c-m-f2 occupies one half of the row). Third system is
-            <strong>block grid</strong> , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6
-            will display up to 6 items in a row).
-          </p>
+        <div class="c-m-1">
+          <p>c-m-1</p>
+        </div>
+        <div class="c-m-11">
+          <p>c-m-11</p>
+        </div>
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Sass variable to set number of collumns in grid (default is 12):
-          </p>
-          <pre>$grid-cell</pre>
+      </div>
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Sass variable to set number of collumns in block grid (default is $grid-cell):
-          </p>
-          <pre>$block-grid-cell</pre>
+      <div class="row">
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Main grid container (can be used as "row" practically anywhere):
-          </p>
-          <pre>.container</pre>
+        <div class="c-m-2 c-l-6">
+          <p>c-m-2 c-l-6</p>
+        </div>
+        <div class="c-m-10 c-l-6">
+          <p>c-m-10 c-l-6</p>
+        </div>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Setting fixed size on container - centered:</p>
-          <pre>(.container).fixed</pre>
+      </div>
 
+      <div class="row">
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Adding text gutter for grid (bottom and right padding):
-          </p>
-          <pre>(.container/.row).text-gutter</pre>
+        <div class="c-m-3">
+          <p>c-m-3</p>
+        </div>
+        <div class="c-m-9">
+          <p>c-m-9</p>
+        </div>
 
+      </div>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Grid structure:</p>
-          <pre>(.container) > .row > .c-1/.c-m-f1</pre>
-          <p>OR</p>
-          <pre>.container > .c-1/.c-m-f1</pre>
 
-          <h3 class="heading kilo">Block grid</h3>
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Block grids have breakpoint dependent overrides just like grids:
-          </p>
-          <pre>.container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in row:</p>
-          <pre>.flex-row > .flex-cell</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in row reversed:</p>
-          <pre>(.flex-row).reverse > .flex-cell</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in column:</p>
-          <pre>(.flex-row).column > .flex-cell</pre>
+      <h4 class="heading kilo m-top-1">Fraction grid</h4>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Flex grid in column reversed:</p>
-          <pre>(.flex-row).column-reverse > .flex-cell</pre>
 
 
+      <div class="row">
 
+        <div class="c-m-f1">
+          <p>c-m-f1</p>
+        </div>
 
+      </div>
 
-          <h2 class="heading mega space">Base grid</h2>
+      <div class="row">
 
-          <div class="container colored">
+        <div class="c-m-f2">
+          <p>c-m-f2</p>
+        </div>
+        <div class="c-m-f4">
+          <p>c-m-f4</p>
+        </div>
+        <div class="c-m-f4">
+          <p>c-m-f4</p>
+        </div>
 
-            <div class="row">
+      </div>
 
-              <div class="c-m-12">
-                <p>c-m-12</p>
-              </div>
+      <div class="row">
 
-            </div>
+        <div class="c-m-f3">
+          <p>c-m-f3</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
+        <div class="c-m-f9">
+          <p>c-m-f9</p>
+        </div>
 
-            <div class="row">
 
-              <div class="c-m-1">
-                <p>c-m-1</p>
-              </div>
-              <div class="c-m-11">
-                <p>c-m-11</p>
-              </div>
 
-            </div>
+      </div>
 
-            <div class="row">
 
-              <div class="c-m-2 c-l-6">
-                <p>c-m-2 c-l-6</p>
-              </div>
-              <div class="c-m-10 c-l-6">
-                <p>c-m-10 c-l-6</p>
-              </div>
+      <h4 class="heading kilo m-top-1">Text gutter for grid</h4>
 
-            </div>
+      <div class="row text-gutter">
 
-            <div class="row">
+        <div class="c-m-f3">
+          I have reset the sensors to scan for
+          <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. 
+        </div>
+        <div class="c-m-f3">
+          By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. 
+        </div>
+        <div class="c-m-f3">
+          It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+        </div>
 
-              <div class="c-m-3">
-                <p>c-m-3</p>
-              </div>
-              <div class="c-m-9">
-                <p>c-m-9</p>
-              </div>
+      </div>
 
-            </div>
 
 
-          </div>
 
-          <h2 class="heading mega space">Fraction grid</h2>
 
-          <div class="container colored blue">
+      <h4 class="heading kilo m-top-1">Block grid</h4>
 
-            <div class="row">
+      <p>
+        Block grids have breakpoint dependent overrides just like grids:
+      </p>
+      <pre>.container > (ul/ol).bgrid-l-6.bgrid-m-3</pre>
 
-              <div class="c-m-f1">
-                <p>c-m-f1</p>
-              </div>
+      <ul class="bgrid-l-6 bgrid-m-3">
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
 
-            </div>
+        <li>
+          <img alt="dummy image" class="r-img promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
 
-            <div class="row">
+      </ul>
 
-              <div class="c-m-f2">
-                <p>c-m-f2</p>
-              </div>
-              <div class="c-m-f4">
-                <p>c-m-f4</p>
-              </div>
-              <div class="c-m-f4">
-                <p>c-m-f4</p>
-              </div>
 
-            </div>
+      <h4 class="heading kilo m-top-2">Flex layouting</h4>
 
-            <div class="row">
 
-              <div class="c-m-f3">
-                <p>c-m-f3</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
-              <div class="c-m-f9">
-                <p>c-m-f9</p>
-              </div>
+      <div class="flex">
+        <div class="flex__cell flex__cell--l-f2">flex cell m3 > l2</div>
+        <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
+        <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
+      </div>
 
 
-
-            </div>
-
-         
-
-          </div>
-
-          <h2 class="heading mega space">Block grid</h2>
-
-          <ul class="bgrid-l-6 bgrid-m-3">
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-      
-          </ul>
-
-
-          <h2 class="heading mega space">Flex grid</h2>
-
-
-          <div class="flex">
-            <div class="flex__cell flex__cell--l-f2">flex cell m3 > l2</div>
-            <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
-            <div class="flex__cell flex__cell--l-f4">flex cell m3 > l4</div>
-          </div>
-
-
-        <div class="flex flex--column">
-            <div class="flex__cell">flex cell</div>
-            <div class="flex__cell">flex cell</div>
-            <div class="flex__cell">flex cell</div>
-          </div>
+      <div class="flex flex--column">
+        <div class="flex__cell">flex cell</div>
+        <div class="flex__cell">flex cell</div>
+        <div class="flex__cell">flex cell</div>
+      </div>
 
 
 
@@ -304,115 +278,98 @@ $breakpoints: (
 
 
 
-        <section class="c-m-f1">
-          <h2 id="typograhpy" class="heading mega">Typography</h2>
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
 
-  
+ 
+    <section>
 
-          <h3 class="heading kilo">Headings</h3>
-
-          <p>Note: Heading below use <code>p>strong</code>. You should use heading tags.</p>
-  
-
-          <p class="heading peta"><strong>.peta .heading</strong></p>
-          <p class="heading tera"><strong>.tera .heading</strong></p>
-          <p class="heading giga"><strong>.giga .heading</strong></p>
-          <p class="heading mega"><strong>.mega .heading</strong></p>
-          <p class="heading kilo"><strong>.kilo .heading</strong></p>
-          <p class="heading"><strong>.heading (default)</strong></p>
-          <p class="heading micro"><strong>.micro .heading</strong></p>
-          <p class="heading nano"><strong>.nano .heading</strong></p>
-          <p class="heading piko"><strong>.piko .heading</strong></p>
+     
 
 
 
-          <h3 class="heading kilo">Text gutter</h3>
 
-          <div class="row text-gutter">
+        <h2 id="typograhpy" class="heading tera">Typography</h2>
 
-            <div class="c-m-f3">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f3">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f3">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-          </div>
+      <p>
+        I have reset the sensors to scan for
+        <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices. We
+        will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating
+        any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix
+        patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+      </p>
 
 
-    
-          <h3 class="heading kilo">Lists</h3> 
 
-          <div class="row text-gutter">
-              <div class="c-m-f2">
+      <h3 class="heading kilo">Headings</h3>
 
-              <ul>
-
-                <li>
-                  USS Enterprise - NCC-1701 -
-                  <a href="#">Commanded by Robert April (2245–2250)</a>
-                </li>
-
-                <li>
-                  USS Reliant - NCC-1864
-                </li>
-
-                <li>
-                  USS Excalibur - NCC-26517
-                </li>
-
-                <li>
-                  USS Shenandoah - NCC-73024
-                </li>
-
-                <li>
-                  USS Stargazer - NCC-2893
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        <section class="c-m-f1">
-          <h2 class="heading mega">Form elements WORK IN PROGRESS</h2>
-
-          
-         
+      <p>Note: Heading below use <code>p>strong</code>. You should use heading tags.</p>
 
 
+      <p class="heading peta"><strong>.peta .heading</strong></p>
+      <p class="heading tera"><strong>.tera .heading</strong></p>
+      <p class="heading giga"><strong>.giga .heading</strong></p>
+      <p class="heading mega"><strong>.mega .heading</strong></p>
+      <p class="heading kilo"><strong>.kilo .heading</strong></p>
+      <p class="heading"><strong>.heading (default)</strong></p>
+      <p class="heading micro"><strong>.micro .heading</strong></p>
+      <p class="heading nano"><strong>.nano .heading</strong></p>
+      <p class="heading piko"><strong>.piko .heading</strong></p>
+
+
+
+
+
+
+
+      <h3 class="heading kilo">Lists</h3>
+
+      <div class="row text-gutter">
         <div class="c-m-f2">
 
-           <h3 class="heading kilo">Common form elements</h3>
+          <ul>
+
+            <li>
+              USS Enterprise - NCC-1701 -
+              <a href="#">Commanded by Robert April (2245–2250)</a>
+            </li>
+
+            <li>
+              USS Reliant - NCC-1864
+            </li>
+
+            <li>
+              USS Excalibur - NCC-26517
+            </li>
+
+            <li>
+              USS Shenandoah - NCC-73024
+            </li>
+
+            <li>
+              USS Stargazer - NCC-2893
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+        <h2 class="heading tera" id="forms">Form elements WORK IN PROGRESS</h2>
+
+
+
+
+<div class="row">
+        <div class="c-m-f2">
+
+          <h3 class="heading kilo">Common form elements</h3>
 
           <label for="text-input">Text input:</label>
           <br />
@@ -446,7 +403,7 @@ $breakpoints: (
 
         <div class="c-m-f2">
 
-          <h3 class="heading">Radio buttons</h3>
+          <h3 class="heading kilo">Radio buttons</h3>
 
           <div class="container">
 
@@ -476,7 +433,7 @@ $breakpoints: (
             <span class="nice-label">Radio Button 3</span>
           </div>
 
-          <h3 class="heading">Checkboxes</h3>
+          <h3 class="heading kilo">Checkboxes</h3>
 
           <div class="container">
             <div class="nice-checkbox">
@@ -497,7 +454,7 @@ $breakpoints: (
             <span class="nice-label">Label for Checkbox 2</span>
           </div>
 
-          <h3 class="heading">Textarea</h3>
+          <h3 class="heading kilo">Textarea</h3>
           <div class="container">
 
             <label for="textarea" class="hidden">Textarea:</label>
@@ -509,191 +466,186 @@ $breakpoints: (
 
         </div>
 
-          </section>
+  </div>
 
-    
 
-        <section class="c-m-f1 space">
-          <h2 class="heading mega">Captioned imagery</h2>
+        <h2 id="listing" class="heading tera m-top-2">Listing/pager</h2>
 
-          <div class="captioned">
-            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg"
-              width="350">
-            <span class="captioned--text">
+        <ul class="pager">
+          <li>
+            <a href="#">previous</a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">6</a>
+          </li>
+          <li>
+            <a href="#">next</a>
+          </li>
+
+        </ul>
+
+
+
+        <h2 id="tables" class="heading tera m-top-2">Tables</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">data</a>
+              </td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+            <tr>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Table footer data</td>
+            </tr>
+          </tfoot>
+
+        </table>
+
+
+ 
+        <h2 id="imagery" class="heading tera m-top-2">Captioned imagery</h2>
+
+        <div class="captioned">
+          <img alt="dummy image" class="captioned--image r-img" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg"
+            width="350">
+          <span class="captioned--text">
               Text describing image (
               <a href="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg">image source</a>
               )
             </span>
-          </div>
+        </div>
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
+        <p>
+          I have reset the sensors to scan for
+          <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices. We
+          will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating
+          any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix
+          patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+        </p>
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
-
-        
-
-        
-
-    </section>
-
-        <section class="c-m-f1">
-          <h2 class="heading mega">Tables</h2>
-
-          <table>
-            <thead>
-              <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">data</a>
-                </td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-              </tr>
-            </tbody>
-
-            <tfoot>
-              <tr>
-                <td colspan="3">Table footer data</td>
-              </tr>
-            </tfoot>
-
-          </table>
-
-
-    </section>
-
-     <section class="c-m-f1">
-
-          <h2 class="heading mega space" id="helpers">Helpers</h2>
-
-
-            <p class="[DISABLEDCLASS]f-code-desc">Hiding element:</p>
-            <pre>.hidden</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Hiding text of the element:</p>
-            <pre>.text-access</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Float left:</p>
-            <pre>.f-left</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Float right:</p>
-            <pre>.f-right</pre>
-
-              
-            <p class="[DISABLEDCLASS]f-code-desc">THIS SHOULD BE MOVED TO RESPONSIVE SECTION Ensuring image will keep proportions</p>
-            <pre>.r-image</pre>
-
-
-    </section>
+        <p>
+          I have reset the sensors to scan for
+          <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices. We
+          will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating
+          any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix
+          patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+        </p>
 
 
 
 
-    <section class="c-m-f1">
+
+
+
+        <h2 id="navigation" class="heading tera m-top-2">Navigation</h2>
+
+        <p>Navigation module:</p>
+        <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
+
+        <p>Media module (NOT FINISHED):</p>
+        <pre>.media > .media--content</pre>
 
    
-          <h2 class="heading mega space" id="mixins">Mixins</h2>
-
-
-            <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
-            <pre>@mixin clearfix</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Removing text from node:</p>
-            <pre>@mixin text-access</pre>
-
 
     </section>
 
-    <section class="c-m-f1">
-      
-          <h2 class="heading mega space" id="modules">Modules</h2>
 
 
-           <h3 class="heading kilo">Listing/pager</h3>
+   <section>
 
-          <ul class="pager">
-            <li>
-              <a href="#">previous</a>
-            </li>
-            <li>
-              <a href="#">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">4</a>
-            </li>
-            <li>
-              <a href="#">5</a>
-            </li>
-            <li>
-              <a href="#">6</a>
-            </li>
-            <li>
-              <a href="#">next</a>
-            </li>
-
-          </ul>
+      <h2 class="heading tera m-top-2" id="helpers">Helpers</h2>
 
 
+      <p>Hiding element:</p>
+      <pre>.hidden</pre>
+
+      <p>Hiding text of the element:</p>
+      <pre>.text-access</pre>
+
+      <p>Float left:</p>
+      <pre>.f-left</pre>
+
+      <p>Float right:</p>
+      <pre>.f-right</pre>
 
 
-        
+      <p>Ensuring image will keep proportions</p>
+      <pre>.r-img</pre>
 
-            <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
-            <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Media module (NOT FINISHED):</p>
-            <pre>.media > .media--content</pre>
+      <p>Horizontal spacing with padding ("p" prefix) or margins ("m"). "e" prefix for factor means EM, "r" prefix means using viewport units.</p>
+      <pre>.p-top-1, .p-bottom-r1, .m-bottom-e1</pre>
 
 
     </section>
 
 
-   
+
+
+    <section>
+
+
+      <h2 class="heading tera m-top-2" id="mixins">Mixins</h2>
+
+
+      <p>Common clearfix:</p>
+      <pre>@mixin clearfix</pre>
+
+      <p>Removing text from node:</p>
+      <pre>@mixin text-access</pre>
+
+
+    </section>
+
+
 
   </main>
 

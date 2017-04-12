@@ -20,22 +20,44 @@
 		margin-bottom: #{$calculated}px !important;
 	}
 
-	// redefining temp variable since we need different jumps in vw units
-	$calculated: $i * 1.25 * $i;
+	// making sure we won't generate multiple 0 padding classes
+	@if $i > 0 {
+	    // em version
+		// redefining temp variable since we need different jumps in vw units
+		$calculated: $i + 0.5;
+		.p-top-e#{$i} {
+			padding-top: #{$calculated}em !important;
+		}
 
-	.p-top-r#{$i} {
-		padding-top: #{$calculated}vw !important;
-	}
+		.p-bottom-e#{$i} {
+			padding-bottom: #{$calculated}em !important;
+		}
 
-	.p-bottom-r#{$i} {
-		padding-bottom: #{$calculated}vw !important;
-	}
+		.m-top-e#{$i} {
+			margin-top: #{$calculated}em !important;
+		}
 
-	.m-top-r#{$i} {
-		margin-top: #{$calculated}vw !important;
-	}
+		.m-bottom-e#{$i} {
+			margin-bottom: #{$calculated}em !important;
+		}
 
-	.m-bottom-r#{$i} {
-		margin-bottom: #{$calculated}vw !important;
+		// redefining temp variable since we need different jumps in vw units
+		$calculated: $i * 1.25 * $i;
+
+		.p-top-r#{$i} {
+			padding-top: #{$calculated}vw !important;
+		}
+
+		.p-bottom-r#{$i} {
+			padding-bottom: #{$calculated}vw !important;
+		}
+
+		.m-top-r#{$i} {
+			margin-top: #{$calculated}vw !important;
+		}
+
+		.m-bottom-r#{$i} {
+			margin-bottom: #{$calculated}vw !important;
+		}
 	}
 }

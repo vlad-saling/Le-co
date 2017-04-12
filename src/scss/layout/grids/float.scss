@@ -30,6 +30,11 @@
 	width: 100%;
 }
 
+// preventing padding stacking
+[class*="c-"] [class*="c-"] {
+    padding: 0;
+}
+
 
 /* fixing pixel "rounding" */
 
