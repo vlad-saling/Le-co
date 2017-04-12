@@ -81,80 +81,27 @@ $breakpoints: (
 
 
 
-    <section class="c-m-f1">
-
-          <h2 class="heading mega space" id="helpers">Helpers</h2>
-
-
-            <p class="[DISABLEDCLASS]f-code-desc">Hiding element:</p>
-            <pre>.hidden</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Hiding text of the element:</p>
-            <pre>.text-access</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Float left:</p>
-            <pre>.f-left</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Float right:</p>
-            <pre>.f-right</pre>
-
-              
-            <p class="[DISABLEDCLASS]f-code-desc">THIS SHOULD BE MOVED TO RESPONSIVE SECTION Ensuring image will keep proportions</p>
-            <pre>.r-image</pre>
-
-
-    </section>
-
-
-
-
-    <section class="c-m-f1">
-
    
-          <h2 class="heading mega space" id="mixins">Mixins</h2>
-
-
-            <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
-            <pre>@mixin clearfix</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Removing text from node:</p>
-            <pre>@mixin text-access</pre>
-
-
-    </section>
 
     <section class="c-m-f1">
       
-          <h2 class="heading mega space" id="modules">Modules</h2>
-
-        
-
-            <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
-            <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
-
-            <p class="[DISABLEDCLASS]f-code-desc">Media module (NOT FINISHED):</p>
-            <pre>.media > .media--content</pre>
 
 
-    </section>
+          <h2 class="heading mega" id="layout">Layout</h2>
 
+          <h3 class="heading kilo">Main <code>container</code></h3>
 
-    <section>
-      
+          
 
-        <div class="c-m-f1">
-
-          <h2 class="heading mega" id="grid">Grid systems</h2>
+          <h3 class="heading kilo">Grid system</h3>
 
           <p>
-            Lemony provide three grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
+            Lemony provide several grid systems. <strong>Base grid</strong> offers common grid functionality where a cell occupies
             as many collumns as specified within class name (e.g. .c-2 cell spans trough two collumns). <strong>Fractional grid</strong>            on the other hand uses number in class as a spectification of occupied portion of the whole available with of
             parent container ( e.g. .c-m-f2 occupies one half of the row). Third system is
             <strong>block grid</strong> , which transforms any ordered or unordered list into a grid-like view (e.g. .bgrid-large-6
             will display up to 6 items in a row).
           </p>
-
-          <h2 class="heading mega space">Grid usage</h2>
 
           <p class="[DISABLEDCLASS]f-code-desc">
             Sass variable to set number of collumns in grid (default is 12):
@@ -162,7 +109,7 @@ $breakpoints: (
           <pre>$grid-cell</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">
-            Sass variable to set number of collumns in block grid (default is 12):
+            Sass variable to set number of collumns in block grid (default is $grid-cell):
           </p>
           <pre>$block-grid-cell</pre>
 
@@ -174,37 +121,24 @@ $breakpoints: (
           <p class="[DISABLEDCLASS]f-code-desc">Setting fixed size on container - centered:</p>
           <pre>(.container).fixed</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Setting full size on container - centered:</p>
-          <pre>(.container).full</pre>
-
-          <p class="[DISABLEDCLASS]f-code-desc">Column container - simple grid row:</p>
-          <pre>(.container).full</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">
-            Adding small (1%), medium (2%) or lartbe (5%) left and right padding (text gutter for grid):
+            Adding text gutter for grid (bottom and right padding):
           </p>
           <pre>(.container/.row).text-gutter</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">
-            Grid container defining mobile wrappers, that should have a gap and not cover whole screen - usually one parent wrapper:
-          </p>
-          <pre>.row</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">Grid structure:</p>
           <pre>(.container) > .row > .c-1/.c-m-f1</pre>
           <p>OR</p>
           <pre>.container > .c-1/.c-m-f1</pre>
 
-          <p class="[DISABLEDCLASS]f-code-desc">Block grid:</p>
-          <pre>(.container) > (ul/ol).bgrid-large-6</pre>
+          <h3 class="heading kilo">Block grid</h3>
 
           <p class="[DISABLEDCLASS]f-code-desc">
-            Block grids have three variations that can be used together to alter responsive behaviour. Following example displays up
-            to 6 items on desktop, 4 on tablet screen and 2 on smallest screens:
+            Block grids have breakpoint dependent overrides just like grids:
           </p>
-          <prere>
-            .container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2
-          </p>
+          <pre>.container > (ul/ol).bgrid-large-6.bgrid-medium-4.bgrid-small-2</pre>
 
           <p class="[DISABLEDCLASS]f-code-desc">Flex grid in row:</p>
           <pre>.flex-row > .flex-cell</pre>
@@ -217,12 +151,6 @@ $breakpoints: (
 
           <p class="[DISABLEDCLASS]f-code-desc">Flex grid in column reversed:</p>
           <pre>(.flex-row).column-reverse > .flex-cell</pre>
-
-          <p class="[DISABLEDCLASS]f-code-desc">Dominant flex cell will go 100% wide in medium screen:</p>
-          <pre>(.flex-cell).dominant</pre>
-
-          <p class="[DISABLEDCLASS]f-code-desc">First flex cell will go to the first place on small screen:</p>
-          <pre>(.flex-cell).first</pre>
 
 
 
@@ -273,38 +201,6 @@ $breakpoints: (
 
             </div>
 
-            <div class="row">
-
-              <div class="c-m-4">
-                <p>c-m-4</p>
-              </div>
-              <div class="c-m-8">
-                <p>c-m-8</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-m-5">
-                <p>c-m-5</p>
-              </div>
-              <div class="c-m-7">
-                <p>c-m-7</p>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="c-m-6">
-                <p>c-m-6</p>
-              </div>
-              <div class="c-m-6">
-                <p>c-m-6</p>
-              </div>
-
-            </div>
 
           </div>
 
@@ -382,19 +278,7 @@ $breakpoints: (
 
             <li>
               <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
-            <li>
-              <img alt="dummy image" class="r-image promo" src="https://raw.githubusercontent.com/vlad-saling/dir/master/arch/arch-1-1.jpg"></li>
+      
           </ul>
 
 
@@ -415,16 +299,13 @@ $breakpoints: (
           </div>
 
 
-        </div>
 
     </section>
 
-    <section>
-      
 
 
-        <div class="c-m-f1">
-          <h2 id="patterns" class="heading mega">Text elements</h2>
+        <section class="c-m-f1">
+          <h2 id="typograhpy" class="heading mega">Typography</h2>
 
           <p>
             I have reset the sensors to scan for
@@ -436,7 +317,7 @@ $breakpoints: (
 
   
 
-          <h3 class="heading mega">Headings</h3>
+          <h3 class="heading kilo">Headings</h3>
 
           <p>Note: Heading below use <code>p>strong</code>. You should use heading tags.</p>
   
@@ -453,7 +334,7 @@ $breakpoints: (
 
 
 
-          <h3 class="heading mega">Text gutter</h3>
+          <h3 class="heading kilo">Text gutter</h3>
 
           <div class="row text-gutter">
 
@@ -484,144 +365,34 @@ $breakpoints: (
 
           </div>
 
-          <div class="row text-gutter">
 
-            <div class="c-m-f4">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f4">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f4">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-            <div class="c-m-f4">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-          </div>
+    
+          <h3 class="heading kilo">Lists</h3> 
 
           <div class="row text-gutter">
-
-            <div class="c-m-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-            <div class="c-m-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-            <div class="c-m-f5">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-
-          </div>
-
-          <div class="row text-gutter">
-            <div class="c-m-f1">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-          </div>
-
-          <div class="row text-gutter">
-            <div class="c-m-f2">
-              I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers. I have reset the sensors to scan for
-              <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-              We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-              extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing
-              hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our
-              phasers.
-            </div>
-            <div class="c-m-f2">
+              <div class="c-m-f2">
 
               <ul>
 
                 <li>
                   USS Enterprise - NCC-1701 -
-                  <a href="#">Commanded by Robert April (2245–2250)</a> , Christopher Pike (2250–2265), James T. Kirk (2265-2270,
-                  2271–2285), and Willard Decker (2270-2271), Vessel's self-destruction carried out while in orbit of the
-                  Genesis Planet, to prevent ship from falling into Klingon hands.
+                  <a href="#">Commanded by Robert April (2245–2250)</a>
                 </li>
 
                 <li>
-                  USS Reliant - NCC-1864 - Ship on which Pavel Chekov serves as first officer. Assigned to Project Genesis and later hijacked
-                  by Khan Noonien Singh. Destroyed by Genesis Device detonation.
+                  USS Reliant - NCC-1864
                 </li>
 
                 <li>
-                  USS Excalibur - NCC-26517 - Part of the tachyon blockade during the Klingon Civil War. Later commanded by Captain Mackenzie
-                  Calhoun in Star Trek: New Frontier.
+                  USS Excalibur - NCC-26517
                 </li>
 
                 <li>
-                  USS Shenandoah - NCC-73024 - Taken by Dax and Worf to rescue a Cardassian informant from the Dominion. Severely damaged by
-                  the Jem'Hadar en route to deliver diplomatic message to Grand Nagus Zek.
+                  USS Shenandoah - NCC-73024
                 </li>
 
                 <li>
-                  USS Stargazer - NCC-2893 - Jean-Luc Picard's first command. Abandoned following the Battle of Maxia, later returned to Starfleet.
+                  USS Stargazer - NCC-2893
                 </li>
 
               </ul>
@@ -630,14 +401,18 @@ $breakpoints: (
 
           </div>
 
-        </div>
+        </section>
 
-        <div class="c-m-f1">
+        <section class="c-m-f1">
           <h2 class="heading mega">Form elements WORK IN PROGRESS</h2>
 
-        </div>
+          
+         
+
 
         <div class="c-m-f2">
+
+           <h3 class="heading kilo">Common form elements</h3>
 
           <label for="text-input">Text input:</label>
           <br />
@@ -671,7 +446,7 @@ $breakpoints: (
 
         <div class="c-m-f2">
 
-          <h2 class="heading">Radio buttons:</h2>
+          <h3 class="heading">Radio buttons</h3>
 
           <div class="container">
 
@@ -701,7 +476,7 @@ $breakpoints: (
             <span class="nice-label">Radio Button 3</span>
           </div>
 
-          <h2 class="heading">Checkboxes:</h2>
+          <h3 class="heading">Checkboxes</h3>
 
           <div class="container">
             <div class="nice-checkbox">
@@ -722,7 +497,7 @@ $breakpoints: (
             <span class="nice-label">Label for Checkbox 2</span>
           </div>
 
-          <h2 class="heading">Textarea:</h2>
+          <h3 class="heading">Textarea</h3>
           <div class="container">
 
             <label for="textarea" class="hidden">Textarea:</label>
@@ -734,40 +509,11 @@ $breakpoints: (
 
         </div>
 
-        <div class="c-m-f1 space">
-          <h2 class="heading mega">Listing/pager</h2>
+          </section>
 
-          <ul class="pager">
-            <li>
-              <a href="#">previous</a>
-            </li>
-            <li>
-              <a href="#">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">4</a>
-            </li>
-            <li>
-              <a href="#">5</a>
-            </li>
-            <li>
-              <a href="#">6</a>
-            </li>
-            <li>
-              <a href="#">next</a>
-            </li>
+    
 
-          </ul>
-
-        </div>
-
-        <div class="c-m-f1 space">
+        <section class="c-m-f1 space">
           <h2 class="heading mega">Captioned imagery</h2>
 
           <div class="captioned">
@@ -796,51 +542,13 @@ $breakpoints: (
             helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
           </p>
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
+        
 
-          <div class="captioned f-right">
-            <img alt="dummy image" class="captioned--image" src="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg"
-              width="350">
-            <span class="captioned--text">
-              Text describing image (
-              <a href="https://raw.githubusercontent.com/vlad-saling/dir/master/lake/lake-3-2.jpg">image source</a>
-              )
-            </span>
-          </div>
+        
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
+    </section>
 
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
-
-          <p>
-            I have reset the sensors to scan for
-            <a href="#">frequencies</a> outside the usual range. By emitting harmonic vibrations to shatter the lattices.
-            We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and
-            extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon
-            helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
-          </p>
-
-        </div>
-
-        <div class="c-m-f1">
+        <section class="c-m-f1">
           <h2 class="heading mega">Tables</h2>
 
           <table>
@@ -890,9 +598,100 @@ $breakpoints: (
 
           </table>
 
-        </div>
 
     </section>
+
+     <section class="c-m-f1">
+
+          <h2 class="heading mega space" id="helpers">Helpers</h2>
+
+
+            <p class="[DISABLEDCLASS]f-code-desc">Hiding element:</p>
+            <pre>.hidden</pre>
+
+            <p class="[DISABLEDCLASS]f-code-desc">Hiding text of the element:</p>
+            <pre>.text-access</pre>
+
+            <p class="[DISABLEDCLASS]f-code-desc">Float left:</p>
+            <pre>.f-left</pre>
+
+            <p class="[DISABLEDCLASS]f-code-desc">Float right:</p>
+            <pre>.f-right</pre>
+
+              
+            <p class="[DISABLEDCLASS]f-code-desc">THIS SHOULD BE MOVED TO RESPONSIVE SECTION Ensuring image will keep proportions</p>
+            <pre>.r-image</pre>
+
+
+    </section>
+
+
+
+
+    <section class="c-m-f1">
+
+   
+          <h2 class="heading mega space" id="mixins">Mixins</h2>
+
+
+            <p class="[DISABLEDCLASS]f-code-desc">Common clearfix:</p>
+            <pre>@mixin clearfix</pre>
+
+            <p class="[DISABLEDCLASS]f-code-desc">Removing text from node:</p>
+            <pre>@mixin text-access</pre>
+
+
+    </section>
+
+    <section class="c-m-f1">
+      
+          <h2 class="heading mega space" id="modules">Modules</h2>
+
+
+           <h3 class="heading kilo">Listing/pager</h3>
+
+          <ul class="pager">
+            <li>
+              <a href="#">previous</a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a href="#">6</a>
+            </li>
+            <li>
+              <a href="#">next</a>
+            </li>
+
+          </ul>
+
+
+
+
+        
+
+            <p class="[DISABLEDCLASS]f-code-desc">Navigation module:</p>
+            <pre>.nav(.horizontal) > .nav--list > .nav--item > .nav--link</pre>
+
+            <p class="[DISABLEDCLASS]f-code-desc">Media module (NOT FINISHED):</p>
+            <pre>.media > .media--content</pre>
+
+
+    </section>
+
 
    
 

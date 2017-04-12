@@ -453,18 +453,6 @@ body {
       .pager > li > a:hover {
         border-color: rgba(32, 32, 32, 0.8); }
 
-.content-cell {
-  display: none; }
-
-.content-cell[id]:target {
-  display: block; }
-
-.content-cell:not(:target) ~ .content-cell:last-of-type {
-  display: block; }
-
-.content-cell:target ~ .content-cell:last-of-type {
-  display: none; }
-
 .media {
   margin: 10px;
   overflow: hidden; }
