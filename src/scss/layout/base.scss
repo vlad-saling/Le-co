@@ -25,6 +25,14 @@ body {
 pre {
 	overflow-x: auto;
 }
+
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+}
 /* general container */
 
 .container {
