@@ -5,16 +5,18 @@ table {
 	text-align: left;
 	border-collapse: collapse;
 
-	thead > tr,
-	tbody > tr,
-	tfoot > tr {
-		> th {
-			padding: 6px 4px;
-			border: 1px solid #e2e2e2;
-		}
-		> td {
-			padding: 4px;
-			border: 1px solid #e2e2e2;
+	thead,
+	tbody,
+	tfoot {
+		> tr {
+			> th {
+				padding: 6px 4px;
+				border: 1px solid rgba(32,32,32,.5);
+			}
+			> td {
+				padding: 4px;
+				border: 1px solid rgba(32,32,32,.5);
+			}
 		}
 	}
 
@@ -22,12 +24,14 @@ table {
 		background-color: #f9f9f9;
 	}
 
-	thead > tr > th,
-	tfoot > tr > td {
-		background-color: #f1f1f1;
-	}
-
-	tfoot > tr > td { 
-		color:  #777;
+	thead,
+	tfoot {
+		> tr {
+			> td,
+			> th {
+				background-color: rgba(32,32,32,1);
+				color: #eee;
+			}
+		}
 	}
 }
