@@ -36,6 +36,7 @@
 		top: 8px;
 		position: absolute;
 		border-radius: 50%;
+		pointer-events: none;
 		transition: all $transition-duration;
 	}
 
