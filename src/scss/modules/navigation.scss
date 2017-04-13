@@ -1,28 +1,22 @@
 //navigation - nav parent module - can be extended
 
-.nav {
 
-	.nav--list {
-		padding: 0;
-		list-style: none;
-	}
-
-	.nav--item {
-		
-	}
-
-	.nav--link {
-		display:block;
-		text-decoration:none;
-
-		&:hover {
-			text-decoration:underline;
-		}
-	}
-
-
-	&.horizontal {
-		.nav--item {float:left}
-	}
-
+.list {
+    /*root block*/
 }
+
+    .list--horizontal {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .list--horizontal > li {
+            display: inline-block;
+            padding-right: 10px;
+        }
+
+        .list--right-aligned > li {
+            padding-right: 0;
+            padding-left: 10px;
+        }
