@@ -35,6 +35,12 @@
     .fancy-footer a {
       color: #fff;
     }
+
+    section:not(:last-child) {
+      border-bottom: 1px solid #888;
+    }
+
+
   </style>
 </head>
 
@@ -57,9 +63,9 @@
 
   <main class="container container--fixed main p-bottom-2">
 
-    <section class="p-top-1">
+    <section class="p-bottom-2">
 
-      <h3 class="heading tera">Configuration</h3>
+      <h3 class="heading tera m-top-2">Configuration</h3>
 
       <p>
         For grids and other responsive patters you can specify set of breakpoints they will be generated against.
@@ -82,12 +88,11 @@ $breakpoints: (
 
     </section>
 
-<hr />
 
-    <section>
+    <section class="p-bottom-2">
 
 
-      <h2 class="heading tera m-bottom-1" id="layout">Layout</h2>
+      <h2 class="heading tera m-bottom-1 m-top-2" id="layout">Layout</h2>
 
       <h3 class="heading giga m-top-2">Container</h3>
 
@@ -283,14 +288,14 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
 
      
 
 
 
 
-        <h2 id="typograhpy" class="heading tera">Typography</h2>
+        <h2 id="typograhpy" class="heading tera m-top-2">Typography</h2>
 
       <p>
         I have reset the sensors to scan for
@@ -366,11 +371,11 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
 
 
 
-        <h2 class="heading tera" id="forms">Form elements WORK IN PROGRESS</h2>
+        <h2 class="heading tera m-top-2" id="forms">Form elements WORK IN PROGRESS</h2>
 
 
 
@@ -487,7 +492,7 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
 
         <h2 id="listing" class="heading tera m-top-2">Listing/pager</h2>
 
@@ -526,7 +531,7 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
 
         <h2 id="tables" class="heading tera m-top-2">Tables</h2>
 
@@ -584,7 +589,7 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
  
         <h2 id="imagery" class="heading tera m-top-2">Captioned imagery</h2>
 
@@ -622,7 +627,7 @@ $breakpoints: (
 
 
  
-    <section>
+    <section class="p-bottom-2">
 
 
 
@@ -635,6 +640,11 @@ $breakpoints: (
             <li><a href="#">Item 3</a></li>
             <li><a href="#">Item 4</a></li>
         </ul>
+
+  </section>
+
+
+    <section class="p-bottom-2">
 
 
         <h2 id="media-object" class="heading tera m-top-2">Media object (flex)</h2>
@@ -652,7 +662,7 @@ $breakpoints: (
 
 
 
-   <section>
+   <section class="p-bottom-2">
 
       <h2 class="heading tera m-top-2" id="helpers">Helpers</h2>
 
