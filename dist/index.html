@@ -36,16 +36,79 @@
       color: #fff;
     }
 
+    /* consider adding this to library */
 
+    .container {
+      padding: 0 10px;
+    }
+
+    .container .container {
+      padding: 0;
+    }
+
+
+    /* consider adding this to library */
+    /* makro layout */
+
+    .side-menu {
+      height: 100vh; 
+      width: 20vw; 
+      position: fixed; 
+      background-color: #444;
+      overflow: auto;
+    }
+
+    .side-menu ul {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .side-menu li {
+      display: block;
+    }
+
+    .side-menu a {
+      color: white;
+    }
+
+    .content {
+      margin-left: 20vw
+    }
 
   </style>
 </head>
 
 <body>
 
-  <div style="height: 100vh; width: 20vw; position: fixed; background-color: #444;">menu</div>
+  <div class="side-menu" style="overflow: auto">
 
-  <div style="margin-left: 20vw">
+    <div class="row">
+
+      <div class="c-m-f1">
+
+        <p class="heading mega">Le-co</p>
+        
+        <ul class="list">
+          <li><a href="#configuration">Introduction</a></li>
+          <li><a href="#layout">layout</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#listing">Listing/Pager</a></li>
+          <li><a href="#tables">Table</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#media-object">Media object</a></li>
+          <li><a href="#helpers">Helpers</a></li>
+          <li><a href="#mixins">Mixins</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="content">
 
     <header class="container fancy-block p-top-2 p-bottom-1">
       <div class="container container--fixed">
@@ -61,10 +124,16 @@
         <div class="row">
           <div class="c-m-f1">
             <ul class="list list--horizontal">
-              <li><a href="#navigation">Item 1</a></li>
-              <li><a href="#">Item 2</a></li>
-              <li><a href="#">Item 3</a></li>
-              <li><a href="#">Item 4</a></li>
+              <li><a href="#configuration">Introduction</a></li>
+              <li><a href="#layout">layout</a></li>
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#forms">Forms</a></li>
+              <li><a href="#listing">Listing/Pager</a></li>
+              <li><a href="#tables">Table</a></li>
+              <li><a href="#navigation">Navigation</a></li>
+              <li><a href="#media-object">Media object</a></li>
+              <li><a href="#helpers">Helpers</a></li>
+              <li><a href="#mixins">Mixins</a></li>
             </ul>
           </div>
         </div>
@@ -78,7 +147,7 @@
 
       <section class="p-bottom-2 c-m-f1">
 
-        <h3 class="heading tera m-top-2">Configuration</h3>
+        <h2 class="heading tera m-top-2" id="configuration">Configuration</h2>
 
         <p>
           For grids and other responsive patters you can specify set of breakpoints they will be generated against.
@@ -308,7 +377,7 @@
 
 
 
-          <h2 id="typograhpy" class="heading tera m-top-2">Typography</h2>
+          <h2 id="typography" class="heading tera m-top-2">Typography</h2>
 
         <p>
           I have reset the sensors to scan for
