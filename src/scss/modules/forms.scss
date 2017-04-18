@@ -2,7 +2,7 @@
 // needs fragmentation
 
 @mixin common-form-style {
-	padding: 3px 6px;
+	padding: $rectangle-spacing;
 	font-size: 1rem;
 }
 

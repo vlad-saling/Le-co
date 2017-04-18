@@ -12,7 +12,7 @@
 		> a {
 			color: inherit;
 			display: inline-block;
-			padding: 3px 6px;
+			padding: $rectangle-spacing;
 			text-decoration: none;
 			border: 1px solid rgba(32,32,32,.5);
 			transition: border-color $transition-duration;
