@@ -229,6 +229,9 @@ hr {
 .flex--column-reverse {
   flex-direction: column-reverse; }
 
+.flex--center {
+  align-items: center; }
+
 .flex__cell {
   background: #ccc;
   flex: 1;
