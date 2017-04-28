@@ -11,30 +11,20 @@
   <title>Le-co. Modular (S)CSS library.</title>
 
 
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
-    html {
-      font-family: Lato
-    }
 
-
-
-    .fancy-block {
-      background-image: linear-gradient(to bottom, #0e67b3, #664ca8);
+    .fancy-header {
+      border-bottom: 1px solid #e8e8e8;
     }
 
     .fancy-footer {
-      background-color: #664ca8;
+      border-top: 1px solid #e8e8e8;
     }
 
-    .fancy-block,
-    .fancy-footer,
-    .fancy-block a,
-    .fancy-footer a {
-      color: #fff;
-    }
+
 
     /* consider adding this to library */
 
@@ -52,10 +42,10 @@
 
     .side-menu {
       height: 100vh; 
-      width: 20vw; 
+      width: 200px; 
       position: fixed; 
-      background-color: #444;
       overflow: auto;
+      border-right: 1px solid #e8e8e8;
     }
 
     .side-menu ul {
@@ -68,12 +58,8 @@
       display: block;
     }
 
-    .side-menu a {
-      color: white;
-    }
-
     .content {
-      margin-left: 20vw
+      margin-left: 200px
     }
 
   </style>
@@ -81,7 +67,7 @@
 
 <body>
 
-  <div class="side-menu" style="overflow: auto">
+  <div class="side-menu">
 
     <div class="row">
 
@@ -110,7 +96,7 @@
 
   <div class="content">
 
-    <header class="container fancy-block p-top-2 p-bottom-1">
+    <header class="container fancy-header p-top-2 p-bottom-1">
       <div class="container container--fixed">
         <div class="row">
           <div class="c-m-f2">
@@ -121,22 +107,7 @@
             <a class="f-right" href="https://github.com/LabZoneSK/Le-co">git repo</a>
           </div>
         </div>
-        <div class="row">
-          <div class="c-m-f1">
-            <ul class="list list--horizontal">
-              <li><a href="#configuration">Introduction</a></li>
-              <li><a href="#layout">layout</a></li>
-              <li><a href="#typography">Typography</a></li>
-              <li><a href="#forms">Forms</a></li>
-              <li><a href="#listing">Listing/Pager</a></li>
-              <li><a href="#tables">Table</a></li>
-              <li><a href="#navigation">Navigation</a></li>
-              <li><a href="#media-object">Media object</a></li>
-              <li><a href="#helpers">Helpers</a></li>
-              <li><a href="#mixins">Mixins</a></li>
-            </ul>
-          </div>
-        </div>
+
       </div>
     </header>
 

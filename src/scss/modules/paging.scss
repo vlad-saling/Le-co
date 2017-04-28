@@ -10,15 +10,15 @@
 		display: inline-block;
 
 		> a {
-			color: inherit;
 			display: inline-block;
 			padding: $rectangle-spacing;
 			text-decoration: none;
-			border: 1px solid rgba(32,32,32,.5);
-			transition: border-color $transition-duration;
+			color: #fff;
+			background-color: rgba(32,32,32,1);
+			transition: background-color $transition-duration;
 
 			&:hover {
-				border-color: rgba(32,32,32,.8);
+				background-color: rgba(32,32,32,.8);
 			}		
 		}
 	}
