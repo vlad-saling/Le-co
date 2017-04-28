@@ -6,7 +6,8 @@
   "scripts": {
     "build:prod": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.min.css --output-style compressed",
     "build:dev": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.css",
-    "build": "npm run build:prod && npm run build:dev"
+    "build": "npm run build:prod && npm run build:dev",
+    "syncgh": "git checkout gh-pages && git merge master && git push && git checkout master"
   },
   "repository": {
     "type": "git",
