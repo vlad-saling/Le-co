@@ -5,6 +5,12 @@
     display:flex;
     flex-direction: row;
 	flex-wrap: wrap;
+
+	@media only screen and (max-width: (#{nth(map-values($breakpoints), 1)} - 1)) {
+		flex-direction: column
+	}
+
+	
 }
 
 	.flex--nowrap {
