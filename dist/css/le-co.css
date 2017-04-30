@@ -219,17 +219,20 @@ hr {
 .flex {
   margin-bottom: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 481px) {
     .flex {
-      flex-direction: column; } }
+      flex-direction: row; } }
+
+.flex--reverse {
+  flex-direction: column-reverse; }
+  @media only screen and (min-width: 481px) {
+    .flex--reverse {
+      flex-direction: row-reverse; } }
 
 .flex--nowrap {
   flex-wrap: nowrap; }
-
-.flex--reverse {
-  flex-direction: row-reverse; }
 
 .flex--column {
   flex-direction: column; }
