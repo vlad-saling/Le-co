@@ -244,6 +244,9 @@ hr {
 .flex--center {
   align-items: center; }
 
+.flex--s-between {
+  justify-content: space-between; }
+
 .flex__cell {
   flex: 1;
   padding: 2%;
