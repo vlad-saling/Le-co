@@ -4,6 +4,7 @@
 .container {
 	margin: 0 auto;
 	clear:both;
+	min-width: $min-width;
 	@include clearfix;
 }
     @if $responsive == true {
