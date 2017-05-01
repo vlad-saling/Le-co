@@ -734,4 +734,10 @@ table {
     display: block;
     clear: both; }
 
+pre {
+  max-height: 300px;
+  background: #eee;
+  padding: 6px 10px;
+  color: #555; }
+
 /*# sourceMappingURL=le-co.css.map */
