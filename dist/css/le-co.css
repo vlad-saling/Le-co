@@ -16,7 +16,11 @@
   float: right !important; }
 
 .fw {
-  width: 100% !important; }
+  width: 100% !important;
+  max-width: 100% !important; }
+
+.circle {
+  border-radius: 50%; }
 
 .p-top-0 {
   padding-top: 0px !important; }
