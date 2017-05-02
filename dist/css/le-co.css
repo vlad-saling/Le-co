@@ -539,7 +539,7 @@ ul {
     display: inline-block; }
     .pager > li > a {
       display: inline-block;
-      padding: 3px 6px;
+      padding: 8px 12px;
       text-decoration: none;
       color: #fff;
       background-color: #202020;
@@ -558,7 +558,7 @@ ul {
   flex: 1; }
 
 .fe {
-  padding: 3px 6px;
+  padding: 8px 7px;
   font-size: 1rem;
   border: 1px solid rgba(32, 32, 32, 0.5);
   color: #888;
@@ -578,7 +578,7 @@ ul {
     height: 10px;
     width: 10px;
     right: 9px;
-    top: 6px;
+    top: 11px;
     font-size: .75rem;
     position: absolute;
     pointer-events: none; }
@@ -588,7 +588,7 @@ ul {
     padding-right: 25px; }
 
 .fe-btn {
-  padding: 3px 6px;
+  padding: 8px 12px;
   font-size: 1rem;
   border: 0px;
   min-width: 50px;
