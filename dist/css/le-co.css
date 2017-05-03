@@ -339,8 +339,7 @@ hr {
 */
 .row {
   width: 100%;
-  clear: both;
-  margin-bottom: 10px; }
+  clear: both; }
   .row:after {
     content: " ";
     display: block;
