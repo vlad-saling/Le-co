@@ -338,13 +338,7 @@ hr {
      $grid-columns
 */
 .row {
-  width: 100%;
-  clear: both;
   margin-bottom: 10px; }
-  .row::after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 /* structural grid (layout) */
 [class*="c-"] {
