@@ -4,6 +4,11 @@
 .hidden {
   display: none !important; }
 
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
 .text-access {
   text-indent: 200%;
   overflow: hidden;

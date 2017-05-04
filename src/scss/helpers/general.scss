@@ -4,6 +4,11 @@
     display:none !important;
 }
 
+
+.clearfix {
+	@include clearfix;
+}
+
 .text-access {
 	@include text-access
 }
