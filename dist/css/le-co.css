@@ -577,8 +577,8 @@ ul {
     border-color: currentColor;
     background-color: #ffe8e8; }
   .fe.disabled, .fe[disabled] {
-    color: #999;
-    background-color: #efefef; }
+    color: #c1c1c1;
+    background-color: #f3f3f3; }
 
 .fe-select {
   position: relative;
