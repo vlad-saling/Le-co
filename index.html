@@ -436,11 +436,23 @@ $breakpoints: (
 
 
 
-            <label for="text-input">Text input:</label>
-            <input type="text" class="fe" id="text-input" value="Text input" />
+            <label for="text-input">Input:</label>
+            <input type="text" class="fe" id="text-input" placeholder="default value" />
+
 <pre>
 &lt;label for=&quot;text-input&quot;&gt;Text input:&lt;/label&gt;&#13;&#10;&lt;input type=&quot;text&quot; class=&quot;fe&quot; id=&quot;text-input&quot; value=&quot;Text input&quot; /&gt;
 </pre>
+
+<h3 class="heading kilo">Disabled input:</h3>
+
+            <label for="text-input">Input error:</label>
+            <input type="text" class="fe" id="text-input" value="wrong value" disabled />
+
+
+<h3 class="heading kilo">Input error:</h3>
+
+            <label for="text-input">Input error:</label>
+            <input type="text" class="fe fe--err" id="text-input" value="wrong value" />
 
 <h3 class="heading kilo m-top-2">Buttons</h3>
       

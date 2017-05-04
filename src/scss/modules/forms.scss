@@ -5,9 +5,9 @@
 .fe {
 	padding: $input-spacing;
 	font-size: 1rem;
-	border: 1px solid rgba(32,32,32,.5);
-	color: #888;
-	background: #fff;
+	border: 0;
+	color: #333;
+	background-color: #f3f3f3;
 	transition: all $transition-duration;
 
 	&:hover {
@@ -16,6 +16,17 @@
 
 	&:focus {
 		color: #555;
+	}
+
+	&.fe--err {
+		color: #af1b00;
+		border-color: currentColor;
+    	background-color: #ffe8e8;
+	}
+
+	&.disabled, &[disabled] {
+		color: #999;
+		background-color: #efefef;
 	}
 }
 
@@ -33,8 +44,13 @@
 		font-size: .75rem;
 		position: absolute;
 		pointer-events: none;
+		color: #999;
+		transition: all $transition-duration;
 	}
 
+	&:hover::after {
+		color: #333;
+	}
 
 	select.fe {
 		-webkit-appearance: none;
@@ -50,7 +66,6 @@
 	min-width: 50px;
 	text-align: center;
 	color: #fff;
-		
 	background-color: rgba(32,32,32,1);
 	transition: background-color $transition-duration;
 
@@ -91,7 +106,7 @@
 		position: relative;
 		padding-left: 30px;
 		display: inline-block;
-		line-height: 1.5em;
+		line-height: 1.6em;
 	}
 
 	label:after,
@@ -101,23 +116,23 @@
 		transition: all $transition-duration;
 	}
 
-	label:after {
+	label:before {
 		top: 4px;
 		left: 6px;
-		height: 14px;
-		width: 14px;
-		border: 1px solid rgba(32,32,32,.5);
+		height: 16px;
+    	width: 16px;
+		background-color: #f3f3f3;
 	}
 
-	label:hover::after {
-		border: 1px solid rgba(32,32,32,.8);
-	}
-
-	label:before {
+	label:after {
 		top: 8px;
 		left: 10px;
 		height: 8px;
 		width: 8px;
+	}
+
+	label:hover::after {
+		background-color: #999;
 	}
 	
 	input[type="radio"] {
@@ -131,7 +146,7 @@
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		&:checked + label:before {
+		&:checked + label:after {
 			background-color: #333;
 		}
 	}
