@@ -40,18 +40,11 @@
 		justify-content: space-between
 	}
 
-	
-
 	.flex__cell {
 		flex: 1; 
-		margin-bottom: 2%;
 
-		+ & {
-			margin-left: 2%;
-		} 
-
-		.flex--gutter & {
-			padding: 2%;
+		.flex--gutter & + & {
+			padding: 0 0 10px 10px;
 		}
 	}
 
