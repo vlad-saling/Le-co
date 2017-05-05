@@ -259,9 +259,10 @@ hr {
   justify-content: space-between; }
 
 .flex__cell {
-  flex: 1; }
+  flex: 1;
+  padding-bottom: 10px; }
   .flex--gutter .flex__cell + .flex__cell {
-    padding: 0 0 10px 10px; }
+    padding-left: 10px; }
 
 @media only screen and (min-width: 481px) {
   .flex__cell--m-f1 {
