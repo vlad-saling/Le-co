@@ -114,6 +114,9 @@
 .m-1 {
   margin: 10px; }
 
+.p-1 {
+  padding: 10px; }
+
 /* responsive stuff */
 /* making d images adapt their size - treshold shoud be customized */
 .r-img {
@@ -173,7 +176,8 @@ hr {
     display: block;
     clear: both; }
   [class*="bgrid-"] > li {
-    float: left; }
+    float: left;
+    padding: 10px; }
 
 @media only screen and (min-width: 481px) {
   .bgrid-m-1 > li {
