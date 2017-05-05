@@ -111,6 +111,9 @@
 .m-bottom-r2 {
   margin-bottom: 5vw !important; }
 
+.m-1 {
+  margin: 10px; }
+
 /* responsive stuff */
 /* making d images adapt their size - treshold shoud be customized */
 .r-img {
@@ -170,8 +173,7 @@ hr {
     display: block;
     clear: both; }
   [class*="bgrid-"] > li {
-    float: left;
-    padding: 10px; }
+    float: left; }
 
 @media only screen and (min-width: 481px) {
   .bgrid-m-1 > li {
@@ -257,8 +259,7 @@ hr {
   justify-content: space-between; }
 
 .flex__cell {
-  flex: 1;
-  padding: 10px; }
+  flex: 1; }
 
 @media only screen and (min-width: 481px) {
   .flex__cell--m-f1 {
