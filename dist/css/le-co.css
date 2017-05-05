@@ -170,7 +170,11 @@ hr {
     display: block;
     clear: both; }
   [class*="bgrid-"] > li {
-    float: left;
+    float: left; }
+    [class*="bgrid-"] > li + li {
+      margin-left: 10px; }
+  [class*="bgrid-"].bgrid--gutter > li {
+    margin-left: 0;
     padding: 10px; }
 
 @media only screen and (min-width: 481px) {
@@ -258,8 +262,11 @@ hr {
 
 .flex__cell {
   flex: 1;
-  padding: 2%;
   margin-bottom: 2%; }
+  + .flex__cell {
+    margin-left: 2%; }
+  .flex--gutter .flex__cell {
+    padding: 2%; }
 
 @media only screen and (min-width: 481px) {
   .flex__cell--m-f1 {
