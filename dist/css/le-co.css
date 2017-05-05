@@ -171,9 +171,7 @@ hr {
     clear: both; }
   [class*="bgrid-"] > li {
     float: left;
-    padding-bottom: 10px; }
-    [class*="bgrid-"] > li + li {
-      padding-left: 10px; }
+    padding: 10px; }
 
 @media only screen and (min-width: 481px) {
   .bgrid-m-1 > li {
