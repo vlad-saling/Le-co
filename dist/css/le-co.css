@@ -570,7 +570,7 @@ ul {
   font-size: 1rem;
   border: 0;
   color: #333;
-  background-color: #f3f3f3;
+  background-color: #e8e8e8;
   transition: all 0.2s; }
   .fe:hover {
     border-color: rgba(32, 32, 32, 0.8); }
@@ -651,7 +651,7 @@ ul {
   left: 6px;
   height: 16px;
   width: 16px;
-  background-color: #f3f3f3; }
+  background-color: #e8e8e8; }
 
 .fe-chrd label:after {
   top: 8px;
