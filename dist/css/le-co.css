@@ -264,7 +264,9 @@ hr {
   justify-content: space-between; }
 
 .flex__cell {
-  flex: 1; }
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto; }
 
 @media only screen and (min-width: 481px) {
   .flex__cell--m-f1 {
