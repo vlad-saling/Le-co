@@ -6,3 +6,7 @@
 
 [dist](https://labzonesk.github.io/Le-co/dist/css/le-co.min.css)
 [dev](https://labzonesk.github.io/Le-co/dist/css/le-co.css)
+
+## Releases
+
+[Alpha v0.1.0](https://github.com/LabZoneSK/Le-co/releases/tag/v0.1.0)
