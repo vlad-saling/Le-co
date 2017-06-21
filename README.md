@@ -4,10 +4,9 @@
 
 Minimalistic-ish UI component library.
 
-## component/snippet library
-
-[dist](https://labzonesk.github.io/Le-co/dist/css/le-co.min.css)
-[dev](https://labzonesk.github.io/Le-co/dist/css/le-co.css)
+Asset links:  
+[production css](https://labzonesk.github.io/Le-co/dist/css/le-co.min.css)  
+[development css](https://labzonesk.github.io/Le-co/dist/css/le-co.css)
 
 ## Releases
 
