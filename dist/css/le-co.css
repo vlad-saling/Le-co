@@ -676,24 +676,12 @@ table {
   width: 100%;
   text-align: left;
   border-collapse: collapse; }
-  table thead > tr > th,
-  table tbody > tr > th,
-  table tfoot > tr > th {
-    padding: 6px 4px;
-    border: 1px solid rgba(32, 32, 32, 0.5); }
-  table thead > tr > td,
-  table tbody > tr > td,
-  table tfoot > tr > td {
+  table th,
+  table td {
     padding: 4px;
-    border: 1px solid rgba(32, 32, 32, 0.5); }
-  table tbody > tr:nth-child(even) > td {
-    background-color: #f9f9f9; }
-  table thead > tr > td,
-  table thead > tr > th,
-  table tfoot > tr > td,
-  table tfoot > tr > th {
-    background-color: #202020;
-    color: #eee; }
+    border-bottom: 1px solid rgba(198, 198, 198, 0.5); }
+  table tbody tr:nth-child(even) td {
+    background-color: #fafafa; }
 
 .captioned {
   float: left;

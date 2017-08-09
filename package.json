@@ -7,7 +7,8 @@
     "build:prod": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.min.css --output-style compressed",
     "build:dev": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.css --source-map true",
     "build": "npm run build:prod && npm run build:dev",
-    "syncgh": "git checkout gh-pages && git merge master && git push && git checkout master"
+    "syncgh": "git checkout gh-pages && git merge master && git push && git checkout master",
+    "watch": "nodemon -e scss -x \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,13 @@
     "native"
   ],
   "author": "Vladislav Saling",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vlad-saling/Le-co/issues"
   },
   "homepage": "https://github.com/vlad-saling/Le-co/issues#readme",
   "devDependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }
