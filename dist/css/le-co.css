@@ -415,7 +415,8 @@ hr {
 
 /* typography */
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.25em; }
 
 button,
 input,
@@ -427,13 +428,8 @@ select {
 a {
   color: inherit; }
 
-ul {
-  line-height: 1.25em; }
-
 /* heading */
 .heading {
-  line-height: 1em;
-  font-size: 1.15rem;
   margin: .5em 0; }
   .heading.peta {
     font-size: 2.25rem; }
