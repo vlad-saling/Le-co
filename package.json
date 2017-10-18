@@ -4,10 +4,10 @@
   "description": "Collection of snippets",
   "main": "index.js",
   "scripts": {
-    "build:prod": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.min.css --output-style compressed",
-    "build:dev": "./node_modules/.bin/node-sass ./src/scss/style.scss ./dist/css/le-co.css --source-map true",
-    "build": "npm run build:prod && npm run build:dev",
-    "syncgh": "git checkout gh-pages && git merge master && git push && git checkout master"
+    "build:prod": "node-sass ./src/scss/style.scss ./dist/css/le-co.min.css --output-style compressed",
+    "build:dev": "node-sass ./src/scss/style.scss ./dist/css/le-co.css --source-map true",
+    "build": "npm run build:prod && npm run copy && npm run build:dev",
+    "copy": "copyfiles -u 1 ./dist/css/*.css* ./docs"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/vlad-saling/Le-co/issues#readme",
   "devDependencies": {
+    "copyfiles": "^1.2.0",
     "node-sass": "^4.5.3"
   }
 }
