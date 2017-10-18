@@ -19,13 +19,14 @@
     "native"
   ],
   "author": "Vladislav Saling",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vlad-saling/Le-co/issues"
   },
   "homepage": "https://github.com/vlad-saling/Le-co/issues#readme",
   "devDependencies": {
     "copyfiles": "^1.2.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }

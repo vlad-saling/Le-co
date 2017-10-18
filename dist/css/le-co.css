@@ -166,72 +166,6 @@ hr {
   .container--fixed {
     max-width: 769px; } }
 
-[class*="bgrid-"] {
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  [class*="bgrid-"]:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  [class*="bgrid-"] > li {
-    float: left;
-    padding: 10px;
-    width: 100%; }
-
-@media only screen and (min-width: 481px) {
-  .bgrid-m-1 > li {
-    width: 100%; }
-  .bgrid-m-2 > li {
-    width: 50%; }
-  .bgrid-m-3 > li {
-    width: 33.33333%; }
-  .bgrid-m-4 > li {
-    width: 25%; }
-  .bgrid-m-5 > li {
-    width: 20%; }
-  .bgrid-m-6 > li {
-    width: 16.66667%; }
-  .bgrid-m-7 > li {
-    width: 14.28571%; }
-  .bgrid-m-8 > li {
-    width: 12.5%; }
-  .bgrid-m-9 > li {
-    width: 11.11111%; }
-  .bgrid-m-10 > li {
-    width: 10%; }
-  .bgrid-m-11 > li {
-    width: 9.09091%; }
-  .bgrid-m-12 > li {
-    width: 8.33333%; } }
-
-@media only screen and (min-width: 769px) {
-  .bgrid-l-1 > li {
-    width: 100%; }
-  .bgrid-l-2 > li {
-    width: 50%; }
-  .bgrid-l-3 > li {
-    width: 33.33333%; }
-  .bgrid-l-4 > li {
-    width: 25%; }
-  .bgrid-l-5 > li {
-    width: 20%; }
-  .bgrid-l-6 > li {
-    width: 16.66667%; }
-  .bgrid-l-7 > li {
-    width: 14.28571%; }
-  .bgrid-l-8 > li {
-    width: 12.5%; }
-  .bgrid-l-9 > li {
-    width: 11.11111%; }
-  .bgrid-l-10 > li {
-    width: 10%; }
-  .bgrid-l-11 > li {
-    width: 9.09091%; }
-  .bgrid-l-12 > li {
-    width: 8.33333%; } }
-
 /* flex box grid */
 .flex {
   margin-bottom: 10px;
@@ -481,7 +415,8 @@ hr {
 
 /* typography */
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.25em; }
 
 button,
 input,
@@ -493,13 +428,8 @@ select {
 a {
   color: inherit; }
 
-ul {
-  line-height: 1.25em; }
-
 /* heading */
 .heading {
-  line-height: 1em;
-  font-size: 1.15rem;
   margin: .5em 0; }
   .heading.peta {
     font-size: 2.25rem; }
@@ -676,24 +606,12 @@ table {
   width: 100%;
   text-align: left;
   border-collapse: collapse; }
-  table thead > tr > th,
-  table tbody > tr > th,
-  table tfoot > tr > th {
-    padding: 6px 4px;
-    border: 1px solid rgba(32, 32, 32, 0.5); }
-  table thead > tr > td,
-  table tbody > tr > td,
-  table tfoot > tr > td {
+  table th,
+  table td {
     padding: 4px;
-    border: 1px solid rgba(32, 32, 32, 0.5); }
-  table tbody > tr:nth-child(even) > td {
-    background-color: #f9f9f9; }
-  table thead > tr > td,
-  table thead > tr > th,
-  table tfoot > tr > td,
-  table tfoot > tr > th {
-    background-color: #202020;
-    color: #eee; }
+    border-bottom: 1px solid rgba(198, 198, 198, 0.5); }
+  table tbody tr:nth-child(even) td {
+    background-color: #fafafa; }
 
 .captioned {
   float: left;
