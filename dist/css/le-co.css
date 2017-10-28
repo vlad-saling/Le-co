@@ -158,11 +158,11 @@ hr {
     display: block;
     clear: both; }
 
-@media only screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .container--fixed {
     max-width: 481px; } }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .container--fixed {
     max-width: 769px; } }
 
@@ -172,13 +172,13 @@ hr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
-  @media only screen and (min-width: 481px) {
+  @media (min-width: 481px) {
     .flex {
       flex-direction: row; } }
 
 .flex--reverse {
   flex-direction: column-reverse; }
-  @media only screen and (min-width: 481px) {
+  @media (min-width: 481px) {
     .flex--reverse {
       flex-direction: row-reverse; } }
 
@@ -202,7 +202,7 @@ hr {
   flex-shrink: 1;
   flex-basis: auto; }
 
-@media only screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .flex__cell--m-f1 {
     flex-basis: 100%;
     max-width: 100%; }
@@ -240,7 +240,7 @@ hr {
     flex-basis: 8.33333%;
     max-width: 8.33333%; } }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .flex__cell--l-f1 {
     flex-basis: 100%;
     max-width: 100%; }
@@ -306,7 +306,7 @@ hr {
 [class*="c-"] + [class*="c-"]:last-child {
   float: right; }
 
-@media only screen and (min-width: 481px) {
+@media (min-width: 481px) {
   .c-m-1 {
     width: 8.33333%; }
   .c-m-f1 {
@@ -356,7 +356,7 @@ hr {
   .c-m-f12 {
     width: 8.33333%; } }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .c-l-1 {
     width: 8.33333%; }
   .c-l-f1 {
