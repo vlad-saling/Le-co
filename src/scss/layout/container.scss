@@ -18,7 +18,7 @@
 		@else {
 			// generating all breakpoint overrides
 			@each $breakpointName, $breakpointStartingPoint in $breakpoints {
-				@media only screen and (min-width: ($breakpointStartingPoint)) {
+				@media (min-width: ($breakpointStartingPoint)) {
 					.container--fixed {
 						max-width: #{$breakpointStartingPoint};
 					}
