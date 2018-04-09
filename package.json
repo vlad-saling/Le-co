@@ -7,7 +7,8 @@
     "build:prod": "node-sass ./src/scss/style.scss ./dist/css/le-co.min.css --output-style compressed",
     "build:dev": "node-sass ./src/scss/style.scss ./dist/css/le-co.css --source-map true",
     "build": "npm run build:prod && npm run build:dev && npm run copy",
-    "copy": "copyfiles -u 1 ./dist/css/*.css* ./docs"
+    "copy": "copyfiles -u 1 ./dist/css/*.css* ./docs",
+    "refresh": "npm run build && npm run copy"
   },
   "repository": {
     "type": "git",
