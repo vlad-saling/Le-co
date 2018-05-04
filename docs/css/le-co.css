@@ -194,6 +194,9 @@ hr {
 .flex--center {
   align-items: center; }
 
+.flex--auto-margin {
+  margin: auto; }
+
 .flex--s-between {
   justify-content: space-between; }
 
