@@ -19,42 +19,40 @@ a {
 
 /* heading */
 
-.heading {
-	margin: .5em 0;
-
-
-	&.peta {
-		font-size: 2.25rem;
-	}
-
-	&.tera {
-		font-size: 2.0rem;
-	}
-
-	&.giga {
-		font-size: 1.75rem;
-	}
-
-	&.mega {
-		font-size: 1.5rem;
-	}
-
-	&.kilo {
-		font-size: 1.25rem;
-	}
-
-	&.micro {
-		font-size: 1rem;
-	}
-
-	&.nano {
-		font-size: .75rem;
-	}
-
-	&.piko {
-		font-size: .5rem;
-	}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	margin: .5em 0;	
 }
+
+.h1 {
+	font-size: 2.25rem;
+}
+
+.h2 {
+	font-size: 2.0rem;
+}
+
+.h3 {
+	font-size: 1.75rem;
+}
+
+.h4 {
+	font-size: 1.33rem;
+}
+
+
+.h5 {
+	font-size: 1rem;
+}
+
+.h6 {
+	font-size: .75rem;
+}
+
 
 .t-center {
 	text-align: center;
