@@ -39,7 +39,7 @@
 
 // generating all breakpoint overrides
 @each $breakpointName, $breakpointStartingPoint in $breakpoints {
-	@media (min-width: ($breakpointStartingPoint)) {
+	@media (min-width: #{$breakpointStartingPoint}px) {
 		@for $i from 1 through $grid-columns {
 			.c-#{$breakpointName}-#{($i)} {
 				width: 100%/$grid-columns * $i;

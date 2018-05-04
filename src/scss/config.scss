@@ -19,10 +19,12 @@ $transition-duration: 0.2s;
 // same values are also used as max-width if explicit max-width is not defined
 $breakpoints: (
 //  breakpointAlias: startingPointInSomeUnit
-	"m": "481px", 
-	"l": "769px"
+	"m": 481, 
+	"l": 769
 );
 
+// set viewport size beyond which fixed container should spread less that 90% of available space
+$constrain: 769;
 
 // reference loop for implmentation at any point of the code base
 // @each $breakpointName, $breakpointStartingPoint in $breakpoints {

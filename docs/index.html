@@ -126,14 +126,16 @@
         <h2 class="heading tera m-top-2" id="configuration">Configuration</h2>
 
         <p>
-          For grids and other responsive patters you can specify set of breakpoints they will be generated against.
+          For grids and other responsive patterns you can specify set of breakpoints they will be generated against. Fixed size container will scale with breakpoints matching their width. However, trough '$constrain' variable one can set a minimum breakpoint value, that should behave like that. Everything below will stretch to 90% of viewport.
         </p>
 
 <pre>
 $breakpoints: (
-    "m": "481px",
-    "l": "767px"
+  "m": 481, 
+  "l": 769
 );
+
+$constrain: 769;
 </pre>
 
         <p>

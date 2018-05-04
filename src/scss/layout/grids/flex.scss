@@ -6,7 +6,7 @@
     flex-direction: column;
 	flex-wrap: wrap;
 
-	@media (min-width: #{nth(map-values($breakpoints), 1)}) {
+	@media (min-width: #{nth(map-values($breakpoints), 1)}px) {
 		flex-direction: row
 	}
 
@@ -15,7 +15,7 @@
 	.flex--reverse {
         flex-direction:  column-reverse;
 
-		@media (min-width: #{nth(map-values($breakpoints), 1)}) {
+		@media (min-width: #{nth(map-values($breakpoints), 1)}px) {
 			flex-direction: row-reverse
 		}
     }
@@ -51,7 +51,7 @@
 	}
 
 	.flex-self-vcenter {
-		@media (min-width: #{nth(map-values($breakpoints), 1)}) {
+		@media (min-width: #{nth(map-values($breakpoints), 1)}px) {
 			align-self: center;
 		}
 	}
@@ -60,7 +60,7 @@
 
 	// generating all breakpoint overrides
 	@each $breakpointName, $breakpointStartingPoint in $breakpoints {
-		@media (min-width: ($breakpointStartingPoint)) {
+		@media (min-width: #{$breakpointStartingPoint}px) {
 			@for $i from 1 through $grid-columns{
 				.flex__cell--#{$breakpointName}-f#{($i)} {
 					flex-basis: 100%/$i;
