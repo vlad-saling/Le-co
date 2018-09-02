@@ -54,9 +54,15 @@
 
 	select.fe {
 		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		border-radius: 0;
-		padding-right: 25px;
-	}
+		padding-right: 28px;
+
+		&::-ms-expand {
+			display: none;
+		}
+    	}
 }
 
 .fe-btn {
