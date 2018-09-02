@@ -79,6 +79,10 @@
 		background-color: rgba(32,32,32,.8);
 		text-decoration: none;
 	}
+	
+	&:focus {
+		background-color: rgba(32,32,32,0.9);
+	}
 
 	&.disabled, &[disabled] {
 		cursor: default;
@@ -107,6 +111,11 @@
 		padding-left: 30px;
 		display: inline-block;
 		line-height: 1.6em;
+		
+		&.chrd-only {
+			width: 30px;
+    			height: 1.6em;
+		}
 	}
 
 	label:after,
@@ -148,6 +157,10 @@
 	input[type="radio"] {
 		&:checked + label:after {
 			background-color: #333;
+		}
+		
+		&:focus + label:before {
+			border-color: rgba(32,32,32,.8);
 		}
 	}
 }
